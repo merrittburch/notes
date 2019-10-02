@@ -1,2 +1,2 @@
 # notes
-I can't remember everything, I need notes.
+Random scribbles from papers and git cheatsheets.

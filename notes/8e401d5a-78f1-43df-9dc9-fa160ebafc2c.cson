@@ -1,5 +1,5 @@
 createdAt: "2019-08-21T17:50:33.366Z"
-updatedAt: "2019-10-02T18:30:10.176Z"
+updatedAt: "2019-10-02T19:55:51.843Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Interesting Papers"
@@ -10,7 +10,7 @@ content: '''
   Paper Notes
   
   #### Disregulation of expression correlates with rare-allele burden and fitness loss in maize (Kremling et al. 2018)
-  H: rare alleles contribute to extreme gene expression
+  - H: rare alleles contribute to extreme gene expression
   Investigated whether rare-allele abundance is greatest in individuals with extreme gene expression
   
   #### Transposable elements and gene expression during the evolution of amniotes (Zeng et al. 2018)
@@ -46,25 +46,25 @@ content: '''
   
   #### 10 Years of GWAS Discovery: Biology, Function, and Translation (Visscher et al. 2017)
   - GWAS rely and exploit linkage disequilibrium, the correlation structure that exists among DNA variants in the current genome as a result of historical evolutionary forces, particularly finite population size, mutation, recombination rate, and natural selection
-  Statistical power to detect associations between DNA variants and a trait depends on the experimental sample size, distribution of effect sizes of unknown causal genetic variants that are segregating in the population, frequency of those variants, and the LD between observed genotyped DNA variants and the unknown causal variants
-  Therefore, the potential of a GWAS to succeed for a particular trait or disease depends on 
-  (1) how many loci affecting the trait segregate in the population, 
-  (2) the joint distribution of effect size and allele frequency at those loci (sometimes called genetic architecture), 
-  (3) the experimental sample size, 
-  (4) the panel of genome-wide variants that are used in the GWAS, and 
-  (5) how heterogeneous the trait or disease being studied is. The last relates to both the biology of the trait and the ability to diagnose or measure it with precision.
+  - Statistical power to detect associations between DNA variants and a trait depends on the experimental sample size, distribution of effect sizes of unknown causal genetic variants that are segregating in the population, frequency of those variants, and the LD between observed genotyped DNA variants and the unknown causal variants
+  - Therefore, the potential of a GWAS to succeed for a particular trait or disease depends on 
+    - (1) how many loci affecting the trait segregate in the population, 
+    - (2) the joint distribution of effect size and allele frequency at those loci (sometimes called genetic architecture), 
+    - (3) the experimental sample size, 
+    - (4) the panel of genome-wide variants that are used in the GWAS, and 
+    - (5) how heterogeneous the trait or disease being studied is. The last relates to both the biology of the trait and the ability to diagnose or measure it with precision.
   
   #### A global overview of pleiotropy and genetic architecture in complex traits (Watanabe et al. 2019)
-  Catalog of 4155 GWAS summary statistics (3,555 sets of summary statistics from 294 studies + new GWAS on 600 traits from the UK Biobank)
-  Traits classified into 27 domains; ~3k unique traits; avg sample size 56250
-  Online database: https://atlas.ctglab.nl
-  Q: What is the extent of pleiotropy  in the human genome? Finite number of segregating sites within human genome, suggets pleiotropy, could establish direction of causalitly between traits and shared genetic mechanisms
-  61% of genome covered in GWAS hits, 93.3% were loci associated with more than 1 trait, 90% were multidomain loci
-  Most pleiotropic locus: 441 trait associated loci from 213 traits across 23 traait domains
-  Looked at characteristics of trait-associated variants in terms of effect size, MAF, functional consequences on genes and regulatory functions using the ‘lead’ snps
-  Most pleiotropic gene sets were involved in regulation of transcription
-  Majority of trait associated gene sets are trait specific
-  Widely aacknolowledged that 90% of GWAS findings fall into noncoding regions (intergenic, intronic)
+  - Catalog of 4155 GWAS summary statistics (3,555 sets of summary statistics from 294 studies + new GWAS on 600 traits from the UK Biobank)
+  - Traits classified into 27 domains; ~3k unique traits; avg sample size 56250
+  - Online database: https://atlas.ctglab.nl
+  - Q: What is the extent of pleiotropy  in the human genome? Finite number of segregating sites within human genome, suggets pleiotropy, could establish direction of causalitly between traits and shared genetic mechanisms
+  - 61% of genome covered in GWAS hits, 93.3% were loci associated with more than 1 trait, 90% were multidomain loci
+  - Most pleiotropic locus: 441 trait associated loci from 213 traits across 23 traait domains
+  - Looked at characteristics of trait-associated variants in terms of effect size, MAF, functional consequences on genes and regulatory functions using the ‘lead’ snps
+  - Most pleiotropic gene sets were involved in regulation of transcription
+  - Majority of trait associated gene sets are trait specific
+  - Widely aacknolowledged that 90% of GWAS findings fall into noncoding regions (intergenic, intronic)
   
   #### Expression quantitative trait loci: present and future (Nica and Dermitzakis 2013)
   - eQTL is a locus that explains a fraction of the genetic variable of a gene expression phenotype
@@ -81,19 +81,18 @@ content: '''
   
   #### Transposable element influences on gene expression in plants (Hirsch and Springer 2017)
   - Three ways that transposons can influence gene expression
-  1) TE insertions within introns or untranslated regions of genes are often tolerated and have minimal impact on expression level or splicing (or they can produce aberrant/novel transcripts)
-  2) TEs can provide novel alternative promoters, which can lead to new expression patterns or original coding potential of an alternate transcript
-  3) TE insertions near genes can influence regulation of gene expression through a variety of mechanisms (ex. May provide novel cis-acting regulatory sites behanving as enhancers or insert within existing enchancers to influence transcript production. 
+      1) TE insertions within introns or untranslated regions of genes are often tolerated and have minimal impact on expression level or splicing (or they can produce aberrant/novel transcripts)
+      2) TEs can provide novel alternative promoters, which can lead to new expression patterns or original coding potential of an alternate transcript
+      3) TE insertions near genes can influence regulation of gene expression through a variety of mechanisms (ex. May provide novel cis-acting regulatory sites behanving as enhancers or insert within existing enchancers to influence transcript production. 
   - TEs can change chromatin modifications near genes which can influecnce gene expression levels
   - Recombination low at TE regions
   - Genes habe set of chromatin modifications such as histone acetylation and methylaation of histone H3 at lysine 4 (H3K4me) that are associated with active transcription
   - TEs enriched for chromatin modifications such as CHG (where H is any nucleotide other than G) DNA methylation, H3K9me2, and H3K27me1, which are associated with transcriptional silencing
   
-  
   - TEs classified by (Wicker et al. 2007)
-  1) class I elements: retrotransposons,most common in plant genomes and often contain long terminal repeats (LTRs) and transpose by an RNA intermediate using a copy and paste mechanism
+      1) class I elements: retrotransposons,most common in plant genomes and often contain long terminal repeats (LTRs) and transpose by an RNA intermediate using a copy and paste mechanism
       - Classified into five orders, each of which can be subdivided into multiple superfamilies used on their features and structure
-  2) Class II elements: DNA transposons have terminal inverted repeats (TIRs) and utilize a DNA intermediate for movement that employs a “cut and paste” mechanism, lower levels in plant genomes than retros
+    2) Class II elements: DNA transposons have terminal inverted repeats (TIRs) and utilize a DNA intermediate for movement that employs a “cut and paste” mechanism, lower levels in plant genomes than retros
   - Include Helitron elements that lack TIRs
   - Class I and II elements require both autonomous and non-autonomous elements
   - Autonomous TEs encode all the necessary factors to facilitate transposition of an element itself or for other members of the same family
@@ -107,26 +106,26 @@ content: '''
   - Many expressed genes contain moderate levels of CG methylation over coding genes
   - Limited evidence for functional role of this methylation
   - Some genes with TEs have altered transcript levels, but most do not show different gene expression, changes in chromatin state for TEs located within genes may influence gene expression 
-  TEs can influence gene expression patterns by disrupting cis-regulatory seqeunces, altering chromatin marks of the cis-regulatory elements, or providing novel regulatory information in addition to cis-regulatory elements to drive expression
-  TEs are one possible source of novel cis-regulatory information that could influence the expression of nearby genes (outside of SNPs)
-  TEs themselves also require activation by their own cis-regulatory elements
-  The Genomic Ecosystem of Transposable Elements in Maize (C. et al. )
-  Class I retrotransposons (major contributor in plant DNA) orders:
-  LTR: long terminal repeats
-  LINE: long interspersed nuclear elements
-  SINE: short interspersed nuclear elements
-  All transcribed to mRNA by host polymerases, some translated to produce reverse transcriptase and other enzymes
-  All use TE encoded enzymes for reverse transcription of a cDNA copy that can be integrated at a new position in the host genome
-  Class II retrotransposons
-  TIR elements: physically excised from one position on the chromosome and move by TE-encoded transposase proteins that recognize terminal inverted repeats (TIRs)
-  Helitrons: transpose by a rolling circle mechanism that generates a new copy after a single strand nick by and element encoded protein and subsequent strand invasion and repair
-  For most TE’s: generates a target site duplication (TSD) in the host DNA at the integration site, and the identification of a TSD bordering a TE can confirm transposition
+  - TEs can influence gene expression patterns by disrupting cis-regulatory seqeunces, altering chromatin marks of the cis-regulatory elements, or providing novel regulatory information in addition to cis-regulatory elements to drive expression
+  - TEs are one possible source of novel cis-regulatory information that could influence the expression of nearby genes (outside of SNPs)
+  - TEs themselves also require activation by their own cis-regulatory elements
+  - The Genomic Ecosystem of Transposable Elements in Maize (C. et al. )
+  - Class I retrotransposons (major contributor in plant DNA) orders:
+    - LTR: long terminal repeats
+    - LINE: long interspersed nuclear elements
+    - SINE: short interspersed nuclear elements
+    - All transcribed to mRNA by host polymerases, some translated to produce reverse transcriptase and other enzymes
+    - All use TE encoded enzymes for reverse transcription of a cDNA copy that can be integrated at a new position in the host genome
+  - Class II retrotransposons
+    - TIR elements: physically excised from one position on the chromosome and move by TE-encoded transposase proteins that recognize terminal inverted repeats (TIRs)
+    - Helitrons: transpose by a rolling circle mechanism that generates a new copy after a single strand nick by and element encoded protein and subsequent strand invasion and repair
+    - For most TE’s: generates a target site duplication (TSD) in the host DNA at the integration site, and the identification of a TSD bordering a TE can confirm transposition
   
   #### Regulatory activities of transposable elements: from conflicts to benefits (Chuong et al. 2017)
-  TEs contribute a substantial fraction of the binding sites across the genome (5-40%, average ~20%) → 16, 20
-  LTR elemnts tend to contribute more than other TE types → 15, 22,42, probably because LTRs are more likely to possess and tetain their ancestral cis-regulatory activities
-  For a given TF the majority of TE-dervied binding sites are contributed by a relatively small number of specific TE families that are highly enriched for TF binding events relative to what would be expected based on the density of these TE families in the genome → 18, 20,43,44
-  Tend to be lineage specific (i.e. different between mice and humans), compared 26 pairs of orthologous TFs across mice and humans, >98% of >130,000 TE derived peaks ID’d in each species were species specific
+  - TEs contribute a substantial fraction of the binding sites across the genome (5-40%, average ~20%) → 16, 20
+  - LTR elemnts tend to contribute more than other TE types → 15, 22,42, probably because LTRs are more likely to possess and tetain their ancestral cis-regulatory activities
+  - For a given TF the majority of TE-dervied binding sites are contributed by a relatively small number of specific TE families that are highly enriched for TF binding events relative to what would be expected based on the density of these TE families in the genome → 18, 20,43,44
+  - Tend to be lineage specific (i.e. different between mice and humans), compared 26 pairs of orthologous TFs across mice and humans, >98% of >130,000 TE derived peaks ID’d in each species were species specific
   
   #### HOME: a histogram based machine learning approach for effective identification of differentially methylated regions (Srivastava et al. 2019)
   - Sodium bisulfite treatment of DNA converts cytostintes , but not methylcytosines, into uracils, and during PCR amplification of the PCR amplification of the bisulfite treated DNA the uracils are replaced by thymines
