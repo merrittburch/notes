@@ -1,5 +1,5 @@
 createdAt: "2019-08-21T17:50:33.366Z"
-updatedAt: "2019-10-02T19:55:51.843Z"
+updatedAt: "2019-10-03T19:47:33.490Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Interesting Papers"
@@ -7,7 +7,60 @@ tags: []
 content: '''
   Interesting Papers
   
-  Paper Notes
+  ### That BLUP is a Good Thing: The Estimation of Random Effects (Robinson 1991)
+  - Method  of estimating random effects
+  - Henderson’s justification
+    - BLUP estimates were MLE
+    - Assumes normality for $\\mu$ and e to maximize the joint density of y and $\\mu$ with respect to $\\beta$ and $\\mu$
+    - Rejected  the use of MLE because the maximized function was not a likelihood
+  - gBLUP estimates if the realized values of the random variables $\\mu$ are 
+    - linear in the sense that they are linear functions of the data, y
+    - Unbiased in the sense that the average value of the estimate is equal to the average value of the quantity being estimated
+    - Best in the sense that they have a minimum mean squared error within the class of linear unbiased estimators
+    - Predictors to distinguish them from estimators of fixed effects
+  
+  
+  ### What is Bayesian statistics? (Eddy 2004)
+  - Pool table example
+  - Calculating the probability of observing some data (the outcomes of up to the next three points) given a probability model (p)
+  - DIfference between MLE and Bayes
+    - MLE: have to iterate over all possible values of variance and variance component, both update each other, sometimes why MLE is so off (like in the example in the paper)
+    - Bayes: no attempts to estimate points, tries all possible values and accounts for uncertainties
+  - Law of total probability → P(Y) is sum(P|Y’)*P(Y’)) → probability of Y given all possibilities of Y
+    - Considered “a trivial algebraic truism for two random variables X and Y”
+    - Probability of a particular choice of p given the data is proportional to the probability that we would get the observed data if that p were true (the likelihood of p) multiplied by the a priori probability of this p relative to all other possible values of p 
+  - Difficulties with bayesian statistics
+    - Require integration over uncertain parameters and often these integrations have no analytical solution
+    - Require specifying prior probability distributions with are also unknown, bad prior probabilities lead to bad estimations
+    - Not clear about trying the hypothesis or parameters as random
+  - Math behind total probability
+  $$\\int_{0}^{1} (1-p)^3 P(p|A=5,B=3) dp$$
+  $$\\int_{0}^{1} (1-p)^3 * \\frac{P(A=5,B=3|p)P(p) dp}{\\int_{0}^{1} P(A=5,B=3|p) P(p) dp}$$
+  Where the $P(p)=1$ and cancels out
+  $$\\frac{\\int_{0}^{1} (1-p)^3 \\binom8 5 p^5 (1-p)^3 p}{\\int_{0}^{1} \\binom8 5 p^5 (1-p)^2  p}$$
+  - Bayes methods didn't gain traction till the 1990's due to computational power.
+  
+  
+  ### Construction of genetic linkage map and identification of QTLs related to agronomic traits in maize using DNA transposon-based markers (Ramekar et al. 2018)
+  Found 24 QTLs associated with nine traits; 13 QTLs involved Mu loci and two involved SCARs
+  In addition to previously developed molecular markers, mobile fragments of DNA called transposable elements (TEs) may create opportunity to produce high-density linkage map and facilitate to locate additional QTLs.
+  majority (66%) of maize genes are located within 1 kb of an annotated transposon
+  Mu system accounts for approximately 1% of the maize genome and is considered to be one of the most complex superfamilies
+  Mu element system is highly active and has a transposition frequency of 1 × 10−3 to 1 × 10−5 per gene, per generation, thereby resulting in a mutation rate that is 50× that of background mutation rates
+  Inserts into 5’ UTR
+  Population:
+  80 RILs (F7:8) from Mo17 and KW7 (Korean waxy landrace)
+  Ear length (EL), ear diameter (ED), setted ear length (SEL), fresh 100 kernel weight (100KW), total kernel weight (TKW), water content (WC) and amylose content (AC) aka AMY? (notation changes). 
+  ID’d TEs using PCR of major families (Mu and others)
+  Results and Discission
+  Many QTLs with huge LOD scores and HUGE effects
+   258 Mu-TD and 34 SCAR markers resulted in 6,248.2 cM of additional length to the existing linkage map
+  24 QTLs linked to nine traits located on maize chromosomes. Among these, 6 QTLs were identified using Mu loci co-localized with SSR markers whereas 9 QTLs were located on chromosome 5, 6, 7, 9 and 10 involved only Mu loci or SCARs. 
+  These QTLs, involving DNA transposon-based markers for traits AMY, 100KW, WC, SEL, EL, and ED are newly found compared to our previous study (Sa et al. 2015) and are valuable sources.
+  Notes:
+  No benchmarking of results to know FT, PH, EL or any other known or verified loci
+  Small population size might lead to spurious associations for highly complex traits.
+  
   
   #### Disregulation of expression correlates with rare-allele burden and fitness loss in maize (Kremling et al. 2018)
   - H: rare alleles contribute to extreme gene expression
