@@ -1,5 +1,5 @@
 createdAt: "2019-08-21T15:05:25.538Z"
-updatedAt: "2019-08-21T15:12:13.932Z"
+updatedAt: "2019-10-07T20:06:18.239Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Helpful git tips"
@@ -19,6 +19,7 @@ content: '''
   git push # no need to specify branch
   # Online: merge named pull request, branch to master (step to get code review)
   ```
+  
 '''
 linesHighlighted: []
 isStarred: false
