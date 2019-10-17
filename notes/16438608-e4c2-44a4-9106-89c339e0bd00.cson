@@ -1,5 +1,5 @@
 createdAt: "2019-08-09T18:59:36.958Z"
-updatedAt: "2019-08-30T19:41:59.196Z"
+updatedAt: "2019-10-17T13:49:23.206Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Some helpful notes for plant breeding related topics"
@@ -8,7 +8,54 @@ content: '''
   ### Some helpful notes for plant breeding related topics
   
   
-  #### 
+  #### From GoHy workshop with Geoff Morris (2019-10-)
+  - Website www.gohy.org
+  - Find definitions and templates linked from main slides
+  - Go: goal directed --> where do I want to go?
+  - Hy: hypothesis driven --> how will I get there?
+  - Every project goes through a series of steps/goals that define the overall structure of a vision and goal based hypothesis/projet (vision, mission, development, research, hypothesis, prediction, objectives)
+  - Vision: why, big picture, potentially lifelong and I don't include myself/my contribution
+  - Mission: Can be a life-long mission that's also big-picturebut I can include my contribution, can also change every few months
+  - Development: Deliverable products or services to the community (or plant breeders)
+  - Research: (genetisist) Generate knowledge that facilitaes development
+  - Hypothesis: The model to be tested
+  - Prediction:Observation that you could make but haven't
+  - Objectives: Steps you need to take to make necessary obervations
+  
+  Constant interations through creating hypotheses, predicting, creating new objectives, and making new observations is crucial to staying up to date and asking the right questions
+  
+  My vision: Have plants that survive and thrive in many environments
+  Motivation: Understand how quantitaitve variation contibutes to plant phenotypic variation
+  
+  - Numerous roadblocks can occur at any point in the GoHy process
+  - Need to be asking in these situations: What research is needed? Why did those past experiments fail? Can this question be realisticly be done?? Go into further detail on past observations
+  
+  What is a hypothesis?
+  1) It's a model that explains some observations
+  2) Is a model that is consistent with past theory
+  3) Is a model that is testable via its predictions
+  
+  Prediction vs. Hypothesis
+  - prediction: what you think will happen
+  - hypothesis: why you think that will happen
+  
+  ? Ongoing question: I don't understand the difference between having strong priors on how an experiment will turn out given past experience and how that turns into p-hacking.
+  
+  Prediction terms:
+  - significantly
+  - greater than > or < less than
+  - co-localized
+  - enriched
+  
+  Hypothesis vs:
+  - Theory: theories ate models that have been tested over and over and have not been rejected
+  - Assumptions: assumptions are models that can't (or won't) be tested
+  
+  Multiple predictions are needed to test a hypothesis
+  - ex: Nature genetics papers in molecular biology creating CRISPR, RNAi-knockdowns, mutants, etc, to prove the function of a locus)
+  - ran predictions/hypothesies from easiest to hardest 
+  - hypothesis testing requires mutually exclusive predictions
+  - predictions that fail lead to new hypotheses, and eventually new knowledge
   
   
   
