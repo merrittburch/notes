@@ -1,0 +1,26 @@
+createdAt: "2019-10-30T15:02:38.028Z"
+updatedAt: "2019-10-30T15:44:44.947Z"
+type: "MARKDOWN_NOTE"
+folder: "6827e53fd4576b1dc031"
+title: "Seminars"
+tags: []
+content: '''
+  Seminars
+  
+  Date: 2019-10-30
+  - Taylor Crow
+  - Chromosomal inversion and their impact on phenotypic variation
+  - Looking at chromosome 4 inversion, through mexico either homo chr4 inversion, many more het for chr 4 inversion, homo chr4 inversion more prevelant with higher elevation
+  - Hypothesis for keeping inversion --> capturing favorable adaptation alleles, can't recombine out as easily, sharp reduction in diversity within this region
+  - Trying to find functional adaptive alleles within this inversion, also, what traits are under selection in this region, and what specific genes are in this region
+  - Why is Inv4m so important? Bioarkv paper showd high phenotypic plasticity mapping to this region
+  - 47 genes within this region with poor gene annotation, why does it contribute to flowering time?
+  - Crossed different landraces, backcrossed to B73, collected RNAseq samples in multiple tisses in v1 or v3 stage, looked at expresison differences in introgression lines vs. inv4m region
+  - Looked at enriched GO terms in "clean" trans-genes regulated by inv4m (outside of the inversion)
+  - From Cinta: 
+    - see a yield and heterosis effect in Ames, also in other 282 like populations see a seed size and weight effect from this inversion, might be a master regulator from Mexicana
+    - How do temperate maize lines segregate for inversion?
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false
