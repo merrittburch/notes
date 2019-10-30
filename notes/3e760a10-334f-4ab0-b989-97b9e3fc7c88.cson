@@ -1,0 +1,45 @@
+createdAt: "2019-10-24T16:13:39.996Z"
+updatedAt: "2019-10-24T16:18:19.530Z"
+type: "MARKDOWN_NOTE"
+folder: "6827e53fd4576b1dc031"
+title: "TASSEL 5.0 Pipeline Command Line Interface:"
+tags: []
+content: '''
+  TASSEL 5.0 Pipeline Command Line Interface:
+  Guide to using Tassel Pipeline
+  
+  Merritt Burch
+  2019-10-24
+  
+  ### Prerequisites
+  
+  Java JDK 8.0 or later (http://java.sun.com/javase/downloads/index.jsp).
+  
+  ### Source Code
+  
+  git clone https://bitbucket.org/tasseladmin/tassel-5-source.git
+  
+  ### Install
+  
+  git clone https://bitbucket.org/tasseladmin/tassel-5-standalone.git
+  
+  OR
+  
+  https://bitbucket.org/tasseladmin/tassel-5-standalone/downloads/?tab=tags
+  
+  ### Usage
+  
+  #### Pipeline controls
+  
+  FileLoadPlugin
+  
+  ```shell
+  FileLoadPlugin <options>
+  -format <Format> : Import file format [SqrMatrix, Sequence, Unknown, Fasta, Hapmap, HapmapLIX, Plink, Phenotype, ProjectionAlignment, ProjectPCsandRunModelSelection, Phylip_Seq, Phylip_Inter, Table, Serial, HapmapDiploid, Text, VCF, HDF5, TOPM, HDF5Schema, Filter, NumericGenotype, TaxaList, PositionList, SqrMatrixRaw, SqrMatrixBin, GOBII, Depth, ReferenceProbability, Report, PlinkPhenotype, SqrMatrixDARwinDIS, Avro, Flapjack] (Default: Make Best Guess)
+  -sortPositions <true | false> : Whether to sort genotype positions if that's possible. (Default: false)
+  -keepDepth <true | false> : Whether to keep depth if that's possible. (Default: true)
+  ```
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false
