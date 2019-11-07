@@ -1,12 +1,72 @@
 createdAt: "2019-08-21T17:50:33.366Z"
-updatedAt: "2019-10-03T19:47:33.490Z"
+updatedAt: "2019-11-07T23:02:29.876Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Interesting Papers"
 tags: []
 content: '''
   Interesting Papers
+  **
   
+  Population Stratification in Genetic Association Studies [(Hellwege et al. 2017)](https://paperpile.com/c/mOL2KS/IunS)
+  
+  *   Population stratification is a primary consideration in studies of the genetic determinants of human traits, failure to control for it may lead to confounding, causing a study to fail for the lack of significant results or too many false positives because differences in local ancestry that are unrelated to the trait or trait variance seem significant
+      
+  *   Paper is a review on global and local methods for detecting the presence of population structure and approaches for accounting population stratification in association studies
+      
+  *   Ways to estimate  the relationship of subpopulations to one another
+      
+  
+  *   (measures genetic differentiation) Fixation index (Fst) which compares the differences in expected  heterozygosity across populations under Hardy-Weinberg Equilibrium. The drift toward fixation in isolated groups results in a loss  of heterozygosity in the total population (Wahlund effect). Fst quantifies the proportional impact the subpopulations have on the heterozygosity estimate relative to the expected heterozygosity under  HWE. Smaller Fst indicates similar allele freqs. Between populations, larger values mean the allele freqs. are different
+      
+  *   Calculate ancestry informative markers (AIMs). Maximum ability to differentiate populations comes from genetic markers with large frequency differences between the parental populations for admixed samples (AIMs). AIMs are frequently incorporated into genotyping experiments when PS is suspected for downstream conditioning on inferred ancestral information in association modeling
+      
+  
+  *   Factors that can accelerate the rate of differentiation at a locus are small subpopulation size, inbreeding, selection, and mutation
+      
+  *   Methods for detecting ancestry in small chromosomal regions —>
+      
+  
+  *   Evaluate local ancestryL MALDsoft, STRUCTURE, ANCESTRYMAP (HMMs)
+      
+  
+  *   Local ancestry estimates can be used as covariates in linear model on a SNP by SNP basis (Wang et al 2011), as well was test based on a conditional likelihood framework, which models the distribution of  the test SNP given disease status and flanking marker genotypes
+      
+  
+    
+  
+  Principal components analysis corrects for stratification in genome-wide association studies [(Price et al. 2006)](https://paperpile.com/c/mOL2KS/j9KX)
+  
+  *   Saw lecture about controlling for admixture, paper trail lead me here
+      
+  *   Population stratification - allele frequency differences between cases and controls due to systematic ancestry differences can cause spurious associations in disease studies
+      
+  *   Methods of dealing with stratification are genomic control and structured association
+      
+  *   Genomic control corrects for stratification by adjusting association statistics at each marker by a uniform overall inflation factor, (not very robust because some markers differ ein allele freqs across ancestral pops, uniform adjustment not equal —> loss in power)
+      
+  *   Structured association uses STRUCTURE to assign the samples to discrete subpopulation clusters then aggregates evidence of association within each closter, has computational cost when individuals belong to many clusters
+      
+  *   Paper proposes method: EIGENSTRAT, has 3 steps
+      
+  
+  *   Apply principal components to genotype data to infer continuous axes of genetic variation, these axes of variation reduce the data to a small number of dimensions, describing as much variability as possible
+      
+  *   Continuously adjust genotypes and phenotypes by amounts attributable to ancestry along each axis by computing residuals of linear regressions, this creates a virtual set of matched cases and controls
+      
+  *   Compute association statistics using ancestry adjusted genotypes and phenotypes
+      
+  
+  *   Continuous axes of variation provide useful descriptions of within continent genetic variation, axes are orthogonal
+      
+  *   EIGENSTRAT achieves an equal or lower rate of false positives and achieves superior sensitivity to detect true associations, relative to the genomic control
+      
+  *   Looked at the number of SNPs required  to infer population structure, impacted by fst and number of SNPs, at SNPs < 5km incomplete stratification correction, requires >20k SNPs
+      
+  *   the set of SNPs used by EIGENSTRAT to infer axes of variation included the candidate SNPs of interest. This raises the question of whether the axes of variation could be biased by the inclusion of these SNPs. To address this question, we reran EIGENSTRAT with the four candidate SNPs, the LCT region SNP rs3769005, and all SNPs within 5 Mb of each of those SNPs excluded when inferring axes of variation. Results were essentially unchanged.
+      
+  
+  **
   ### That BLUP is a Good Thing: The Estimation of Random Effects (Robinson 1991)
   - Method  of estimating random effects
   - Henderson’s justification
