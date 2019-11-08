@@ -1,5 +1,5 @@
 createdAt: "2019-08-21T17:50:33.366Z"
-updatedAt: "2019-11-07T23:02:29.876Z"
+updatedAt: "2019-11-08T19:34:34.725Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Interesting Papers"
@@ -8,65 +8,114 @@ content: '''
   Interesting Papers
   **
   
-  Population Stratification in Genetic Association Studies [(Hellwege et al. 2017)](https://paperpile.com/c/mOL2KS/IunS)
+  ### Population Stratification in Genetic Association Studies [(Hellwege et al. 2017)](https://paperpile.com/c/mOL2KS/IunS)
   
-  *   Population stratification is a primary consideration in studies of the genetic determinants of human traits, failure to control for it may lead to confounding, causing a study to fail for the lack of significant results or too many false positives because differences in local ancestry that are unrelated to the trait or trait variance seem significant
-      
-  *   Paper is a review on global and local methods for detecting the presence of population structure and approaches for accounting population stratification in association studies
-      
-  *   Ways to estimate  the relationship of subpopulations to one another
-      
+  - Population stratification is a primary consideration in studies of the genetic determinants of human traits, failure to control for it may lead to confounding, causing a study to fail for the lack of significant results or too many false positives because differences in local ancestry that are unrelated to the trait or trait variance seem significant   
+  - Paper is a review on global and local methods for detecting the presence of population structure and approaches for accounting population stratification in association studies
+  - Ways to estimate  the relationship of subpopulations to one another
+  - (measures genetic differentiation) Fixation index (Fst) which compares the differences in expected  heterozygosity across populations under Hardy-Weinberg Equilibrium. The drift toward fixation in isolated groups results in a loss  of heterozygosity in the total population (Wahlund effect). Fst quantifies the proportional impact the subpopulations have on the heterozygosity estimate relative to the expected heterozygosity under  HWE. Smaller Fst indicates similar allele freqs. Between populations, larger values mean the allele freqs. are different
+  - Calculate ancestry informative markers (AIMs). Maximum ability to differentiate populations comes from genetic markers with large frequency differences between the parental populations for admixed samples (AIMs). AIMs are frequently incorporated into genotyping experiments when PS is suspected for downstream conditioning on inferred ancestral information in association modeling
+  - Factors that can accelerate the rate of differentiation at a locus are small subpopulation size, inbreeding, selection, and mutation
+  - Methods for detecting ancestry in small chromosomal regions —>
+  - Evaluate local ancestryL MALDsoft, STRUCTURE, ANCESTRYMAP (HMMs)
+  - Local ancestry estimates can be used as covariates in linear model on a SNP by SNP basis (Wang et al 2011), as well was test based on a conditional likelihood framework, which models the distribution of  the test SNP given disease status and flanking marker genotypes
   
-  *   (measures genetic differentiation) Fixation index (Fst) which compares the differences in expected  heterozygosity across populations under Hardy-Weinberg Equilibrium. The drift toward fixation in isolated groups results in a loss  of heterozygosity in the total population (Wahlund effect). Fst quantifies the proportional impact the subpopulations have on the heterozygosity estimate relative to the expected heterozygosity under  HWE. Smaller Fst indicates similar allele freqs. Between populations, larger values mean the allele freqs. are different
-      
-  *   Calculate ancestry informative markers (AIMs). Maximum ability to differentiate populations comes from genetic markers with large frequency differences between the parental populations for admixed samples (AIMs). AIMs are frequently incorporated into genotyping experiments when PS is suspected for downstream conditioning on inferred ancestral information in association modeling
-      
   
-  *   Factors that can accelerate the rate of differentiation at a locus are small subpopulation size, inbreeding, selection, and mutation
+  ### Principal components analysis corrects for stratification in genome-wide association studies [(Price et al. 2006)](https://paperpile.com/c/mOL2KS/j9KX)
+  - Saw lecture about controlling for admixture, paper trail lead me here
+  - Population stratification - allele frequency differences between cases and controls due to systematic ancestry differences can cause spurious associations in disease studies
+  - Methods of dealing with stratification are genomic control and structured association
+  - Genomic control corrects for stratification by adjusting association statistics at each marker by a uniform overall inflation factor, (not very robust because some markers differ ein allele freqs across ancestral pops, uniform adjustment not equal —> loss in power)
+  - Structured association uses STRUCTURE to assign the samples to discrete subpopulation clusters then aggregates evidence of association within each closter, has computational cost when individuals belong to many clusters
+  - Paper proposes method: EIGENSTRAT, has 3 steps
+  - Apply principal components to genotype data to infer continuous axes of genetic variation, these axes of variation reduce the data to a small number of dimensions, describing as much variability as possible
+  - Continuously adjust genotypes and phenotypes by amounts attributable to ancestry along each axis by computing residuals of linear regressions, this creates a virtual set of matched cases and controls
+  - Compute association statistics using ancestry adjusted genotypes and phenotypes
+  - Continuous axes of variation provide useful descriptions of within continent genetic variation, axes are orthogonal
+  - EIGENSTRAT achieves an equal or lower rate of false positives and achieves superior sensitivity to detect true associations, relative to the genomic control
+  - Looked at the number of SNPs required  to infer population structure, impacted by fst and number of SNPs, at SNPs < 5km incomplete stratification correction, requires >20k SNPs
+  - the set of SNPs used by EIGENSTRAT to infer axes of variation included the candidate SNPs of interest. This raises the question of whether the axes of variation could be biased by the inclusion of these SNPs. To address this question, we reran EIGENSTRAT with the four candidate SNPs, the LCT region SNP rs3769005, and all SNPs within 5 Mb of each of those SNPs excluded when inferring axes of variation. Results were essentially unchanged.
       
-  *   Methods for detecting ancestry in small chromosomal regions —>
-      
+  ### Population Stratification in Genetic Association Studies (Hellwege et al. 2017)
+  - Population stratification is a primary consideration in studies of the genetic determinants of human traits, failure to control for it may lead to confounding, causing a study to fail for the lack of significant results or too many false positives because differences in local ancestry that are unrelated to the trait or trait variance seem significant
+  - Paper is a review on global and local methods for detecting the presence of population structure and approaches for accounting population stratification in association studies
+  - Ways to estimate  the relationship of subpopulations to one another
+    - (measures genetic differentiation) Fixation index (Fst) which compares the differences in expected  heterozygosity across populations under Hardy-Weinberg Equilibrium. The drift toward fixation in isolated groups results in a loss  of heterozygosity in the total population (Wahlund effect). Fst quantifies the proportional impact the subpopulations have on the heterozygosity estimate relative to the expected heterozygosity under  HWE. Smaller Fst indicates similar allele freqs. Between populations,  larger values mean the allele freqs. are different
+    - Calculate ancestry informative markers (AIMs). Maximum ability to differentiate populations comes from genetic markers with large frequency differences between the parental populations for admixed samples (AIMs). AIMs are frequently incorporated into genotyping experiments when PS is suspected for downstream conditioning on inferred ancestral information in association modeling
+  - Factors that can accelerate the rate of differentiation at a locus are small subpopulation size, inbreeding, selection, and mutation
+  - Methods for detecting ancestry in small chromosomal regions —>
+  - Evaluate local ancestryL MALDsoft, STRUCTURE, ANCESTRYMAP (HMMs)
+  - Local ancestry estimates can be used as covariates in linear model on a SNP by SNP basis (Wang et al 2011), as well was test based on a conditional likelihood framework, which models the distribution of  the test SNP given disease status and flanking marker  genotypes
   
-  *   Evaluate local ancestryL MALDsoft, STRUCTURE, ANCESTRYMAP (HMMs)
-      
+  ### Principal components analysis corrects for stratification in genome-wide association studies (Price et al. 2006)
+  - Saw lecture about controlling for admixture, paper trail lead me here
+  - Population stratification - allele frequency differences between cases and controls due to systematic ancestry differences can cause spurious associations in disease studies
+  - Methods of dealing with stratification are genomic control and structured association
+    - Genomic control corrects for stratification by adjusting association statistics at each marker by a uniform overall inflation factor, (not very robust because some markers differ ein allele freqs across ancestral pops, uniform adjustment not equal —> loss in power)
+    - Structured association uses STRUCTURE to assign the samples to discrete subpopulation clusters then aggregates evidence of association within each closter, has computational cost when individuals belong to many clusters
+  - Paper proposes method: EIGENSTRAT, has 3 steps
+    - Apply principal components to genotype data to infer continuous axes of genetic variation, these axes of variation reduce the data to a small number of dimensions, describing as much variability as possible
+    - Continuously adjust genotypes and phenotypes by amounts attributable to ancestry along each axis by computing residuals of linear regressions, this creates a virtual set of matched cases and controls
+    - Compute association statistics using ancestry adjusted genotypes and phenotypes
+    - Continuous axes of variation provide useful descriptions of within continent genetic variation, axes are orthogonal
+    - EIGENSTRAT achieves an equal or lower rate of false positives and achieves superior sensitivity to detect true associations, relative to the genomic control
+    - Looked at the number of SNPs required  to infer population structure, impacted by fst and number of SNPs, at SNPs < 5km incomplete stratification correction, requires >20k SNPs
+    - the set of SNPs used by EIGENSTRAT to infer axes of variation included the candidate SNPs of interest. This raises the question of whether the axes of variation could be biased by the inclusion of these SNPs. To address this question, we reran EIGENSTRAT with the four candidate SNPs, the LCT region SNP rs3769005, and all SNPs within 5 Mb of each of those SNPs excluded when inferring axes of variation. Results were essentially unchanged.
   
-  *   Local ancestry estimates can be used as covariates in linear model on a SNP by SNP basis (Wang et al 2011), as well was test based on a conditional likelihood framework, which models the distribution of  the test SNP given disease status and flanking marker genotypes
-      
+  ### Finding genetic variants in plants without complete genomes  (Voichek and Weigel 2019)
+  - A difficulty of working with plant genomes is that they are highly repetitive and feature excessive structural variation between members of the same species, mostly attributed to their active transposons (Bennetzen, 2000)
+  - A. thaliana has a small (140 Mb) and not very repetitive genome compared to many other plants, SNPs may be assigned to incorrect positions due to sequence similarity shared between unlinked loci (Long et al., 2013)
+  - The maize genome is highly repetitive, with transposons often inserted into other transposons, and 50%-60% of short read sequences can not be mapped uniquely to it, making the accurate identification of variants in the population a formidable challenge
+  - Used k-mers extracted from short reads, compare k-mers taken from different samples can be compared
+  - K-mer presence/absence can ID a broad range of genetic variants
+  - SVs such as large deletions, inversions, translocations,TE insertions, will leave markers in the presence or absence of kmers. 
+  - Paper: USed k-mer based GWAS and compared it to SNP-based GWAS on 2k phenotypes from Arabidopsis, maize, and tomato
+  - K-mers have stronger statistical support
+  - Did permutation tests instead of doing Bonferoni correction, many k-mers not independent
+  - K-mers aligned to the same genomic loci as the corresponding SNPs. different k-mer lengths results in same results, SNPs and k-mers had the same results
+  - I think in the maize 282, 7.3 billion unique k-mers in the population, 2.3 billion were present in at least 5 accessions. Mapped Zhao traits (mostly morphological) from Panzea, for some k-mers, k-mermarked a common alllele in the population with a strong effect on a phenotype but the allele could not be ID’d in the SNP dataset
+  - we posit that for GWAS purposes, k -mer based approaches are ideal because they minimize arbitrary choices when classifying alleles and because they capture more, almost optimal, information from raw sequencing data.   
   
-    
+  ### Protein tertiary structure modeling driven by deep learning and contact distance prediction in CASP13 (Hou et al. 2019)
+  - breakthroughs in contact distance prediction was driven by two key advances: residue-residue coevolutionary analysis popularized in Reference 5 and demonstrated in CASP11 andCASP12 experiment4,6and deep learning introduced in Reference 7 and enhanced in References 8-12
+  - The coevolutionary analysis is based on the observation that two amino acids in contact (or spatially close according to a distance threshold such as 8 Å) must coevolve in order to maintain the contact relationship during evolution, that is, if one amino acid is mutated to a positively charged residue, the other one must change to a negatively charged one to be in contact
+  - coevolutionary scores can be used as input for machine learning methods to further improve contact prediction
+  - Machine learning methods work well in prediction of residual networks
+  - variants of deep learning methods—convolutional neural networks and residual networks—were combined with coevolutionary features to substantially improve contact prediction
+  - Project: enhanc-ing our MULTICOM protein structure prediction system17-19with our latest development in contact distance prediction empowered by deep learning and its application to template-FM and protein model ranking,17,20,21 while having a routine update on its other components such as template library, template identification, and template-based modelling
+  - Results: 
+  - that contact distance predic-tion empowered by the advanced deep learning architecture can accu-rately predict a large number of contacts for some template-free or hard template-based targets, which are sufficient to fold them correctly by the distance geometry and simulated annealing from scratch without using any template or fragment information.
+  - directly translating predicted contacts into tertiary structures by sat-isfying distance restraints can fold large proteins with complicated topol-ogies better than using contacts indirectly to guide traditional fragment assembly approaches
+  - deep learning can integrate one-dimensional (1D), two-dimensional (2D), and 3D structural features to improve protein model ranking
+  - ? Are the CASP proteins ‘benchmarkers’ for protein structure prediction?
   
-  Principal components analysis corrects for stratification in genome-wide association studies [(Price et al. 2006)](https://paperpile.com/c/mOL2KS/j9KX)
+  ### Introduction to Single-Cell RNA Sequencing (Olsen and Baryawno 2018)
+  - Transcriptome → complete set of transcripts in a cell, including the cell’s total gene expression and consequently implied phenotype and functional state
+  - Transcriptome encompasses protein coding messenger RNA, rRNA, tRNA, and noncoding RNAs with regulatory functions
+  - scRNAseq (single cell RNA seq) developed in 2009, methods have been refined and improved
+  - Overall process:
+  - Single cells must be isolated from each other for individual processing (enzymatic dissociation)
+  - After isolation, single cells are lysed and RNA molecules within an individual cells are captured and converted to cDNA by means of reverse transcription
   
-  *   Saw lecture about controlling for admixture, paper trail lead me here
-      
-  *   Population stratification - allele frequency differences between cases and controls due to systematic ancestry differences can cause spurious associations in disease studies
-      
-  *   Methods of dealing with stratification are genomic control and structured association
-      
-  *   Genomic control corrects for stratification by adjusting association statistics at each marker by a uniform overall inflation factor, (not very robust because some markers differ ein allele freqs across ancestral pops, uniform adjustment not equal —> loss in power)
-      
-  *   Structured association uses STRUCTURE to assign the samples to discrete subpopulation clusters then aggregates evidence of association within each closter, has computational cost when individuals belong to many clusters
-      
-  *   Paper proposes method: EIGENSTRAT, has 3 steps
-      
   
-  *   Apply principal components to genotype data to infer continuous axes of genetic variation, these axes of variation reduce the data to a small number of dimensions, describing as much variability as possible
-      
-  *   Continuously adjust genotypes and phenotypes by amounts attributable to ancestry along each axis by computing residuals of linear regressions, this creates a virtual set of matched cases and controls
-      
-  *   Compute association statistics using ancestry adjusted genotypes and phenotypes
-      
+  ### Chromatin activity at GWAS loci identifies T cell states driving complex immune diseases (Soskic et al. 2019)
+  - Well established that immune-disease-associated variants localize to chromatin regions that are specific to CD4+ T cells and monocytes, it is not yet known whether immune-disease-associated variants are further enriched in chromatin regions that are specific to a particular cytokine-induced cell state
+  - developed a statistical method for assessing SNP enrichment in chromatin marks to analyze the effects of immune-disease-associated variants in specific cell states
   
-  *   Continuous axes of variation provide useful descriptions of within continent genetic variation, axes are orthogonal
-      
-  *   EIGENSTRAT achieves an equal or lower rate of false positives and achieves superior sensitivity to detect true associations, relative to the genomic control
-      
-  *   Looked at the number of SNPs required  to infer population structure, impacted by fst and number of SNPs, at SNPs < 5km incomplete stratification correction, requires >20k SNPs
-      
-  *   the set of SNPs used by EIGENSTRAT to infer axes of variation included the candidate SNPs of interest. This raises the question of whether the axes of variation could be biased by the inclusion of these SNPs. To address this question, we reran EIGENSTRAT with the four candidate SNPs, the LCT region SNP rs3769005, and all SNPs within 5 Mb of each of those SNPs excluded when inferring axes of variation. Results were essentially unchanged.
-      
+  ### TypeTE: a tool to genotype mobile element insertions from whole genome resequencing data (Goubert et al. 2019)
+  - Mobile element insertions (MEIs)
+  - MEIs generate structural variants between genomes (typically insertions( and can lead to complex rearrangements through non-homologous recombination between copies
+  - Recently mobilized human TEs include members of the LINE-1, Alu, SVA, and a few endogenous retroviruses (HERVs) families, make up >30% of the genome, are polymorphic
+  - pMEIs (polymorphic mobile element insertions), Alu most common
+  - little less than 20,000 Alu copies have been identified as segregating among 2,504 humans sampled as part of the 1000 Genomes Project 
+  - worldwide reference pMEI datasets such as those produced by 1000 GP (Sudmant et al. 2015) can be used in conjunction with gene expression data (e.g. RNA-seq) to identify loci associated with changes in gene expression (S. Wang et al. 2016)
+  - Results:
+  - 82% of the genotypes reported by 1000GP are consistent with PCR calls for Alu elements, didn’t test other TE’s because there is no ‘gold standard’ verification set
+  - TypeTE average concordance rate of 91% or greater with PCR-based genotyping
+  - Performs equally regardless of coverage depth, does not influence genotyping accuracy
+  - Improvements over MELT but fails to accurately genotype some loci experimentally assasyed (16/227)
+  - Compatible with any data type for insertions, any retroelement families in any species
   
-  **
   ### That BLUP is a Good Thing: The Estimation of Random Effects (Robinson 1991)
   - Method  of estimating random effects
   - Henderson’s justification
@@ -78,7 +127,7 @@ content: '''
     - Unbiased in the sense that the average value of the estimate is equal to the average value of the quantity being estimated
     - Best in the sense that they have a minimum mean squared error within the class of linear unbiased estimators
     - Predictors to distinguish them from estimators of fixed effects
-  
+    - 
   
   ### What is Bayesian statistics? (Eddy 2004)
   - Pool table example
