@@ -1,5 +1,5 @@
 createdAt: "2019-08-21T17:50:33.366Z"
-updatedAt: "2019-11-08T19:34:34.725Z"
+updatedAt: "2019-11-15T23:49:44.740Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Interesting Papers"
@@ -7,6 +7,40 @@ tags: []
 content: '''
   Interesting Papers
   **
+  
+  ### Efficient toolkit implementing best practices for principal component analysis of population genetic data (Privé et al. )
+  - PCa has been used in genetics for many years, adding PCs as covariates has been routinely used to adjust for population structure in GWAS
+  - Some pitflls to calculating PCs on genotype data  have been documented
+  - Some PCs may capture LD structure rather than population structure. Including PCs that capture LD as covariates in genetic analyses can lead to reduced power for detecting a genetic association within these LD regions in GWAS
+  - Another issue might arise when projecting PCs of a reference dataset to another study dataset, projected PCs are shrunk towards 0 in the new dataset. Shrinkage is potentially dangerous when projected PCs for analyses such as PC regression, ancestry detection, and correction for ancestry.
+  - PC scores may capture outliers that are due to family structure, population structue or other reasons. Might be beneficial to detect and remove these individuals to maximize the population structure captured by PCA or to restrict analyses to genetically homogenous populations
+  - Efficient methods for PCA use approximations, which can result in some lack of precision of computed PCs
+  - Paper calculates PCs in UK biobank data, creates R package for calculating PCs, show that many PCs calculated by Biobank capture LD structure instead of population structure but subsetting data prevents this. They also project the other individuals that were not used in the PCA calculation, show that this projection is biased and provide an efficient solution to estimate unbiased projections
+  - Detecting LD structure in PCA → method similar to Prive 2018, apply a first round of clumping (r^2>0.2) prioritizing variants by higer minor allele count, then compute K PC scores and loadings. To summarize the contribution of each variant in all K PC loadings they comopute Mahalanobis distances of these loadings.
+  - Find and filter outliers by threshold, removed variants and recomputed PC scores and loadings again iteratively until no outliers present anymore
+  - Projecting PCs from 60% of individuals to other 40% for k=20 PCs by:
+    1) multiplying the genotypes of these individuals by the previously computed loadings
+    2) correcting the simple projections using asymptotic chrinkage factors as determined by the R package hdpca with eigenvalues from a genomic relationship matrix
+    3) The OADP projection (little shrinkage)
+  - When projecting using loadings (method 1), there is negligble shrinkage for first 2 PCs, larger shrinkage further on
+  - Reccommended steps for calculating PCs
+    -  Discard all related individuals (both in pairs → subsetting overdominant populations, avoids problems when projecting)
+    -  Compute PCA while removing long-range LD regions
+    -  Sample outlier detection (if outliers remove them and go to previous step)
+    -  Project all other inviduals
+  - One should also look at PC scores to identify which PCs capture population structure. As in many applications, we believe there should be a compromise between signal and noise. Therefore, we recommend using only PCs that show structure (e.g. PC1-16 in figure S9) and exclude PCs that indicate LD
+  - Useful to subset input individuals  so  there is not too much imbalance between sample sizes of the different populations, unequal sample sizes can distort PCs (more info from 50k individuals than all 400k individuals)
+  
+  ### New approaches to population stratification in genome-wide association studies (Price et al. 2010)
+  - Population structure: a fixed or random effect?
+  - An important and unanswered question is whether population structure should be modeled as part of the set of random effects together with family structure and cryptic relatedness, or as a separate fixed effect requiring PC covariates and additional model parameters,  random effects are simpler to include
+  - Population structure should be a fixed effect (i.e. its effect as a function of genetic ancestry is the same for all samples)
+  - Paper mostly thinks about global PCs
+  - Simple linear models represent the phenotype $Y$ as a function of fixed effects $X$: $Y=x\\beta+\\epsilon$ where:
+    -  X denotes the genotype at the candidate marker as  well as the optional covariates
+    -  B denotes the coefficients of fixed effects
+    -  $\\epsilon$ is a normally distributed noise term that accounts for unexplained variation in Y
+    -  PCA addresses the issue of population structure by including PC covariates in X to explicitly model the ancestry of each individual
   
   ### Population Stratification in Genetic Association Studies [(Hellwege et al. 2017)](https://paperpile.com/c/mOL2KS/IunS)
   
