@@ -1,5 +1,5 @@
 createdAt: "2019-11-18T16:42:57.021Z"
-updatedAt: "2019-11-18T18:59:04.968Z"
+updatedAt: "2019-11-18T19:32:12.143Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Genomics 4000 Notes"
@@ -28,13 +28,45 @@ content: '''
   
   ---
   ### DNA replication, repair, and mutation (October 30, 2019; lecture 16)
+  - Germline mutation vs somatic mutation 
+  - Germline
+    - can be transmitted to next gernation
+    - During, before, or after meiosis
+    - Mutation reate is much lower than in somatic cells
+    - Mutation rate increases with age. Males are responsbile for most mutations resulting from DNA replication errors (40 yr olds transmit double the mutations than 20 year olds; older females dramatically more likely to transmit aneuploid oocytes)
+    - In humans, it is restimated that a person inherrs 40 de novo point mutations from their parents
+  - Somatic mutation
+    - Different tissues differ in mutation rates, susceptibiluty to DNA damage, and DNA damage repair efficiency
+    - Estimated that in proliferative tissues, nearly all genomic sites will have been mutated in at least 1 cell by age 60
+    - Some mutations can lead to cancer
+    - More mutations lead to cels being less fit
+  - Types of mutations (most arise from chromosomal breakage and illegitimate repapir)
+    - duplication
+    - inversions
+    - deletions
+    - insertions
+    - translocation    
+  - Detecting large deletions/suplications
+    - Array comparitive hybridization
+    - Next gen seqeuncing using paird end reads from defined insert library
+    - Look for abnormal spacing when mapping reads to genome
+  - Types of mutations II
+    -  point mutations (missense, nonsense, synoympus)
+    -  Small indel (2 or more nucleotides)
+    -  Trinucleotide/simple seqeunce repeat expansion/contraction
+    -  Most mutations occur during DNA replication
+    -  Others occur from environmentaly induced or metabolic dmage
+    -  There are intrinsic mechanisms to sense and repair different types of DNA damage (during cell cycle, cell cycle will stop at various ppoints if it detects unreplicated or damaged DNA, chromosome misalignment, numerous genes and proteins involeved (kinases))
+      - Rescue damaged replication forms --> backup to origins to rescue
+      - Different genomic regions of genome replicated at different times   
   
+  - Detecting point mutations/small indels
+    - 
   
-  - once done check done list
   
   ---
   ### Quantitative Proteomics (October 28 2019, lecture 15)
-  
+  - once done check done list
   
   ---
   ### Non-coding RNAs (October 23 2019, lecture 14)
