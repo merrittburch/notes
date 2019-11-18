@@ -1,0 +1,99 @@
+createdAt: "2019-11-18T16:42:57.021Z"
+updatedAt: "2019-11-18T17:51:33.364Z"
+type: "MARKDOWN_NOTE"
+folder: "6827e53fd4576b1dc031"
+title: "Genomics 4000 Notes"
+tags: []
+content: '''
+  Genomics 4000 Notes
+  
+  ### Notes are in reverse order
+  
+  
+  ---
+  ### Single cell genomics continued and interactomics (October 16 2019)
+  - Single cell transcriptomics of 20 mouse organs creates a tabula muris ( an international collaboration with the aim to profile every cell-type in the mouse using a standardized method)
+  - Single cell study of C. elegans, hermaphrodites have 959 cells 302/959 are neurons. Males have 1031 cells
+  - Nobel prize won for C. elegans work in 2002 "for their discoveries concerning genetic regulation of organ development and programmed cell death" --> 1090 cells are generated, and exactly 131 cells are eliminated by programmed cell death --> adult has 959 cells
+  - Lots of other datasets available in mouse development and embryogenesis, joint profiling of chromatin accessibility and gene expression in thousands of single cells
+  - Interactome: term to define all of the molecular interactions (generally between proteins) that take place in the cell (ex. receptor ligand, enzyme substrate, members of the multimeric protein complex)
+  - Difficulties with proteins
+    - Do not behave as uniformly as DNA
+    - Stability of protein protein interactions (might not survive through purification)
+    - Ectopic expression can be toxic to some cells
+    - Quality/availability of antibody
+  - Detecting protein protein interactions
+    - genetic approaches
+      - yeast 2 hybrid and mammalian analogues
+      - enhancer/suppressor mutation screens
+      - synthetic lethal screens
+    - Biochemical/cytological approach
+      - affinity chromatography
+      - co-immunosuppression
+      - co-localization inside of cells
+    - Protein or antibody microarrays
+    - Computational
+      - co-regulation
+      - inference from GO terms and protein domains
+  - Yeast 2 hybrid approach
+    - based on the fact that some transcriptional activators have separate DNA binding (BD) and transcriptional activation domains (AD)
+    - Protein you are studying = bait
+    - Proteins you are screening (prey)
+    - transform bait and prey plasmids into yeast, measure the expression of a reporter gene
+    - Not the most sensitive method
+    - Proteins not in native environment
+    - interactions must occur in nucleus
+    - cannot identify multiprotein complexes
+    - some proteins require posttranslational modifications to interact with other proteins, yeast cannot do all animal type modifiations
+    - some inaccuray reported when compated against known protein protein interactions (false negatives or false positives)
+  - Also have a protein complementation assay
+    - Can be fone in the organism.cell type of interest. Make cell line with bait, transfect various preys, if bound together, YFP reporter reports
+  - Affinity chromatography methods
+    - Co-immunoprecipitation
+      - using an antibody to isplate and purify a protein from a whole cell lysate
+      - Normally only purify the protein the antibody recognizes
+      - Any additional proteins co-purify are candidates for interacting proteins
+      - Advantage: dealing with native proteins
+    - Co-IP/Westerns can detect protein-protein interactions
+    - MALDI-TOF mass spec (ionization, separation, detection) --> can determine the mass of molecules with high accuracy and sensitivity
+  - ENhancer & supressor genetic screens
+    - Goal: to unravel complex developmetnal or genetic pathways beginning with a sensitized mutant strain
+    - Cross the mutation to other known mutants or randomly mutagenize individuals
+    - ceck for enhancement or supression of original mutation
+    - the new mutation may lie in the same pathway
+  
+  
+  ---
+  ### Single cell genomics (October 9, 2019)
+  Why:
+  - most tissues are not homogeneous, bulk profiling represents a composite/average of all cells in a sample
+  - Single cell genomics a way of preserving info from individual cells
+  - Single cell info important when analysing tumour heterogeneity, cell differentiation, neuron studies, complex cellular mixtures (distinguish change in expression from change in composition, diverse cells types with some rare cells, diverse organisms like microbes)
+  - Steps to generating a single cell library (extract samples, make library, sequence, analyse)
+  - Challenges:
+    - Hard to isolate desired cell types in native state
+    - Easy to contaminate DNA/RNA
+    - Some biases during same prep
+    - Sometimes not high throughput
+  - Many methods and platforms to do sequencing
+    - Fluidigm
+    - Drop-seq (10X genomics)
+    - Most methods rely on clever tagging of cells and the DNA within them with combinations of adapters (combinatorial indexing/unique molecular identifier)
+  - Analysis --> read mapping, normalization, filtering, clustering to assure that cells are separating, biological datamining.
+  - Data analysis: potential pitfalls
+    - doublets (more than 1 cell per barcode)
+    - sparse data matrix (no data, no expression)
+    - clustering (cells might not have a distinct profile)
+    - cross-hybridization (mis assignment of cell barcode)
+    - visualization (pattern recognition, what are we looking at?)
+    - reproducibility (limited biological or technical replication)
+  - Could do more than single cell RNAseq
+    - Perturb seq (CRISPR screen readout)
+    - ATACseq (accessible chromatin (enhances, promoters))
+    - CHIPseq (DNA bound by proteins/histone marks (antibody pull down))
+    - WGS (CNVS, mutation profiling, metagenomics)  
+  - What's next --> single cell spatial genomics
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false
