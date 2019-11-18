@@ -1,5 +1,5 @@
 createdAt: "2019-11-18T16:42:57.021Z"
-updatedAt: "2019-11-18T19:32:12.143Z"
+updatedAt: "2019-11-18T21:02:26.073Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Genomics 4000 Notes"
@@ -10,63 +10,168 @@ content: '''
   ### Notes are in reverse order
   
   
+  
+  ---
+  ### Cloning and stem cells (November 18 2019; lecture 21)
+  - Types of stem cells
+    - Pluripotent stem cells
+      - Such as embryonic stem cells --> can differentiate into all 3 gem layers of an organism, Are the most  widely used type of stem cells, esp in mice
+    - Multipotent stem cells
+      - such as adult stem cells, can  yield a limited set of differentiated cells in restriced pathways
+    - Totipotent cells,  such as two celled zygote, can differentiate into all cells, including extraembryonic cell types (like the placenta)
+  - Drawbacks of human ES cell likes
+    - ethical dilemma: must destroy embryos
+    - not universally useful due to genetic incompatibility between "donor" (an embryo) and a recipient patient --> could have immune system rejection
+    - Patient specific stem cells can solve immune incompatibility problem
+  - What is cloning?
+      - Process that produces genetically identical copies of a biological entity
+  - Transplanation of living nuclei from blastula cells  into enuclated frog eggs (PNAS 1952, a big deal at the time)
+      - Cells must be de-differentiated
+  - Somatic cell nuclear transfer 
+    - Step 1: Remove nucleus from oocyte (enucleation)
+    - Step 2: Inject donor cell/nucleus
+  -  Imprinting thought to be a barrier to cloning
+    - have fertilized embryo, either remove female or male pronucleus, leads to invariable or poor development of embryo  or embryo tissues
+  - Dolly 1996-2003
+    - Created by isolation of cells cultured from udder of a donor, induced into quiescence, and electrofused with enucleated oocytes
+    - Use 277  unfertilized eggs
+    - 29 reconstructed eggs survived and were implanted in surrogate ewes
+    - 1 gave birth to Dolly, she had offspring
+    - Cloning in all animals remains inefficient
+  - Reasons for cloning
+    - Reproductive cloning
+      - make an exact copy of an organism
+      - predominantly in farm animals (prize bulls)
+      - express pharmaceutically relevant proteins in milk
+      - rescue endangered species
+      - remaking beloved pets
+    - Therapeutic cloning
+      - embryo  is used only to generate stem cells matched to the donor
+      - anticipated use in regenerated medicine  
+      - some monkeys have been cloned   
+  - Adult stem cells
+    - people still find therapeutic cloning, or any type of cloning objectionable
+    - Recent years, stem cells that form many adult tissues have been ID'd
+    - This raises the possibility that a patients own cells can be used for therapeutics
+    - How to  isolate and grow these cells? Typically, they are rare and slow-cycling
+  - Making patient-specific pluripotent stem cells by epigenetic reprogramming
+    - try turning somatic cells into ES cells
+    - Adding key genes into somatic cells that will "reprogram" them into an ES cell-like state
+    - This avoids SCNT and need for eggs
+  - Study ~2012, indiction of pluripotent stem cells from mouse embryonic and adult fibroblast cultures by defined factors (2012 nobel prize), looked at 24 candidate genes (mostly TFs), introduced genes all at once, then in smaller combinations to see which ones might convert fibroblasts into ES-like cells
+  - Yamanaka Factors
+    - expression of TFs: c-Myc, Sox2, Oct4, and Klf4  are sufficient to produce iPS cells from embryonic fibroblasts
+    - The exact ratio of the factors can be modified, and starting cell type has major influence (epigenetic states are vastly different)
+    - Conditions, chemicals, cell types have allowed use of as few as 1 of the factors to enable reprogramming
+  - iPS induction
+    - resets the epigenetic memory
+    - alters DNA methylation patterns
+    - alters histone modifications
+    - not always 100% efficient, and varies by iPS clone
+    - Genomics can ID "fully reprogrammed" clones    
+    - Example: induced pluripotent stem cells generated from patients with ALS can be differentiated into motor neurons
+    - Need to "fix" mutations in iPS cells   
+  
+  
   ---
   ### Cancer Genomics (November 13 2019; lecture 20)
+  
   
   
   ---
   ### Microbial Genomics and the Microbiome (November 11 2019; lecture 19)
   
   
+  
   ---
   ### Gene Regulatory Networks Systems Biology (November 6 2019; lecture 18)
   
   
+  
   ---
-  ### Comparitive and Evolutionary Genomics (November 4 2019; lecture 17)
+  ### Comparative and Evolutionary Genomics (November 4 2019; lecture 17)
+  
   
   
   ---
   ### DNA replication, repair, and mutation (October 30, 2019; lecture 16)
   - Germline mutation vs somatic mutation 
   - Germline
-    - can be transmitted to next gernation
+    - can be transmitted to next generation
     - During, before, or after meiosis
-    - Mutation reate is much lower than in somatic cells
-    - Mutation rate increases with age. Males are responsbile for most mutations resulting from DNA replication errors (40 yr olds transmit double the mutations than 20 year olds; older females dramatically more likely to transmit aneuploid oocytes)
-    - In humans, it is restimated that a person inherrs 40 de novo point mutations from their parents
+    - Mutation rate is much lower than in somatic cells
+    - Mutation rate increases with age. Males are responsible for most mutations resulting from DNA replication errors (40 yr olds transmit double the mutations than 20 year olds; older females dramatically more likely to transmit aneuploid oocytes)
+    - In humans, it is re-estimated that a person inherits 40 de novo point mutations from their parents
   - Somatic mutation
-    - Different tissues differ in mutation rates, susceptibiluty to DNA damage, and DNA damage repair efficiency
+    - Different tissues differ in mutation rates, susceptibility to DNA damage, and DNA damage repair efficiency
     - Estimated that in proliferative tissues, nearly all genomic sites will have been mutated in at least 1 cell by age 60
     - Some mutations can lead to cancer
-    - More mutations lead to cels being less fit
-  - Types of mutations (most arise from chromosomal breakage and illegitimate repapir)
+    - More mutations lead to cells being less fit
+  - Types of mutations (most arise from chromosomal breakage and illegitimate repair)
     - duplication
     - inversions
     - deletions
     - insertions
     - translocation    
-  - Detecting large deletions/suplications
-    - Array comparitive hybridization
-    - Next gen seqeuncing using paird end reads from defined insert library
+  - Detecting large deletions/duplications
+    - Array comparative hybridization
+    - Next gen sequencing using paired end reads from defined insert library
     - Look for abnormal spacing when mapping reads to genome
   - Types of mutations II
-    -  point mutations (missense, nonsense, synoympus)
+    -  point mutations (mis-sense, nonsense, synonymous)
     -  Small indel (2 or more nucleotides)
-    -  Trinucleotide/simple seqeunce repeat expansion/contraction
+    -  Trinucleotide/simple sequence repeat expansion/contraction
     -  Most mutations occur during DNA replication
-    -  Others occur from environmentaly induced or metabolic dmage
-    -  There are intrinsic mechanisms to sense and repair different types of DNA damage (during cell cycle, cell cycle will stop at various ppoints if it detects unreplicated or damaged DNA, chromosome misalignment, numerous genes and proteins involeved (kinases))
+    -  Others occur from environmentally induced or metabolic damage
+    -  There are intrinsic mechanisms to sense and repair different types of DNA damage (during cell cycle, cell cycle will stop at various points if it detects unreplicated or damaged DNA, chromosome misalignment, numerous genes and proteins involved (kinases))
       - Rescue damaged replication forms --> backup to origins to rescue
       - Different genomic regions of genome replicated at different times   
-  
   - Detecting point mutations/small indels
-    - 
+    - hard to distinguish between sequencing errors and real mutations
+    - For detecting de novo germline mutations inherited from a parent
+      - easy --> all cells in body will have mutation, so half of all reads will contain a variant not present in either parent
+    - For tumours:
+      - easy --> all or most cells in the tumor will have variants not present in normal tissue in the patient
+    - For detection of spontaneous somatic mutations in a tissue:
+      - Hard --> Because most cells will not have a mutation, how to measure mutation rate?
+  - Mutation rates in human cells every day
+    - 20,000 abasic sites
+    - 10,000 oxidized bases
+    - 7,000 alkylations
+    - 10 double stranded breaks
+  - How to deal with mutations?
+    - Base excision repair 
+      - (when bases are oxidized, deaminated, methylated --> initiated by the action of a DNA glycosylase that cleaves the N-glycosidic bond between the damaged base and the sugar phosphate backbone of the DNA)
+    - Nucleotide Excision repair (NER)
+      - Recognizes wider variety of damage and removes larger segments of DNA than base excision repair
+      - There are at least 13 NER genes
+      - inherited mutations cause diseases
+    - Mismatch repair (MMR)
+      - MMR mutations (several gene length) cause simple sequence repeat instability --> heredity colorectal cancer
+      - During DNA replication, polymerase can make mistakes
+      - MMR proteins recognize and remove "wrong" nucleotides
+    - Double Strand Break (DSB) repair
+      - DSBs and exposed ssDNA trigger a DNA damage response involving kinase-mediated activation of repair/checkpoint proteins
+      - Mutations in many of these and  other genes involved in  DSB repair cause disease, namely cancer, immune deficiency, and neurological defects
+  - Why do "recessive" genes often have dominant patterns of inheritance in cancer? Loss of heterozygosity by:
+    -  Chrom loss/reduplication
+    -  Gene conversion
+    -  aneusomy
+    -  deletion
+    -  mitotic recombination
+    -  2nd mutations
+  - Genome wide patterns and properties of de novo mutations in humans
+    - sequenced 250 Dutch families  
+    - ~38 de novo mutations per child
+    - For young fathers, most mutations were in late-replicating regions
+    - Children of 40 year old fathers had twice as many mutations as those from 20 year old fathers (2x as many replication cycles of spermatogonial stem cells?)
+    - Mutations were enriched almost 30% for exonic mutations (vs random prediction), due to higher CpG content
   
   
   ---
   ### Quantitative Proteomics (October 28 2019, lecture 15)
-  - once done check done list
+  
+  
   
   ---
   ### Non-coding RNAs (October 23 2019, lecture 14)
