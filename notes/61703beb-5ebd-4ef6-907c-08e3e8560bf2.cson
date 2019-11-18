@@ -1,5 +1,5 @@
 createdAt: "2019-11-18T16:42:57.021Z"
-updatedAt: "2019-11-18T17:51:33.364Z"
+updatedAt: "2019-11-18T18:59:04.968Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Genomics 4000 Notes"
@@ -11,7 +11,105 @@ content: '''
   
   
   ---
-  ### Single cell genomics continued and interactomics (October 16 2019)
+  ### Cancer Genomics (November 13 2019; lecture 20)
+  
+  
+  ---
+  ### Microbial Genomics and the Microbiome (November 11 2019; lecture 19)
+  
+  
+  ---
+  ### Gene Regulatory Networks Systems Biology (November 6 2019; lecture 18)
+  
+  
+  ---
+  ### Comparitive and Evolutionary Genomics (November 4 2019; lecture 17)
+  
+  
+  ---
+  ### DNA replication, repair, and mutation (October 30, 2019; lecture 16)
+  
+  
+  - once done check done list
+  
+  ---
+  ### Quantitative Proteomics (October 28 2019, lecture 15)
+  
+  
+  ---
+  ### Non-coding RNAs (October 23 2019, lecture 14)
+  - Some noncoding RNAs cause imprinting 
+    - (ex. paramutation in maize)
+    - normal, paramutable alleles suffer irreversible changes after being present in same genome as paramutagenic alleles
+    - B1 encodes an enzymes for anthocyanin pigment --> get dark colored plants
+    - There is another allele, B' that "paramutates" B-1 to a B'-like (B-1*) version. No sequence changes are involved. B' and B-1 have identical sequence
+    - If B-1 were recessive to B' then homozygous B-1 plants would arise in the F2
+    - Repeats upstream of the B1 gene produce 24 nt siRNAs
+  - Other cases of non-coding RNAs becoming heritable after trauma (Dutch famine)
+  - Paternally induced transgenerational environmental reprogramming of metabolic gene expression in mammals
+  - Inherited through male RNAs in sperm 
+  
+  ---
+  ### Noncoding RNAs (October 21 2019, lecture 13)
+  - Non-coding RNAs (ncRNA): genes/transcripts that do not encode proteins (not messenger RNAs)
+  - Components of translation machinery
+    - Ribosomal RNA
+    - Transfer RNA
+  - RNAs involved in nucleic acid modification
+    - Small nuclear RNA (snRNA, hnRNA)
+    - Telomerase RNA
+    - Small nuclear RNA (snoRNA, direct RNA modifications)
+  - Regulatory RNAs
+    - micro RNAs; siRNAs (RNA interference)
+    - long non-coding RNAs (lnc RNAs)
+    - piRNAs (involved in transposon supression)
+    - Enhancer RNAs (eRNAs)
+  
+  - Small interferning RNAs (siRNAs) and RNAi
+    - 21-23 nucleotides
+    - Generated from double stranded RNA
+    - Silences genes at post-translational stage by cleavage of mRNA
+    - Found in very divergent organisms (from fungi to beetles)
+    - siRNA pathway
+      - dsRNA cleaved with dicer (dicer = dsRNA endoribonuclease), cuts into 21-23 nt
+      - siRNAs bound by RISC complex (RNA-inducing silencing complex)
+      - RISC binds to complementary mRNA, cleaes mRNA
+  
+  - microRNAs 
+    - First microRNA discovered (lin-4) in C. elegans that binds to antisense complementary (lin-14). lin-14 mRNA always transcribed, by lin-14 protein is present only in embryonic and early larval stages. Lin-4 regulates the timing and developmental events at all larval stages. Lin-4 knockout causes epithelial cells to continue to divide instead of differentiate into other cell types
+    - reduce mRNA level and/or inhibit translation
+    - highly conserved miRNAs (hundreds), generally target hundreds of genes, comprise of 100 families that recognize largely identical targets within a family
+    - Most miRNAs are poorly conserved and expressed at low levels
+    - 2500+ miRNA loci in humans regulating majority of human genes
+    - miRNA expression usually tissue or developmental stage-specific, or inducible under certain conditions
+    - miRNA profiles are altered in human diseases and cancer
+    - changes in miRNA regulation: case if Texel sheep with "exceptional meatiness" phenotype
+    - detect miRNAs using NGS, major may
+    - Biological roles for miRNAs:
+      - binding sites mostly in 3' UTRs
+      - Pairing to 5' end if nuRNA (seed) most important
+      - many mRNAs repressed by miRNAs
+    - Ways to detect biological function
+      - overexpress or ectopically express a microRNA and see what mRNAs and proteins go down (RNA-seq, Mass spec, ribosome profiling)
+      - Knock-down/out an endogenous microRNA and see what transcripts or proteins go up
+      - In humans --> TargetScan Human to detect possible targets/mRNA binding sequences
+  - Difference between microRNA and RNAi (respectively below)
+  - Source: endogenous gene; exogenous
+  - Targets: many; single by design
+  - Repression: subtle (<2 fold); variable (>10 fold)
+  - Mechanism: Inhibition of translation, altered mRNA decay; mRNA cleavage
+  - Target pairing: minimal (~8 5' nts); extensive
+  - Both methods have extensive pairing between mRNA and target site results in cleavage
+  - Imperfect (miRNA-like) pairing between siRNA and target site results in miRNA like repression
+  
+  - Long non-coding RNAs (lncRNAs)
+    - Decoy, scaffold, guide, enhancers
+    - X inactivation depends on lncRNA (Xlist is only transcribed from inactive X (a lncRNA), necessary for X activation, expression from another chromosome causes silencing in cis, acts as a scaffold for repressive chromatin protein complexes)
+  - piRNAs (piwi interacting RNAs) act as genome guardians
+  - circRNAs (circular RNAs, in humans, neural circRNAs titrate miR-7 binding) 
+  
+  ---
+  ### Single cell genomics continued and interactomics (October 16 2019, lecture 12)
   - Single cell transcriptomics of 20 mouse organs creates a tabula muris ( an international collaboration with the aim to profile every cell-type in the mouse using a standardized method)
   - Single cell study of C. elegans, hermaphrodites have 959 cells 302/959 are neurons. Males have 1031 cells
   - Nobel prize won for C. elegans work in 2002 "for their discoveries concerning genetic regulation of organ development and programmed cell death" --> 1090 cells are generated, and exactly 131 cells are eliminated by programmed cell death --> adult has 959 cells
@@ -44,27 +142,27 @@ content: '''
     - Proteins not in native environment
     - interactions must occur in nucleus
     - cannot identify multiprotein complexes
-    - some proteins require posttranslational modifications to interact with other proteins, yeast cannot do all animal type modifiations
-    - some inaccuray reported when compated against known protein protein interactions (false negatives or false positives)
+    - some proteins require post-translational modifications to interact with other proteins, yeast cannot do all animal type modifications
+    - some inaccuracy reported when compared against known protein protein interactions (false negatives or false positives)
   - Also have a protein complementation assay
-    - Can be fone in the organism.cell type of interest. Make cell line with bait, transfect various preys, if bound together, YFP reporter reports
+    - Can be done in the organism.cell type of interest. Make cell line with bait, transfect various preys, if bound together, YFP reporter reports
   - Affinity chromatography methods
     - Co-immunoprecipitation
-      - using an antibody to isplate and purify a protein from a whole cell lysate
+      - using an antibody to isolate and purify a protein from a whole cell lysate
       - Normally only purify the protein the antibody recognizes
       - Any additional proteins co-purify are candidates for interacting proteins
       - Advantage: dealing with native proteins
     - Co-IP/Westerns can detect protein-protein interactions
     - MALDI-TOF mass spec (ionization, separation, detection) --> can determine the mass of molecules with high accuracy and sensitivity
-  - ENhancer & supressor genetic screens
-    - Goal: to unravel complex developmetnal or genetic pathways beginning with a sensitized mutant strain
+  - ENhancer & suppressor genetic screens
+    - Goal: to unravel complex developmental or genetic pathways beginning with a sensitized mutant strain
     - Cross the mutation to other known mutants or randomly mutagenize individuals
-    - ceck for enhancement or supression of original mutation
+    - check for enhancement or suppression of original mutation
     - the new mutation may lie in the same pathway
   
   
   ---
-  ### Single cell genomics (October 9, 2019)
+  ### Single cell genomics (October 9, 2019, lecture 11)
   Why:
   - most tissues are not homogeneous, bulk profiling represents a composite/average of all cells in a sample
   - Single cell genomics a way of preserving info from individual cells
