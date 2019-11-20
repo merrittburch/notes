@@ -1,5 +1,5 @@
 createdAt: "2019-10-30T15:02:38.028Z"
-updatedAt: "2019-10-30T15:44:44.947Z"
+updatedAt: "2019-11-20T16:49:58.938Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Seminars"
@@ -7,15 +7,44 @@ tags: []
 content: '''
   Seminars
   
-  Date: 2019-10-30
-  - Taylor Crow
+  ### Date: 2019-11-20
+  - Jeff Ross-Ibarra Zeavolution
+  - Tajima's D larger in parviglumis compared to maize across genome
+  - For just genes, tajima's D about the same (higher) between the two, something else must be happening within genes vs. outside of genes
+  - Diversity in maize genes lower (pi is diversity measurement) rather than genome wide, teosinte diversity higher outside of genes and within genes, liked selection may be playing a role
+  - classic selective sweeps (background around gene become fixed) vs background selection (diversity reduced around linked genes)
+  - Dip in nucleotide diversity around both synonymous and non-synonymous mutations in maize and teosinte, consistent with human studies, contrasts with drosophila (dip in non-syn, increase/difference in syn)
+  - Testing background selection, as you move away from genes, diversity increases/recover back to neutral background levels
+    - true for maize and teosinte (Beissinger 2016 nature plants)
+    - signal stronger in  teosinte, hypothesize that maize has undergone a pop. bottleneck, selection might be less efficient, effect of linked selection is weaker with a pop. having smaller effective population size
+  -  Ability to detect expansion of population after bottleneck with limited sample size (maize and teosinte)
+  - 48 million ha landrace maize X 22k plants/ha = 10^12 plants at 22 females/ha Ne=10^2, effective population size in maize much, much higher than teosinte 
+  - Look at ratio of pi (random location)/pi_0 (neutral location), look at singletons (si) ratios
+  - Torres, Stetter 2019 bioRxiv --> looking at differences of non-syn and syn (pi_0 and singleton) differences between populations (maize, humans)
+    - impacts of linked selection on diversity across generations, diversity decreases across generations (unit: pi, singletons)
+    - in neutral regions, slower decay in diversity (selection lower), in background selection diversity drops off faster, rate of change higher due to effective population size
+    - Under equilibrium model --> pi/pi_0 increases steadily under classical model, instead it dips then increases in their models over time/generations (opposite, due to singletons and regions with linked selection respond more quickly to demographic change)
+  - Changes in slope confirm initial response is demography, not selection
+  - ratios  of diversity at selected and unselected sites are not necessarily informative about selection or its efficacy
+  - direction and magnitude of change depend on the distribution of fitness effects, Torres paper tries to model distribution of fitness effects
+  - effect of linked (direct) selection on diversity
+    - Demographic models depend on how you calculate/average over lots of individuals
+    - Depends on demography in ways opposite predicted by classical theory
+    - varies over time
+    - depends on effects of fitness effects
+    - interpretation of results in maize await better estimates of DFE and demography, all previous students assume equilibrium populations, no population really follows an equilibrium  distribution
+  
+  
+  ---
+  ### Date: 2019-10-30
+  - Taylor Crow Zeavolution
   - Chromosomal inversion and their impact on phenotypic variation
-  - Looking at chromosome 4 inversion, through mexico either homo chr4 inversion, many more het for chr 4 inversion, homo chr4 inversion more prevelant with higher elevation
-  - Hypothesis for keeping inversion --> capturing favorable adaptation alleles, can't recombine out as easily, sharp reduction in diversity within this region
+  - Looking at chromosome 4 inversion, through mexico either homo chr4 inversion, many more het for chr 4 inversion, homo chr4 inversion more prevalent with higher elevation
+  - Hypothesis for keeping inversion --> capturing favourable adaptation alleles, can't recombine out as easily, sharp reduction in diversity within this region
   - Trying to find functional adaptive alleles within this inversion, also, what traits are under selection in this region, and what specific genes are in this region
-  - Why is Inv4m so important? Bioarkv paper showd high phenotypic plasticity mapping to this region
+  - Why is Inv4m so important? Bioarkv paper show high phenotypic plasticity mapping to this region
   - 47 genes within this region with poor gene annotation, why does it contribute to flowering time?
-  - Crossed different landraces, backcrossed to B73, collected RNAseq samples in multiple tisses in v1 or v3 stage, looked at expresison differences in introgression lines vs. inv4m region
+  - Crossed different landraces, backcrossed to B73, collected RNAseq samples in multiple tissues in v1 or v3 stage, looked at expression differences in introgression lines vs. inv4m region
   - Looked at enriched GO terms in "clean" trans-genes regulated by inv4m (outside of the inversion)
   - From Cinta: 
     - see a yield and heterosis effect in Ames, also in other 282 like populations see a seed size and weight effect from this inversion, might be a master regulator from Mexicana
