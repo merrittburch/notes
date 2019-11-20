@@ -1,5 +1,5 @@
 createdAt: "2019-11-18T16:42:57.021Z"
-updatedAt: "2019-11-18T21:02:26.073Z"
+updatedAt: "2019-11-20T19:38:28.941Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Genomics 4000 Notes"
@@ -71,6 +71,21 @@ content: '''
     - Genomics can ID "fully reprogrammed" clones    
     - Example: induced pluripotent stem cells generated from patients with ALS can be differentiated into motor neurons
     - Need to "fix" mutations in iPS cells   
+  
+  Paper to read before next class:
+  Toward Clinical Implementation of Next- Generation Sequencing-Based Genetic Testing in Rare Diseases: Where Are We? Liu et al., 2019
+  Paper highlights
+  - NGS-based genetic testing in the diagnosis of rare diseases holds great promise to serve as a first-tier genetic testing tool in the near future.
+  - Advancement of NGS technologies provides many options for diag- nosing rare disorders associated with different types of genetic var- iants. Factors must be balanced in a ‘fit-for-purpose’ implementation.
+  - The accuracy and reproducibility of NGS should be evaluated in a clin- ical setting to deliver reliable ge- netic testing results in different clinical stages of rare diseases.
+  - Artificial intelligence (AI) will play a central role in integrating diverse diagnosis information toward an enhanced diagnosis power for rare diseases.
+  
+  Paper notes:
+  - 7000 rare diseases have been recognized, a substantial number of which are life- threatening or chronically debilitating
+  - 80% of rare diseases are genetic in origin
+  - 350 million people globally suffer from rare diseases. Most rare disease patients (50%–75%) show onset at birth or in childhood. As many as 30% of rare diseases patients die before the age of 5 years.
+  - An incomplete knowledge of the natural history of each rare disease can make a substantial propor- tion (60%) of rare diseases intractable and undiagnosable
+  - disease Panel Design: The gene-panels designed for rare diseases fall mainly into three categories of disease-specific, organ-specific, or a universal panel. Gene panels typically include a mixture of causative genes located in genome regions with different GC contents, associated with differing technical difficulty in detecting genetic variants, with further impact on the diagnostic rate.
   
   
   ---
