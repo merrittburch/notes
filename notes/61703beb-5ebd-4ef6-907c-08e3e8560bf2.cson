@@ -1,5 +1,5 @@
 createdAt: "2019-11-18T16:42:57.021Z"
-updatedAt: "2019-11-20T19:38:28.941Z"
+updatedAt: "2019-11-20T20:33:10.325Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Genomics 4000 Notes"
@@ -8,7 +8,53 @@ content: '''
   Genomics 4000 Notes
   
   ### Notes are in reverse order
-  
+  ### Precision Medicine (November 20 2019, lecture 22)
+  - All of Us --> US version of the UK Biobank
+    - collecting healh data on people with varied diet/lifestyles/class/education levels
+  - One of top causes of death in US --> Adverse Drug reactions
+    - May be due to different rates of metabolism, user error, doctor error, dose problems (during testing only sample on a small population, dose could be lethal for some non-tested people)
+  - Factos contributing to inter-individual variability in drug disposition and action
+    - Age
+    - Weight
+    - Sex
+    - Concomitant diseases
+    - concomitant drugs
+    - genetics (ethnicity)
+  - Interindividual variability in dug response
+    - Drugs don't have to work for everyone, just some people.
+    - Very low/poor respinse of people to drug for all kinds of diseases and drug classes
+  - Cytochromoe P450 enzymes
+    - Involved in metabolizing foreign chemicals
+    - MIcrosomal (liver) drug-metabolizing enzymes
+    - 10 isoforms responsible for oxidative metabolism of most drugs (isoforms CPY2D6, CPY2C9, CYP2D6), various activites that catalyzes reactions and affects metabolism
+    - CYP2D6 metabolizers: example codine converts to morphine through CYP2D6
+      - increased risl of "excessive drug effect" when trated with standard doses of agents inactivated by CYP2D6
+      - Can overdose of metabolite is an active compound 
+  - Abacavir Hypersensitivity
+    - reverse transcriptase used to trat HIV
+    - 5-8% patients have asuvere adverse reaction that can be life-threatening
+    - Due to variation in HLB-B gene (involved in immune function)
+    - Varies in ethnic groups
+    - People are now routinely tested for known variants (or a skin test) in advance of starting the drug
+  - Some studies on GWAS of drug effictiveness/ADRs
+  - Whole exome sequencing (WES) and rare diseases
+    - About 80% of rare diseases have genetic basis
+    - by nature, most doctors will have never seen a given rare disease, so correct diagnosis may take years and many doctors
+    - For mendeliean traits, over half can be found by WES, and probably mnuch more (for rare disease not always sure about casual variant) 
+    - Success rate for ID'ing variants in certain diseases goes from 40-70% when parents are sequenced, for undiagnosed diseases chances are 30%
+  - Large Scale discovery of novel genetic causes of dvelopmental disorders
+    - Exome-sequenced 1,133 children and parents with severe, undiagnosed developmental disorders (primarily developmental delay). 
+    - Found an average of 19,811 coding or splicing single nucleotide variants, 491 coding or splicing indels, 148 CNVs, and 1.2 de novo variants per child.
+    - 6 had uniparental disomy; 5 with gross chromosome rearrangements.
+    - Identified likely causal variants in 28% of children, in which the variations were already associated with developmental diseases.
+    - Discovered compelling variants in 12 novel genes associated with developmental disorders. 
+    - Other suspicious variants detected, but evidence not solid.
+  - Cautions with sequencing as a test
+    - Data can be difficult to interpert. Casual variants vs benign variants in a genome....Most natural variants have unknown consequences
+    - Ethical dilemma: What if a genetic test/sequencing is done to address a malady/or carrier status, but then other deleterious or complex disease vaiant is found
+    - Hard to pin down complex traits, prediction not a precisise science
+    - Who's interperting results?
+  - 
   
   
   ---
