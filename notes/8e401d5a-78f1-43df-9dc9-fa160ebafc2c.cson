@@ -1,13 +1,32 @@
 createdAt: "2019-08-21T17:50:33.366Z"
-updatedAt: "2019-11-15T23:49:44.740Z"
+updatedAt: "2019-11-21T14:29:01.966Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Interesting Papers"
 tags: []
 content: '''
-  Interesting Papers
-  **
+  ### Interesting Papers
   
+  
+  
+  ---
+  ### Population-level analysis reveals the widespread occurrence and phenotypic consequence of DNA methylation variation not tagged by genetic variation in maize (Xu 2019)
+  - methylation data available for 263 lines from the 282 panel
+  - PCA of methylation data can separate out heterotic groups pretty well
+  - Mapped the basis of differentially methylated regions (DMR); 4k+ hits for CG, 4k+ hits for CHG, 1.5k hits for CHH, most DMRs mapped within 10 Mb, no hotspots
+  - Mapped DNA methylation ~ expression 15 DAP, most DMRs on same chromosomes (within 1mb ) of gene, some tissue specificity-related and some methylation related differential expression
+  
+  
+  ---
+  ### Traces of transposable element in genome dark matter co-opted by flowering gene regulation networks. (Baud 2019)
+  - Used a 5 kmer approach to detect TE motifs, program named Duster
+  - In Arabidopsis, looked at the 5-20% overlap of TE copies in conserved non-coding sequences that happened 125 and 99.6 million years ago in the rosids. 
+  - TE regions are enriched in the 5' (500 bp) of flowering genes compared to non-flowering genes, no enrichment of TEs in stress-related genes. 
+  - Predicted TEs enriched for transcription factor binding sites, these regions co-localize in flowering time genes and CNS regions
+  - TE domestication --> when TEs are retained in new genes vs co-option --> when TE insertions affect existing genes
+  
+  
+  ---
   ### Efficient toolkit implementing best practices for principal component analysis of population genetic data (Privé et al. )
   - PCa has been used in genetics for many years, adding PCs as covariates has been routinely used to adjust for population structure in GWAS
   - Some pitflls to calculating PCs on genotype data  have been documented
@@ -31,6 +50,8 @@ content: '''
   - One should also look at PC scores to identify which PCs capture population structure. As in many applications, we believe there should be a compromise between signal and noise. Therefore, we recommend using only PCs that show structure (e.g. PC1-16 in figure S9) and exclude PCs that indicate LD
   - Useful to subset input individuals  so  there is not too much imbalance between sample sizes of the different populations, unequal sample sizes can distort PCs (more info from 50k individuals than all 400k individuals)
   
+  
+  ---
   ### New approaches to population stratification in genome-wide association studies (Price et al. 2010)
   - Population structure: a fixed or random effect?
   - An important and unanswered question is whether population structure should be modeled as part of the set of random effects together with family structure and cryptic relatedness, or as a separate fixed effect requiring PC covariates and additional model parameters,  random effects are simpler to include
@@ -42,6 +63,8 @@ content: '''
     -  $\\epsilon$ is a normally distributed noise term that accounts for unexplained variation in Y
     -  PCA addresses the issue of population structure by including PC covariates in X to explicitly model the ancestry of each individual
   
+  
+  ---
   ### Population Stratification in Genetic Association Studies [(Hellwege et al. 2017)](https://paperpile.com/c/mOL2KS/IunS)
   
   - Population stratification is a primary consideration in studies of the genetic determinants of human traits, failure to control for it may lead to confounding, causing a study to fail for the lack of significant results or too many false positives because differences in local ancestry that are unrelated to the trait or trait variance seem significant   
@@ -55,6 +78,7 @@ content: '''
   - Local ancestry estimates can be used as covariates in linear model on a SNP by SNP basis (Wang et al 2011), as well was test based on a conditional likelihood framework, which models the distribution of  the test SNP given disease status and flanking marker genotypes
   
   
+  ---
   ### Principal components analysis corrects for stratification in genome-wide association studies [(Price et al. 2006)](https://paperpile.com/c/mOL2KS/j9KX)
   - Saw lecture about controlling for admixture, paper trail lead me here
   - Population stratification - allele frequency differences between cases and controls due to systematic ancestry differences can cause spurious associations in disease studies
@@ -69,7 +93,9 @@ content: '''
   - EIGENSTRAT achieves an equal or lower rate of false positives and achieves superior sensitivity to detect true associations, relative to the genomic control
   - Looked at the number of SNPs required  to infer population structure, impacted by fst and number of SNPs, at SNPs < 5km incomplete stratification correction, requires >20k SNPs
   - the set of SNPs used by EIGENSTRAT to infer axes of variation included the candidate SNPs of interest. This raises the question of whether the axes of variation could be biased by the inclusion of these SNPs. To address this question, we reran EIGENSTRAT with the four candidate SNPs, the LCT region SNP rs3769005, and all SNPs within 5 Mb of each of those SNPs excluded when inferring axes of variation. Results were essentially unchanged.
-      
+   
+  
+  ---
   ### Population Stratification in Genetic Association Studies (Hellwege et al. 2017)
   - Population stratification is a primary consideration in studies of the genetic determinants of human traits, failure to control for it may lead to confounding, causing a study to fail for the lack of significant results or too many false positives because differences in local ancestry that are unrelated to the trait or trait variance seem significant
   - Paper is a review on global and local methods for detecting the presence of population structure and approaches for accounting population stratification in association studies
@@ -81,6 +107,8 @@ content: '''
   - Evaluate local ancestryL MALDsoft, STRUCTURE, ANCESTRYMAP (HMMs)
   - Local ancestry estimates can be used as covariates in linear model on a SNP by SNP basis (Wang et al 2011), as well was test based on a conditional likelihood framework, which models the distribution of  the test SNP given disease status and flanking marker  genotypes
   
+  
+  ---
   ### Principal components analysis corrects for stratification in genome-wide association studies (Price et al. 2006)
   - Saw lecture about controlling for admixture, paper trail lead me here
   - Population stratification - allele frequency differences between cases and controls due to systematic ancestry differences can cause spurious associations in disease studies
@@ -96,6 +124,8 @@ content: '''
     - Looked at the number of SNPs required  to infer population structure, impacted by fst and number of SNPs, at SNPs < 5km incomplete stratification correction, requires >20k SNPs
     - the set of SNPs used by EIGENSTRAT to infer axes of variation included the candidate SNPs of interest. This raises the question of whether the axes of variation could be biased by the inclusion of these SNPs. To address this question, we reran EIGENSTRAT with the four candidate SNPs, the LCT region SNP rs3769005, and all SNPs within 5 Mb of each of those SNPs excluded when inferring axes of variation. Results were essentially unchanged.
   
+  
+  ---
   ### Finding genetic variants in plants without complete genomes  (Voichek and Weigel 2019)
   - A difficulty of working with plant genomes is that they are highly repetitive and feature excessive structural variation between members of the same species, mostly attributed to their active transposons (Bennetzen, 2000)
   - A. thaliana has a small (140 Mb) and not very repetitive genome compared to many other plants, SNPs may be assigned to incorrect positions due to sequence similarity shared between unlinked loci (Long et al., 2013)
@@ -110,6 +140,8 @@ content: '''
   - I think in the maize 282, 7.3 billion unique k-mers in the population, 2.3 billion were present in at least 5 accessions. Mapped Zhao traits (mostly morphological) from Panzea, for some k-mers, k-mermarked a common alllele in the population with a strong effect on a phenotype but the allele could not be ID’d in the SNP dataset
   - we posit that for GWAS purposes, k -mer based approaches are ideal because they minimize arbitrary choices when classifying alleles and because they capture more, almost optimal, information from raw sequencing data.   
   
+  
+  ---
   ### Protein tertiary structure modeling driven by deep learning and contact distance prediction in CASP13 (Hou et al. 2019)
   - breakthroughs in contact distance prediction was driven by two key advances: residue-residue coevolutionary analysis popularized in Reference 5 and demonstrated in CASP11 andCASP12 experiment4,6and deep learning introduced in Reference 7 and enhanced in References 8-12
   - The coevolutionary analysis is based on the observation that two amino acids in contact (or spatially close according to a distance threshold such as 8 Å) must coevolve in order to maintain the contact relationship during evolution, that is, if one amino acid is mutated to a positively charged residue, the other one must change to a negatively charged one to be in contact
@@ -123,6 +155,8 @@ content: '''
   - deep learning can integrate one-dimensional (1D), two-dimensional (2D), and 3D structural features to improve protein model ranking
   - ? Are the CASP proteins ‘benchmarkers’ for protein structure prediction?
   
+  
+  ---
   ### Introduction to Single-Cell RNA Sequencing (Olsen and Baryawno 2018)
   - Transcriptome → complete set of transcripts in a cell, including the cell’s total gene expression and consequently implied phenotype and functional state
   - Transcriptome encompasses protein coding messenger RNA, rRNA, tRNA, and noncoding RNAs with regulatory functions
@@ -132,10 +166,13 @@ content: '''
   - After isolation, single cells are lysed and RNA molecules within an individual cells are captured and converted to cDNA by means of reverse transcription
   
   
+  ---
   ### Chromatin activity at GWAS loci identifies T cell states driving complex immune diseases (Soskic et al. 2019)
   - Well established that immune-disease-associated variants localize to chromatin regions that are specific to CD4+ T cells and monocytes, it is not yet known whether immune-disease-associated variants are further enriched in chromatin regions that are specific to a particular cytokine-induced cell state
   - developed a statistical method for assessing SNP enrichment in chromatin marks to analyze the effects of immune-disease-associated variants in specific cell states
   
+  
+  ---
   ### TypeTE: a tool to genotype mobile element insertions from whole genome resequencing data (Goubert et al. 2019)
   - Mobile element insertions (MEIs)
   - MEIs generate structural variants between genomes (typically insertions( and can lead to complex rearrangements through non-homologous recombination between copies
@@ -150,6 +187,8 @@ content: '''
   - Improvements over MELT but fails to accurately genotype some loci experimentally assasyed (16/227)
   - Compatible with any data type for insertions, any retroelement families in any species
   
+  
+  ---
   ### That BLUP is a Good Thing: The Estimation of Random Effects (Robinson 1991)
   - Method  of estimating random effects
   - Henderson’s justification
@@ -161,8 +200,9 @@ content: '''
     - Unbiased in the sense that the average value of the estimate is equal to the average value of the quantity being estimated
     - Best in the sense that they have a minimum mean squared error within the class of linear unbiased estimators
     - Predictors to distinguish them from estimators of fixed effects
-    - 
   
+  
+  ---
   ### What is Bayesian statistics? (Eddy 2004)
   - Pool table example
   - Calculating the probability of observing some data (the outcomes of up to the next three points) given a probability model (p)
@@ -184,31 +224,35 @@ content: '''
   - Bayes methods didn't gain traction till the 1990's due to computational power.
   
   
+  ---
   ### Construction of genetic linkage map and identification of QTLs related to agronomic traits in maize using DNA transposon-based markers (Ramekar et al. 2018)
-  Found 24 QTLs associated with nine traits; 13 QTLs involved Mu loci and two involved SCARs
-  In addition to previously developed molecular markers, mobile fragments of DNA called transposable elements (TEs) may create opportunity to produce high-density linkage map and facilitate to locate additional QTLs.
-  majority (66%) of maize genes are located within 1 kb of an annotated transposon
-  Mu system accounts for approximately 1% of the maize genome and is considered to be one of the most complex superfamilies
-  Mu element system is highly active and has a transposition frequency of 1 × 10−3 to 1 × 10−5 per gene, per generation, thereby resulting in a mutation rate that is 50× that of background mutation rates
-  Inserts into 5’ UTR
-  Population:
-  80 RILs (F7:8) from Mo17 and KW7 (Korean waxy landrace)
-  Ear length (EL), ear diameter (ED), setted ear length (SEL), fresh 100 kernel weight (100KW), total kernel weight (TKW), water content (WC) and amylose content (AC) aka AMY? (notation changes). 
-  ID’d TEs using PCR of major families (Mu and others)
-  Results and Discission
-  Many QTLs with huge LOD scores and HUGE effects
-   258 Mu-TD and 34 SCAR markers resulted in 6,248.2 cM of additional length to the existing linkage map
-  24 QTLs linked to nine traits located on maize chromosomes. Among these, 6 QTLs were identified using Mu loci co-localized with SSR markers whereas 9 QTLs were located on chromosome 5, 6, 7, 9 and 10 involved only Mu loci or SCARs. 
-  These QTLs, involving DNA transposon-based markers for traits AMY, 100KW, WC, SEL, EL, and ED are newly found compared to our previous study (Sa et al. 2015) and are valuable sources.
-  Notes:
-  No benchmarking of results to know FT, PH, EL or any other known or verified loci
-  Small population size might lead to spurious associations for highly complex traits.
+  - Found 24 QTLs associated with nine traits; 13 QTLs involved Mu loci and two involved SCARs
+  - In addition to previously developed molecular markers, mobile fragments of DNA called transposable elements (TEs) may create opportunity to produce high-density linkage map and facilitate to locate additional QTLs.
+  - majority (66%) of maize genes are located within 1 kb of an annotated transposon
+  - Mu system accounts for approximately 1% of the maize genome and is considered to be one of the most complex superfamilies
+  - Mu element system is highly active and has a transposition frequency of 1 × 10−3 to 1 × 10−5 per gene, per generation, thereby resulting in a mutation rate that is 50× that of background mutation rates
+  - Inserts into 5’ UTR
+  - Population:
+    - 80 RILs (F7:8) from Mo17 and KW7 (Korean waxy landrace)
+    - Ear length (EL), ear diameter (ED), setted ear length (SEL), fresh 100 kernel weight (100KW), total kernel weight (TKW), water content (WC) and amylose content (AC) aka AMY? (notation changes). 
+  - ID’d TEs using PCR of major families (Mu and others)
+  - Results and Discission
+    - Many QTLs with huge LOD scores and HUGE effects 
+    - 258 Mu-TD and 34 SCAR markers resulted in 6,248.2 cM of additional length to the existing linkage map
+    - 24 QTLs linked to nine traits located on maize chromosomes. Among these, 6 QTLs were identified using Mu loci co-localized with SSR markers whereas 9 QTLs were located on chromosome 5, 6, 7, 9 and 10 involved only Mu loci or SCARs. 
+    - These QTLs, involving DNA transposon-based markers for traits AMY, 100KW, WC, SEL, EL, and ED are newly found compared to our previous study (Sa et al. 2015) and are valuable sources.
+  - Notes:
+    - No benchmarking of results to know FT, PH, EL or any other known or verified loci
+    - Small population size might lead to spurious associations for highly complex traits.
   
   
+  ---
   #### Disregulation of expression correlates with rare-allele burden and fitness loss in maize (Kremling et al. 2018)
   - H: rare alleles contribute to extreme gene expression
   Investigated whether rare-allele abundance is greatest in individuals with extreme gene expression
   
+  
+  ---
   #### Transposable elements and gene expression during the evolution of amniotes (Zeng et al. 2018)
   - Evaluate similarity of ortholog gene expression between tissues between species (no TEs in model)
   - Conservation of gene expression using hierarchical clustering
@@ -219,6 +263,8 @@ content: '''
   - H: recent TE insertions associated with lower gene expression, largely met but with some exceptions such as human SINE were associated with increased gene expression
   - Older TE insertions contribute to rewiring of transcriptional networks and would have had time to be adapted as enhancers and might be assoc. With gene expression
   
+  
+  ---
   #### Local PCA shows how the effect of population structure differs along the genome (Li and Ralph 2019)
   - Wright 1949 defined population structure to encompass “such matters as numbers, composition by age and sex, and state of subdivision” where “subdivision” refers to the restricted migration between subpopulations
   - Phrase also used to refer to the fenetic patterns that result from this process, (ex. Mean relatedness between individuals from distinct populations)
@@ -229,6 +275,7 @@ content: '''
   - Github: https://github.com/petrelharp/local_pca
   
   
+  ---
   #### An atlas of genetic associations in UK Biobank (Canela-Xandri et al. 2018)
   - Atlas of genetic associations for 118 non-binary and 660 binaray traits of 400k UK Biobank, 9m gentic variants
   - GeneATLAS, http://geneatlas.roslin.ed.ac.uk
@@ -240,6 +287,8 @@ content: '''
   - Database includes significant and non-significant associations, providing an unbiased view of phenotype-genotype associations across a large number of traits within a single cohort
   - Database also includes ~200k independent genotype phenoty[e associations, genetic and environmental correlations, and estimates of SNP heritability
   
+  
+  ---
   #### 10 Years of GWAS Discovery: Biology, Function, and Translation (Visscher et al. 2017)
   - GWAS rely and exploit linkage disequilibrium, the correlation structure that exists among DNA variants in the current genome as a result of historical evolutionary forces, particularly finite population size, mutation, recombination rate, and natural selection
   - Statistical power to detect associations between DNA variants and a trait depends on the experimental sample size, distribution of effect sizes of unknown causal genetic variants that are segregating in the population, frequency of those variants, and the LD between observed genotyped DNA variants and the unknown causal variants
@@ -250,6 +299,8 @@ content: '''
     - (4) the panel of genome-wide variants that are used in the GWAS, and 
     - (5) how heterogeneous the trait or disease being studied is. The last relates to both the biology of the trait and the ability to diagnose or measure it with precision.
   
+  
+  ---
   #### A global overview of pleiotropy and genetic architecture in complex traits (Watanabe et al. 2019)
   - Catalog of 4155 GWAS summary statistics (3,555 sets of summary statistics from 294 studies + new GWAS on 600 traits from the UK Biobank)
   - Traits classified into 27 domains; ~3k unique traits; avg sample size 56250
@@ -262,6 +313,8 @@ content: '''
   - Majority of trait associated gene sets are trait specific
   - Widely aacknolowledged that 90% of GWAS findings fall into noncoding regions (intergenic, intronic)
   
+  
+  ---
   #### Expression quantitative trait loci: present and future (Nica and Dermitzakis 2013)
   - eQTL is a locus that explains a fraction of the genetic variable of a gene expression phenotype
   - Standard eQTL analyses involve a direct association test between markers of genetic variation with gene expression levels typically measured in 10-100 individuals
@@ -275,6 +328,8 @@ content: '''
   - Trans-regulatory changes affect: modify the activity ot expression og factors that interact with cis-regulatory sequences
   - Both contribute to the divergent gene expression, but their respective contributions remain unknown
   
+  
+  ---
   #### Transposable element influences on gene expression in plants (Hirsch and Springer 2017)
   - Three ways that transposons can influence gene expression
       1) TE insertions within introns or untranslated regions of genes are often tolerated and have minimal impact on expression level or splicing (or they can produce aberrant/novel transcripts)
@@ -317,12 +372,16 @@ content: '''
     - Helitrons: transpose by a rolling circle mechanism that generates a new copy after a single strand nick by and element encoded protein and subsequent strand invasion and repair
     - For most TE’s: generates a target site duplication (TSD) in the host DNA at the integration site, and the identification of a TSD bordering a TE can confirm transposition
   
+  
+  ---
   #### Regulatory activities of transposable elements: from conflicts to benefits (Chuong et al. 2017)
   - TEs contribute a substantial fraction of the binding sites across the genome (5-40%, average ~20%) → 16, 20
   - LTR elemnts tend to contribute more than other TE types → 15, 22,42, probably because LTRs are more likely to possess and tetain their ancestral cis-regulatory activities
   - For a given TF the majority of TE-dervied binding sites are contributed by a relatively small number of specific TE families that are highly enriched for TF binding events relative to what would be expected based on the density of these TE families in the genome → 18, 20,43,44
   - Tend to be lineage specific (i.e. different between mice and humans), compared 26 pairs of orthologous TFs across mice and humans, >98% of >130,000 TE derived peaks ID’d in each species were species specific
   
+  
+  ---
   #### HOME: a histogram based machine learning approach for effective identification of differentially methylated regions (Srivastava et al. 2019)
   - Sodium bisulfite treatment of DNA converts cytostintes , but not methylcytosines, into uracils, and during PCR amplification of the PCR amplification of the bisulfite treated DNA the uracils are replaced by thymines
   - DNA Methylation: Superior or Subordinate in the Epigenetic Hierarchy? (Jin et al. 2011)
@@ -333,8 +392,6 @@ content: '''
   - In mammals, most CG dinucleotides are methylated on cytosine residues, whereas CG dinucleotides within promoters tend to be protected from methylation
   - Hypomethylation arises mainly from loss of methylation at normally heavily methylated repeat elements, including satellites (SAT2) and retrotransposons (LINEs), leading to genomic instability and oncogene activation
   - Locus specific hypermethylation usually occurs at promoter CGIs of tumor suppressor genes, resulting in heritable transcriptional silencing
-  
-  
 '''
 linesHighlighted: []
 isStarred: false
