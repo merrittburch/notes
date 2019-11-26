@@ -1,5 +1,5 @@
 createdAt: "2019-10-30T15:02:38.028Z"
-updatedAt: "2019-11-20T16:49:58.938Z"
+updatedAt: "2019-11-26T20:43:25.945Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Seminars"
@@ -36,6 +36,44 @@ content: '''
   
   
   ---
+  ### Date: 2019-11-13
+  - Michelle Stitzer - TEs as deleterious alleles in maize
+  - Mentioned Wong and Dooner PNAS 2006
+  - Federoff 2012 Science
+  - Very few TEs shared between maize families (Anderson Stitzer 2019)
+  - low freqeuncy TEs more presrnt in low recombination regions
+  - dysregulation of expression of genes near TEs --> could look this up in NAM hybrid expression data once Anju has it with Michelle, they did their study in the IBM with limited expression data and bad genotypes (IBM 3rd parent)
+  - very little correlation between 'yield' traits and TE presence. Yield has no good predictors besides yield, could be the reason they saw no effect.
+  
+  ---
+  ### Date: 2019-11-06
+  - Allison Hill Roark Capital Group, The Balancing act (seminar put on my GPNWOMEN) --> Your Balance, your life, your script
+  - Script to building your own life, 10 tips 
+    1. Know who you want to be
+        - Cannot create more time in your life, life decisions should be made to reflect values
+    2. Build and facilitate relationships
+        - think of trade-offs, prioritize some relationships over meetings and vis versa
+    3. Lean into your strengths
+        - take strengths finder quiz gallop poll has a nice one
+        - find a job where those strengths are met and does not force you to lean into your weaknesses
+    4. Do not compete
+        - everyone has different plans, circumstances, and challenges
+    5. Be ambitious with no expration dates
+        - not all chapters in your life show advances for the character, some are more character building
+    6. Be strict with your time
+        - people are only really productive for 2 hours per day with unnecessary meetings
+        - be the CEO of your own time (in busy and less busy periods)
+        - schedule the things that are really important in life
+    7. Be present
+        - do not worry about past or future worries
+    8. Accept imperfection
+        - jobs do not always work out, do what you love
+    9. Be vulnerable
+        - ask for feedback and input, its not criticism
+    10. Expect the unexpected
+  
+  
+  ---
   ### Date: 2019-10-30
   - Taylor Crow Zeavolution
   - Chromosomal inversion and their impact on phenotypic variation
@@ -49,6 +87,28 @@ content: '''
   - From Cinta: 
     - see a yield and heterosis effect in Ames, also in other 282 like populations see a seed size and weight effect from this inversion, might be a master regulator from Mexicana
     - How do temperate maize lines segregate for inversion?
+  
+  
+  ---
+  ### Date: 2019-10-25
+  - Chris Pires
+  - Arabidopsis --> 3 whole genome duplications WGDs
+  - Shouldn't be asking what is polyploid, instead when were you last polyploid?
+    - animals were lasy polyploid 350 myr
+  - Mentioned 1000 plant transcriptomes publication, inferred 244 WGDs in green plants
+  - Talked about diversification in trees and in brassica about diversification in metabolites for defense after WGD
+  - Cool paper on network evolution post-wgd Washburn (2016)
+  - conserved non-coding sequence loss consistent with subfunctionalization following gene duplication --> parallels with pan-and project (evolution has done most of the work for us)
+  - who are the wolves of the brassicas? (like dogs evolving from wolves, who was the last most recent common ancestor?)
+    - look at centers of diversity, linguistics, and genetics
+    - can we de-domesticate brassicas to get the wild-ancestor?
+  - Resynthesized allopolyploid Brassica napus
+    - generated a completely homozygous F1
+    - rapid evolution of heritable variation in flowering time --> instant speciation
+    - Would be an interesting project to look into for the doubled haploids
+    - Pires 2004 BJLS
+    - homeologous exchanges in brassica --> leading to changes in phenotypic variance
+    - replaying the evolutionary tape to investigate subgenome dominance (bird bioariv)  
 '''
 linesHighlighted: []
 isStarred: false
