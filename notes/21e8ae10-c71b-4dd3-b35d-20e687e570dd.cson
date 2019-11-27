@@ -1,5 +1,5 @@
 createdAt: "2019-10-30T15:02:38.028Z"
-updatedAt: "2019-11-26T20:43:25.945Z"
+updatedAt: "2019-11-27T19:33:59.277Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Seminars"
@@ -33,6 +33,19 @@ content: '''
     - varies over time
     - depends on effects of fitness effects
     - interpretation of results in maize await better estimates of DFE and demography, all previous students assume equilibrium populations, no population really follows an equilibrium  distribution
+  
+  
+  ---
+  ### Date: 2019-11-19
+  - e-read-depth GWAS, Pat Schnable
+  - paper: Lin et al., 2017 (genome biology) talks about method
+  - essentially TWAS but with RNAseq data as data you map traits back to, regress phenotypes against expression for each gene and each genotype
+  - eRD-GWAS complementary to snp-based GWAS, useful because it finds different subsets of trait-expression associations, might be getting closer to protein-protein interaction layer of central dogma
+  - With snp-based GWAS hits, their study might be "missing" SNPs due to their methods of controlling for population structure that are not as stringent with eRD-GWAS?
+  - trans-acting eQTL associated with traits via eRD-GWAS are unlikely to be LD-induced false positives
+  - LD only confounds cis-eQTLs if neighbouring genes are highly correlated
+  - Their lab is also developing alternative splicing GWAS
+  - Overall they had different gene sets producing results between GWAS methods (eRD-GWAS, alt-splicing-GWAS, snp-based GWAS), could be capturing more levels of valuable information, might be something interesting to test for all my phenotypes?
   
   
   ---
