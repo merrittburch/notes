@@ -1,5 +1,5 @@
 createdAt: "2019-08-21T17:50:33.366Z"
-updatedAt: "2019-11-21T14:29:01.966Z"
+updatedAt: "2019-11-25T17:04:19.474Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Interesting Papers"
@@ -7,6 +7,32 @@ tags: []
 content: '''
   ### Interesting Papers
   
+  
+  
+  ---
+  ### To what extent gene connectivity within co-expression network matters for phenotype prediction? (Chateigner et al. 2019)
+  - Built a coexpression network with Populus to see the interaction between core and peripheral genes within a network and their role in phenotypic variation
+  - Gene-to-gene interaction is a pervasive although elusive phenomenon underlying phenotype expression. Genes operate within networks with more or less mediated actions on the phenome.
+  - These two studies start to outline the first elements of a gene network theory based on connectivity, stating that core genes, which are highly connected, are of high importance, and thus highly constrained by selection. In contrast to these central genes, there are peripheral, less connected genes, never far from a core hub. These peripheral genes are less constrained than core genes and consequently, they harbor larger amounts of variation at population levels.
+  - to what extent core and peripheral genes based on connectivity within a co-expression network are involved in the definition of a phenotype?
+  - Broke out genes into multiple sets (full, core, random, peripheral NG and peripheral, along with Boruta = a set of genes being relevant for their predictability of the phenotype. This set would be the one that enables the best prediction of a given trait
+  For 6 classes of gene sets, trained two contrasting classes of models to predict phenotypesL an additive linear model (ridge regression) and an interactive neural networks model
+  - Two recent works used RNAseq in natural populations of plants to build co-expression networks and study the relationship between network topology and patterns of natural selection → found differences in natural selection among genes given their connectivity within networks but did not look at how network impacts phenotypic variation
+  - Different clusters of genes differentially correlated to traits values and according to sites
+  - Tried to predict phenotypes given these different sets of genes, results pinpointed again one feature differentiating the behavior of core and peripheral genes. Cores were largely overrepresented in the different Boruta selections involving mostly the same genes. Peripherals were underrepresented in Boruta
+  - Predicted 17 phenotypes. Core genes not the best set to predict the different traits, cores able to summarize key information for quality predictions but require complementary contribution from other interacting genes to round up the optimal set. THis is probably why the Boruta set works better under the neural network algorithm because the NN exploits the interactivity between features (genes) already present in the Boruta set
+  
+  
+  ---
+  ### Neighbor GWAS: incorporating neighbor genotypic identity into genome-wide association studies of field herbivory on Arabidopsis thaliana (Sato et al. 2019)
+  - Phenotype of an individual depends on its own genotype and those of neighboring plants, not taken into account with GWAS
+  - Developed “neighbor GWAS” method with real and simulated Arabidopsis data
+  - phenotypic variation explained by neighbor effects approached a plateau when an effective spatial scale became narrow
+  - Impossible to rest all gene by gene interactions due to combinatorial explosion 
+  - Benchmark tests using simulated phenotypes revealed that appropriate spatial scales could be estimated by variation partitioning of observed phenotypes
+  - When the scale of neighbor effects was narrow or moderate (α = 1.0 or 3.0), the scale of the first nearest neighbors would be optimum for the power to detect neighbor signals. 
+  - Strange field layout, plants in separate pots in the field. Roots not able to interact, maybe that might impact overall results?
+  - GWAS results looked like they still had a lot of false positives and no clear peaks
   
   
   ---
