@@ -1,5 +1,5 @@
 createdAt: "2019-10-30T15:02:38.028Z"
-updatedAt: "2019-11-20T16:49:58.938Z"
+updatedAt: "2019-12-04T16:29:54.114Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Seminars"
@@ -7,6 +7,26 @@ tags: []
 content: '''
   Seminars
   
+  
+  
+  ---
+  ### Date: 2019-12-04
+  - Genome scan signals of maize ... in local adaptation?, Fausto Rodríguez, Zeavolution
+  - local adaptation is defined as higher fitness of local adaptation
+  - genome environment associations can help ID local adaptation loci candidates
+  - Hypothesis: phospholipid and phosphorous metabolism might mediate highland adaptation, some prior data to support this in high vs lowland maize (B73 vs Polmero Topocaneo)
+  - Soil P availability depends of pH and mineralogy
+  - Described soil maps worldwide, and more in detail for the Americas focusing on phosphorous solubility, categorized P solubility in standardized scores. 
+  - Made github package, soilP, can overlay with any geo-referenced samples
+  - Low P solubility in maize landraces mostly due to andosols and acrisols
+  - Inv4m contains a P transporter, got GWA hits in inv4m LD block
+  - GWAS controlling only for family (through k=28 in STRUCTURE), no kinship. Results still blurry in inv4m region with k<28 (i.e. lots of false positives)
+  - BayesV? Switch sides of genotype and phenotype? Dwarf 8 paper, not a good way to go. 
+  - Elevation is correlated with inv4m frequency and very low P solubility soils
+  - Next steps: test effect of inversion on P acquisition and fitness with B73xlines with inv4m
+  
+  
+  ---
   ### Date: 2019-11-20
   - Jeff Ross-Ibarra Zeavolution
   - Tajima's D larger in parviglumis compared to maize across genome
