@@ -1,5 +1,5 @@
 createdAt: "2019-08-21T17:50:33.366Z"
-updatedAt: "2019-11-25T17:04:19.474Z"
+updatedAt: "2019-12-09T18:02:28.720Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Interesting Papers"
@@ -7,6 +7,78 @@ tags: []
 content: '''
   ### Interesting Papers
   
+  
+  ---
+  ### Maize Centromeres: Structure, Function, Epigenetics (Birchler and Han 2009)
+  - Centromere organizes the kinetochore has an epigenetic component in that DNA sequence alone does not serve as the determinant of activity
+  - Centromere organizes the kinetochore which mediates movement during mitosis and meiosis via attachment to spindle microtubules
+  - Sequences at centromere are repetitive sequences that are arranged in tandem in thousands of copies at one site, similar among nonhomologous chromosomes
+  - Centromere sequence evolves quite rapidly becoming dissimilar in fairly closely related species but maintaining the same type of gross repetitive organization of small units in tandem
+  - Hypothesize that an epigenetic component is involved with centromere specification
+  - Structural features
+    - Centromeric satellite (CentC), 156 base pairs in length and is present at all of the centromeric positions on all 10 chromosomes that constitute the karyotype of maize. Copy number is variable among non-homologous chromosomes
+    - Retrotransposion family referred to as the centromeric retrotransposon of maize (CRM). Different types of CRM classified into 4 groups. CRM1 and CRM2 are functional and interspersed among the CentC arrays of each centromere. Nonautonomous version, CentA was the first emaple cloned. CRM1 has the highest copy number in the genome followed by CRM2, CRM4, CRM3. Distribution of CRM elements in nonhomologous chromosomes is more uniform that the CentC copy number
+  - Functional features
+    - CENH3 → foundational kinetochore protein is a variant of histone H3 that is present in the nucleosomes of all known functional centromeres, serves as a marker of centromere function. Associates with the CentC/CRM arrays. Interspersed along centromere, only H3K27me1 modifications, reduced levels of 5mC methylation (negative correlation between deposition of CENH3 and the methylation of DNA)
+    - CENP-C, kinetochore protein, serves as a marker of active centromeres
+    - NDC80, though to connect the foundational components to the outer kinetochore. Localizes outside the position of CENP-C. Thought to anchor the microtubules to the kinetochore
+    - MAD2 - maize homologue of the yeast MAD2 spindle attachment checkpoint protein. Localizes to the outer kinetochore with microtubules. In meiosis, MAD2 was not lost upon microtubule attachment, disappearance correlated with tension being placed on the kinetochore as the chromosomes separated
+    - Centromere encoded RNAs recovered from CRM and CentC reppeats, 40-60 nt. CRM homologous RNAs were also of discrete sizes between 100-150 nt. No small RNAs of typical DIcer products in 21-25 bp length. Role of kinetochore-associated RNAs unknown.
+  - B chromosome centromere
+    - Origin of B chromosome is unknown, contains a representation of all the common retrotransposons known in maize. Popular accumulation mechanism. This mechanism consists of nondisjunction of the B chromosome at the second pollen mitosis which produces the 2 male sperm. 
+    - nondisjunction of the centromere requires at least two other sites on the B chromosome to be present in the same nucleus, but not necessarily on the same chromosome. One of these sites is at the very tip of the long arm of the B chromosome (for non-disjunction), and the other resides in the proximal euchromatin (effective for maintaining the integrity of the B chromosome)
+    - How small can you make the B repeat cluster before it stops working using TB-9Sb as a model? the smallest centromeres exhibit reduced transmission through meiosis compared with the ultimate TB-9Sb progenitor,
+    - An extensive attempt to push the size limits of function even lower using these small centromeres only resulted in misdivision derivatives that did not change in size or that increased (51). Thus, the lower size limit for function appears to be in the range of a few hundred kilobases.
+  - Centromere inactivation
+    - McClintock described the breakage-fusion-bridge cycle in maize in which broken chromosomes fuse at the site of cleavage to form a dicentric whose two centromere would progress to opposite poles in the subsequent anaphase to produce a bridge that in turn would break to reinitiate the cycle. 
+    - Lead to the realization that a special structure, known as the telomere was present at the ends of the chromosomes to prevent them from fusing with each other. 
+    - When a B-F-B cycle involves a single chromosome, it will continue in the gametophyte generation and the endosperm, but the broken chromosome will heal in the sporophytic generation by the addition of a telomere. However, if two broken chromosomes are present in the zygote, the so-called chromosome type B-F-B cycle is initiated, which can continue in the sporophytic generation but will generally destroy the chromosomes involved. 
+  
+  
+  ---
+  ### Genetics of 38 blood and urine biomarkers in the UK Biobank (Sinnott-Armstrong et al. 2019)
+  - UK Biobank data. Used lab testing data of >30 proteins, metabolites, and protein modifications in serum and urine on a cohort of 500k individuals with prior phenotype and genome wide genotype data
+  - Characterized genetic architecture of 360k individuals including protein-altering, protein-truncating, non-coding, human leukocyte antigen , and CNVs, built phenome wide associations for implicated genetic variants
+  - Fit regression mofel for 127 covariates including age, sex, urine and serum processing metics, fasting time, and estimated sample dilutin factor along with numerous relevant interactions between covariates
+  - Mendelian Randomization can be confounded by genetic correlations reflecting shared etiology (the cause, or set of causes of a disease or condition) and sometimes instruments with pleiotropic effects may introduce limitations in evaluating causal relationships
+  - Looked at genetic correlation of biomarkers and disease outcomes, might be interesting for maize phenotypes. Many phenotypes already correlated to each other, see how they work together on a genetic basis might be interesting (used MR-Egger in R)
+  - Mapping strategy
+    - Used PCs to control for population structure (10-40)
+    - Self reported ethnicity
+    - Not marked as outliers for heterozygosity and missing rates
+    - Do not shoq pitative sex chromosome aneuploidy
+    - Have at most 10 putative third-degree relatives 
+    - Others related to time of sampling, machine used, sequencing platform, 
+   
+  
+  ---
+  ### A resource-efficient tool for mixed model association analysis of large-scale data (Jiang et al. 2019)
+  - Population structure and relatedness can lead to inflated GWAS test statistics and spurious associations
+  - MLM methods on large samples (UK Biobank) take a long time with many traits
+  - MLMs test for associations between each genetic variant and the phenotype, conditioning on the sample structure inferred from all of the genome wide SNPs.
+  - Runtime complexity O(mn^2) to O(m^2n) where m is the number of variants and n is the sample size
+  - Developed fastGWA implemented in GCTA, is robust in controlling for false positive associations in the presence of population stratification and relatedness, 89 times faster compared to other tools
+   
+  
+  ---
+  ### AlphaBeta: Computational inference of epimutation rates and spectra from high-throughput DNA methylation data in plants (Shahryary et al. )
+  - Cytosine methylation is an important in chromatin modification and a pervasive feature of most plant genomes. Plays a major role in the silencing of TEs and repeat sequences and is involved in some gene regulation
+  - Plants methylate cytosines at symmetrical CG and CHG sites, but also at symmetrical CHH sites were H = A,T,C.
+  - Methylation pathways highly conserved
+  - Despite tight regulation, methylation status of individual cytosines or clusters of cytosines is not faithfully maintained, so cytosine methylation is sometimes gained or lost in a stochastic fashion (aka spontaneous epimutation), known to accumulate through development and aging (probably as a byproduct of the mitotic replication of small stem cell pools that generate and maintain somatic tissues)
+  - Mutation accumulation lines → lab grown, developed from a single isogenic founder and are independently propagated for a large number of generations. Provide a “real-time” observation of germline epimutations against a nearly invariant genomic background and can facilitate the estimates of the per generation epimutation rates.
+  - Developed AlphaBeta, to infer the rate and spectrum of germline and somatic epimutations in plants
+  
+  
+  ---
+  ### Adventures in Multi-Omics I: Combining heterogeneous data sets via relationships matrices (Akdemir and Sanchéz 2019)
+  - It is clear that detailed phenotype data, combined with increasing amounts of genomic data, have an enormous potential to accelerate the identification of key traits to improve our understanding of quantitative genetics
+  - Challenges that still need to be addressed is the incompleteness inherent in these data, i.e., several types of genomic/phenotypic information which might each covering only a few of the genotypes under study
+  - Wheat Data at Triticale Toolbox. Combining genomic data sets to use in genomic prediction.
+  - This example involves estimating breeding values for seven economically important traits for 9102 wheat lines obtained by combining 16 publicly available genotypic data sets
+  - when a random sample of genotypes are selected for the test population the accuracy of the genomic predictions using the combined genomic relationship matrix can be high
+  - Average accuracy for estimating plant height was about 0.68, and for yield 0.58. Lowest accuracy values were for test weight with a mean value of 0.48.
+  -  The performance decreases significantly if we use between population predictions 
   
   
   ---
