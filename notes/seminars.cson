@@ -1,11 +1,24 @@
 createdAt: "2019-10-30T15:02:38.028Z"
-updatedAt: "2019-12-04T16:42:32.904Z"
+updatedAt: "2019-12-11T16:28:43.241Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Seminars"
 tags: []
 content: '''
   Seminars
+  
+  ### Date: 2019-12-11
+  - Maize adaptation to novel environments over time
+  - Miguel Vallebuelo, Kelly Swarts lab
+  - The close wild ancestors of maize had a narrow distribution since the last glacial maximum
+  - source of adaptation comes from inversion on 4
+  - Mexicana gene flow is ancient, but when did it start? --> archaeological samples suggest maize encountered mexicana populations around 6000 as it arrived to the central plateau, continuous gene flow with ancient introgression makes IDing hard
+  - Collected ancient maize DNA samples from archaeological sites, used existing sequenced resources SeeDm, teosintes, Ames, 282, etc
+  - Ancient samples are metagenomic, damaged and fragmented. Maize content low
+  - Samples showed characteristic ancient DNA patterns, short reads, fraying near ends of reads
+  - Creating DNA probes for GBS to capture ancient DNA with less bias. Testing methods with 2 most distant accessions  based on a distance matrix, maximize diversity represented by the lowest amount of accessions to generate probes
+  - Future work, reduce bias of DNA capture in diverse, ancient accessions. Also, understand timing, and locations of mexicana introgression, incorporation of ancient maize over time and space.
+  
   
   ---
   ### Date: 2019-12-04
