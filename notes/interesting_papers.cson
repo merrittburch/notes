@@ -1,11 +1,60 @@
 createdAt: "2019-08-21T17:50:33.366Z"
-updatedAt: "2019-12-09T18:02:28.720Z"
+updatedAt: "2019-12-12T18:17:50.005Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Interesting Papers"
 tags: []
 content: '''
   ### Interesting Papers
+  
+  ---
+  ### The prevalence, evolution and chromatin signatures of plant regulatory elements
+  - Cis-regulatory elements (CREs)
+  - Non-coding CREs, which exhibit high levels of chromatin accessibility, provide essential information to specify the level as well as the temporal and spatial patterns of gene expression
+  - In mammals, many distal CREs have been found to possess specific chromatin features and dynamically interact with their target genes through long distance chromatin looping
+  - No CREs in Capsaspora owczarzaki (amoeba), hypothesize that distal CREs are metazoan innovations that enable complex gene regulation that is critical for multicellularity
+  -  The prevalence, chromatin signatures and mode of action of distal CREs remain unknown across most angiosperm genomes
+  - This study: performed a set of comparative genomic and epigenomic analyses in 13 angiosperm species. 
+  - Results: The results not only identified tens of thousands of putative plant CREs, including those located in promoters, terminators and distal to genes, but also showed that putative distal CREs are characterized by distinct chromatin features that are predictive of their mode of action on target genes.
+  - Interactions between transcription factors (TFs) and DNA at CREs disrupts nucleosome formation, resulting in local ACRs. The assay for transposase-accessible chromatin using sequencing (ATAC-seq) method enables genome-wide identification of ACRs that are probably putative CREs
+  - Accessible chromatin was found at many of the rare, distal CREs in plants.
+  - The number of ACRs within each species ranged from ~15k to 32k and the number correlated well with the number of annotated genes within each species
+  - ACRs were highly enriched at TSStart and TSStop sites, depleted from cytosine DNA methylation, and exhibited greater GC content compared with nearby intergenic sequences
+  - ACR presence did not scale linearly with genome size
+  - Significant difference in ACR location relative to genes in plants with different genome sizes → significant factions of ACRs are distributed further away from genes in larger genomes
+  - Distant accessible chromatin is evolutionarily conserved → maize tb1 and vgt1 distal control regions are characterized by significantly reduced mutation rates compared with the flanking regions.
+  - 9/13 species show purifying selection in distal ACR regions
+  - Strong enrichment of CNSs at dACRs
+  - Transposon content shapes the accessible chromatin landscape → A major factor that could have contributed to the strong correlation between genome sizes and the distances between ACRs and genes is the differential activities of TEs (Fig. 1), because a higher rate of TE proliferation between ACRs and their target genes could lead to both larger overall genome size as well as the distal localization of ACRs, was explained by TE-derived sequence
+  -  G. max and P. vulgaris, suggesting that TE expansion is a general feature that contributes to the presence of dACRs
+  - Species-specific dACRs are strongly enriched within TEs, particularly in class II TEs
+  - Plant dACRs are characterized by three distinct chromatin states (depletion of cytosine DNA methylation, enrichment of H3K27 acetylation (ac) predictive of active enhancers). H3K4me1 is not associated with distal enhancers in arabidopsis and maize, whereas H3K9ac and H3K27ac are associated with putative enhancers in plants
+  - Transcriptional start site enrichment in  H3K4me3, H3K56ac and H2A.Z
+  - Gene body enrichment in H3K4me1 and H3K36me3
+  
+  
+  ---
+  - Breeding-assisted genomics: Applying meta-GWAS for milling and baking quality in CIMMYT wheat breeding program (Battenfield et al. 2018)
+  - To determine genomic architecture of quantitative traits, genetic mapping with complex structured populations have become common, but are limited in breeding programs due to time and resources. 
+  - GWAS, alternatively, does not require structured mating, instead, large, diverse samples of individuals are used to associate genomic markers to phenotypic variation, with population structure and kinship utilized to reduce spurious associations
+  - Statistical power can be strengthened by combining results from several populations that have been studied separately through meta-analysis. Meta-GWAS studies have been utilized to detect genetic risk loci for several diseases in humans which are heavily impacted by environment or genotype-by-environment interactions 
+  - Methods: CIMMYT wheat lines used in association mapping for wheat quality
+  - QK mixed model
+  - In this study we show that meta-GWAS can be used as a powerful approach for insight into the genetic basis of important traits in a breeding program. This will enable more robust and genetically informed breeding approaches to compliment QTLs with designed crossing strategies and marker-assisted selection.
+  
+  
+  ---
+  ### GWAS Atlas: a curated resource of genome-wide variant-trait associations in plants and animals (Tian et al. 2019)
+  -  a resource that integrates GWAS associations, as well as their associated information, is of fundamental significance to systematically capture the whole picture of genotype-phenotype associations and improve our understanding of genetic architecture of complex quantitative traits.
+  - Over the past decade, several resources, such as GWASdb (8,9), GWAS Catalog (3,10,11), GWASCentral (12) and AraGWAS Catalog (13), have been developed to provide publicly available GWAS associations. 
+    - Among them, GWAS Catalog and AraGWAS Catalog are two popular representatives. GWAS Catalog, a dedicated resource for human that includes a total of 149 855 significant associations (P < 1 × 10-5) derived from 7230 studies in 4085 publications (as of August 2019) (3), has been widely used by the global community for deciphering genetic basis and molecular mechanisms of human phenotypes and diseases
+  - Developed GWAS Atlas, curated resource if high-quality GWAS associations
+    - 75,467 GWAS associations in 7 plants, 2 animals manually curated from 254 publications
+    - Organized based on a suite of ontologies
+  - Used pub-med web scraping tool to pull all publication info, then use manual curation to gather genotype to phenotype association info from publications
+  -  we record species name, sampling spot, year, condition, population, sample size, genotyping technology, association model, association number, and PMID for each study. Regarding GWAS association, we collect species name, genome version, genomic position, variant ID, traits, GWAS association P-value, R2 and mapped genes.
+  - Finally, to unify the representation of biological traits, trait entities are mapped to a suite of reference ontologies (PTO, Plant Trait Ontology; ATOL, Animal Trait Ontology for Livestock) (16–18) and species-specific ontology (CO, Crop Ontology) (19) using the ‘term search’ in Planteome API and Livestock Ontologies. Since not all curated traits are included in existing ontologies, we additionally establish PPTO (Plant Phenotype and Trait Ontology) and APTO (Animal Phenotype and Trait Ontology) by integrating more comprehensive terms based on Open Biological and Biomedical Ontologies (OBO) format.
+  - For maize: 86 publications; 308 studies; 205 traits; 28,310 associations; 22,969 variants; 13,654 genes
   
   
   ---
