@@ -1,11 +1,39 @@
 createdAt: "2019-08-21T17:50:33.366Z"
-updatedAt: "2019-12-12T18:17:50.005Z"
+updatedAt: "2019-12-13T20:55:18.215Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Interesting Papers"
 tags: []
 content: '''
   ### Interesting Papers
+  
+  ---
+  ### Chromatin three-dimensional interactions mediate genetic effects on gene expression (Delaneau et al. 2019)
+  - GWAS on the genetic basis of gene expression have advanced our understanding of the function of the human genome
+  - Many eQTL studies now available across many cell types, tissues, and conditions and are commonly used to better interpret the effects of noncoding genetic variations
+  - Poor understanding of how genetic variations affect regulatory machinery, which regulatory elements they perturb, and how their effects propagate along regulatory interactions
+  - This study: characterized the complex and cell type-specific interplay between genetic variation, REs, and gene expression to dissect cis and trans regulatory coordination. Assembled and analyzed a population scale dataset combining the activity of REs (measured by ChiP-seq for methylated histone 3 at lysine 4 (H3K4me1), trimethylated histone 3 at lysine 4 (H3K4me3), and acetylated histone 3 at lysine 27 (H3K27ac)], the expression of genes (using RNA-seq), and genetic variations for 317 lymphoblastoid and 78 fibroblast cell lines, all from European ancestry
+  - Results: regulatory activity is structured in 12.5k well-delimited cis-regulatory domains that respect the local chromatin organization into topologivally associating somains but constitute finer organization
+  - 3D organization in cis can be broadly categorized into functionally linked and unlinked dimains with the most linked correspnding to CRDs
+  
+  
+  ---
+  ### One thousand plant transcriptomes and the phylogenomics of green plants (One Thousand Plant Transcriptomes Initiative 2019)
+  - Sequenced the vegetative transcriptomes of 1,124 species that span the diversity of plants in a broad sense + 31 published genomes to infer species relationships and characterize the relative timing of organismal, molecular, and functional diversification across green plants
+  - Viridiplantae comprise an estimated 450,000–500,000 species, encompass a high level of diversity and evolutionary timescales3, and have important roles in all terrestrial and aquatic ecosystems. Innovations include: multicellularity and the development of the plant cuticle, protected embryos, stomata, vascular tissue, roots, ovules, and seeds, and flowers and frit
+  - This study: infer species relationships and characterize the relative timing of organismal, molecular, and functional diversification across green plant. Inferred timing of ancient genome duplications and large gene-family expansions
+  - Gene history discordance among single copy genes contributed by: hybridization, Horizontal gene transfer, Gene loss following gene and genome duplications, estimation error
+  - Genome sizes vary 2,340-fold in land plants and 4,680-fold in chlorophyte and streptophyte green algae, used a reduced representation sequencing approach to reconstruct gene and species histories
+  - Generated 1,342 transcriptomes representing 1124 species across Archaeplastida, including green plants, glaucophytes and red algae. 
+  - Inferred 244 ancient WGDs across Viridiplantae, confirmed with 65 overlapping published genome-based WGD inferences revealed 6 false negative results in tree-based estimates and no false positives
+  - With the exception of most Selaginella species and some liverworts, analyses implicated at least 1 WGD in the ancestry of every land plant lineage, most algal lineages show no evidence of WGD
+  - Zygnematophyceae exhibited the highest density of WGDs among algal lineages
+  - Increased diversification rates did not precisely co-occur with WGDs on the phylogeny. WGDs are expected to contribute to the evolution of novel gene function. Novel functions among duplicate MADS-box genes that arose through WGD have been linked to the origin of flowering plants and core eudicots → inferred lags between WGDs and increased species diversity
+  - Acquisition of the plastid in the extant Archaeplastida was a pivitioal event in the history of life → evidence indicates that ancestral red algae lost flagella anf peptidoglycan biosynthesis, perhaps associated with a reduction in genome size
+  - History of Viridiplantae → origin marked by the loss of light-harvesting phycobilisomes (Phycobilisomes are light harvesting antennae of photosystem II in cyanobacteria, red algae and glaucophytes.), the evolution of the accessory photosynthetic pigment chlorophyll b, intaplastidal starch synthesis and deposition
+  - Angiosperms are by far the largest clade of green plants (more than 370,000 species) and are marked by multiple key innovations, including the carpel, double fertilization, endosperm, and for most angiosperms, vessel elements.
+  - Skipped some other stuff
+  
   
   ---
   ### The prevalence, evolution and chromatin signatures of plant regulatory elements
