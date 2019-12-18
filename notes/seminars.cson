@@ -1,5 +1,5 @@
 createdAt: "2019-10-30T15:02:38.028Z"
-updatedAt: "2019-12-11T16:28:43.241Z"
+updatedAt: "2019-12-18T16:50:50.621Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Seminars"
@@ -7,9 +7,38 @@ tags: []
 content: '''
   Seminars
   
+  
+  
+  
+  ---
+  ### Date:2019-12-18
+  - Co-expression based gene regulatory networks predict functional interactions in maize (Peng Zhou, Springer Lab, Zeavolution)
+  - Mutile layers of gene expression and regulation (promoters, distal regulatory elements), measured through DNA-seq, ATAC-seq, CHIP-seq, DAP-seq, WGBS, RRBS, RNAseq, etc..
+  - Expression patterns vary widely among inbred line, gene, tissues, expression time-point, presence-absence variation of promoters/enhancers or mutated promoters/enhancers
+  - What are regulating these genes? Two models:
+    - Enhanceosome model (direct cooperatively, direct dna binding, rigid motif grammar)
+    - Billboard model (indirect cooperatively or additivity, direct DNA binding, fixed motif type and number, flexible motif organization)
+    - Binding dictated by motif grammar parameters (motif type, affinity, number, spacing, orientation, order, local DNA shape), all feed into gene regulatory networks
+  - Collected previously published RNAseq datasets
+  - To build network
+    - correlation and information theoretic approaches
+    - boolean networks
+    - Bayseian
+    - regression and differential equations models (LASSO, random forest --> one  they went with, robust)
+  - How random forest trees work, decision tree, grow multiple trees and take the average/majority of these trees
+  - Chipseq datasets available (knotted1 KN1, P1, ramosa1, fascinated ear4, opaque2, HDA101, ZmbZiP22, Auxin response factors family), Katherine's data not yet available
+  - Comparing methods genomic regulatory networks on how well they can predict motifs using additional information. Adding information on cross-species conservation, tissue motif finding, and more. More levels of info, better motif prediction
+  - Looked a GO terms shared between GRNs, some GO terms shared between all GRNs  (transcription related), some shared "meta-networks", some photosynthesis related, some only seeding/SAM related, looks like it reflects dataset captured in, can recapitulate biological functions
+  - Lots of text from publication? 
+  - Tried predicting TF binding in different datasets (some NAM families and IBMs)
+  - Website that holds GRNs [Maize GRN](https://maizeumn.github.io/maizeGRN/) 
+  - Missed takehomes
+  
+  
+  ---
   ### Date: 2019-12-11
   - Maize adaptation to novel environments over time
-  - Miguel Vallebuelo, Kelly Swarts lab
+  - Miguel Vallebuelo, Kelly Swarts Lab
   - The close wild ancestors of maize had a narrow distribution since the last glacial maximum
   - source of adaptation comes from inversion on 4
   - Mexicana gene flow is ancient, but when did it start? --> archaeological samples suggest maize encountered mexicana populations around 6000 as it arrived to the central plateau, continuous gene flow with ancient introgression makes IDing hard
