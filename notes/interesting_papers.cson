@@ -1,11 +1,32 @@
 createdAt: "2019-08-21T17:50:33.366Z"
-updatedAt: "2019-12-13T20:55:18.215Z"
+updatedAt: "2019-12-17T21:16:59.520Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Interesting Papers"
 tags: []
 content: '''
   ### Interesting Papers
+  
+  
+  ---
+  ### Chromatin interaction maps reveal genetic regulation for quantitative traits in maize (Peng et al. 2019)
+  -  Cis regulatory elements ans associated trans-acting factors regulate spatiotemporal gene expression which affects individual development
+  - Cis regulatory elemtns such as promoters, enchancers, and  insulators have distinct epigenetic features, examples:
+  - DNA methylation and histone modification play an important roles in transcriptional regulation in both animals and plants
+  - Long-range chromain interaction maps reveal that cis-regulatory relements frequently form DNA loops mediated by specici proteins
+  - Structures include CTCF/cohesin-associated DNA loops, may coalesce into chromatin contact domains, and further organize into active and inactive compartments as well as chromosome territories
+  - This study: explore the regulatory role of mutations occuring in distal regulatory elements related to gene expression and phenotypic variations with adapted long-read ChIA-PET, and construct high resolution chromatin interaction maps of maize promoter proximal regions and distal regulatory elements associated with RNA pol II occupancy and histone mark H3K4me3. 
+  - Maps are analyzed to identify and assess the roles of promoter proximal–proximal interaction (PPI) and proximal–distal interaction (PDI). By integrating expression quantitative trait locus (eQTL) and genome-wide association study (GWAS) data, we demonstrate that long-range chromatin interactions between variant regulatory elements and their target genes contribute to variations in gene expression, metabolic phenotypes, and agronomic traits. 
+  - Results highlight the significance of 3D organization of regulatory elements and suggest that the topology of long-range genetic variations may affect gene expression as well as phenotype variation.
+  - Why is this a genomics advancement?
+    - Generated: Polymerase II (RNAPII) occupancy and histone modification profiles marked by H3K4me1, H3K4me3, and H3K27ac using ChIP sequencing in maize seedlings to map functional DNA elements and to investigate their regulatory role in gene expression. 
+    - Previously published chromatin accessibility data (though MNase data), RNA-Seq data collected from 79 tissues (root transcriptome atlas)
+  - Clustering analysis indicated that the expression of genes marked by H3K27me3 is mostly detected in a small number of tissues, suggesting that these genes may be tissue-specific, while genes marked by H3K4me1 and H3K4me3 were expressed in most tested tissues, indicating that they may be housekeeping genes
+  - QTL loci for numerous metabolic  traits  and flowering time overlap with distal elements  involved  in chromatin interactions, associated with traits through loop formation. Distal elements with interactions were significantly enriched at the QTL regions compared to the distal elements  without  interactions and random regions of the genome
+  - Histone methylation patterns 
+    - H3K27me3, detected in a small number of tissues (tissue specific?)
+    - H3K4me1 and H3K4me3, expressed in most tissues (housekeeping genes?)
+  
   
   ---
   ### Chromatin three-dimensional interactions mediate genetic effects on gene expression (Delaneau et al. 2019)
