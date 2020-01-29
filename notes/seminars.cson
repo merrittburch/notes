@@ -1,5 +1,5 @@
 createdAt: "2019-10-30T15:02:38.028Z"
-updatedAt: "2019-12-18T16:50:50.621Z"
+updatedAt: "2020-01-29T16:39:27.661Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Seminars"
@@ -9,11 +9,31 @@ content: '''
   
   
   
+  ---
+  ### Date: 2020-01-29
+  - Matt Hufford, NAM assemblies comparative genomics
+  - First maize genome, 32k genes, roughly 800 TE familes 80% new TEs
+  - Used BioNAno optical maps marked at on known regions, align long reads, make sure they align with optical maps.
+  - total 4699 RILSs capturing 136,000 crossover events. 25 founders crossed to B73 maize.
+  - First maize hapmap published with first maize genome.
+  - Discoveries limited by lack of other NAM assemblies --> CNVs, PAVs, structural variants, repetitive elements
+  - LTR assembly index (LAI) show how well repetitive regions are assembled within the genome 
+  - looked at other highly repetitive  regions were assembled, (centromeres, telomeres, NOR,  knobs, centC), stepwide increase in quality reliant on number of reads and length of reads.
+  - BUSCO genes bad consistent across NAM --> missing in NAM, not because they were badly assembled
+  - Gene model annotation --> made pipeline for support based annotation, less importance on ab-initio methods (breaker, makerp)(like v4). More genes to be added (that were not expressed in 10 tissues sampled) using verified ab-initio models. 
+  - Developed pipeline to ID large and small SVs (>1MB and <1Mb), selected SVs had to be verified with support in multiple programs, look into for PB work, make dot-plots for deletions?
+  - Jianming Yu's lab, GWAS on SVs on previously published NAM phenotypes, 3M snps against 88k SVs, looked at phenotypic var. explained high proportion of variance, less than SNPs but still good (Jason Wallace phenotypes), models run separately (SNPs and SVs), plans to incorporate both into the same model. 
+    - Ask Ed about getting SNP set for new NAMs, is someone generating the hapmap vcf to test within my models
+  - The tempo of fractionation across NAM assemblies, 5-16 mya ancient allopolyploidy event from an ancestral andropogoneae grass not shared with sorghum. Fate of homologos after WGD, 1) no change, 2) diverged function, 3) homeolog loss, 4) both homeologs lost
+  - Schanable 2011 --> B73 characterization of fractination. Subgenome 1 kept more homelogs than subgenome 2.
+  - Subset of genes that show variation across NAM in terms of homeologs lost, 23% of maize genes show this pattern
+  - Differential fractation in heterotic groups, lineage specific patterns of retention of homeolgous pairs. Looking at divergence time of homeologs, suggest tempo of fraction is ongoing, most lost occurred >12 ,yr, recently after WGD but some still happening.
+  
   
   ---
   ### Date:2019-12-18
   - Co-expression based gene regulatory networks predict functional interactions in maize (Peng Zhou, Springer Lab, Zeavolution)
-  - Mutile layers of gene expression and regulation (promoters, distal regulatory elements), measured through DNA-seq, ATAC-seq, CHIP-seq, DAP-seq, WGBS, RRBS, RNAseq, etc..
+  - Multiple layers of gene expression and regulation (promoters, distal regulatory elements), measured through DNA-seq, ATAC-seq, CHIP-seq, DAP-seq, WGBS, RRBS, RNAseq, etc..
   - Expression patterns vary widely among inbred line, gene, tissues, expression time-point, presence-absence variation of promoters/enhancers or mutated promoters/enhancers
   - What are regulating these genes? Two models:
     - Enhanceosome model (direct cooperatively, direct dna binding, rigid motif grammar)
@@ -32,7 +52,7 @@ content: '''
   - Lots of text from publication? 
   - Tried predicting TF binding in different datasets (some NAM families and IBMs)
   - Website that holds GRNs [Maize GRN](https://maizeumn.github.io/maizeGRN/) 
-  - Missed takehomes
+  - Missed take homes
   
   
   ---
