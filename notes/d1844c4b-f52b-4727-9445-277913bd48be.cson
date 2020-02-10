@@ -1,0 +1,30 @@
+createdAt: "2020-02-10T18:17:01.637Z"
+updatedAt: "2020-02-10T18:24:05.515Z"
+type: "MARKDOWN_NOTE"
+folder: "6827e53fd4576b1dc031"
+title: "Hackathon"
+tags: []
+content: '''
+  Hackathon
+  
+  ## Date: 2020-02
+  - Tested the effect of the 26 NAM assemblies on ref-ranges (and haplotypes) in the PHG
+  - Ongoing questions
+    - GWAS
+      - Test different number of haplotypes (and levels of collapsing (maxDiv)) to see which yields optimal results
+      - Lengths of haplotypes within ref-ranges might have impact
+      - Work with Peter for imputs to SSR pipeline in tassel. Tassel 4 read in "polymorphisms" file (genotypes as strings), would work for haplotypes.
+  
+  What we did
+  - tried maxDiv levels = 0.0001, 0.0005, 0.005, 0.001, 0.01, maxDiv = 0.001 lead to a median 5 haplotypes with this collapsing method
+  - Ran 282 GBS data through PHG, got paths, need to try GWAS
+  - Tried doing GWAS in Tasssel 4, many different bugs, waiting for Peter to write Tassel 5 plugin for this
+  - Try the following models
+    - y ~ haplotype + kinship (from vcf)
+    - y ~ haplotype + PCs (from haplotypes)
+    - y ~ haplotype + PCs (from vcf)
+    - y ~ SNP + PCs (baseline model)
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false
