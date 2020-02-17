@@ -1,0 +1,64 @@
+createdAt: "2020-02-17T16:59:41.075Z"
+updatedAt: "2020-02-17T17:51:09.220Z"
+type: "MARKDOWN_NOTE"
+folder: "6827e53fd4576b1dc031"
+title: "CS 4780 - Machine Learning"
+tags: []
+content: '''
+  CS 4780 - Machine Learning
+  
+  Watching Class videos from Fall 2019
+  
+  ---
+  ### Lecture 1
+  
+  Traditional computing
+  - Take a program and an input, create n output such as a function and a array of values
+  - For a machine learning model: take an output and input, create a program. Trying to learn a program (training) and then use new inputs related to new inputs (testing)
+  - Machine learning definition: by Tom Mitchell 1997: A computer program A is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E
+    - Example: span detector
+    - Use past emails and whether or not they were flagged as spam. Rules: from unknown sender, has misspellings, and million dollars found in text
+    - Has issues in rules, people misspell, could miss things that are important, pattern doesn't fit for everyone. Input, program, use differ
+  - Machine learning used to detect spam, predicting weather, classifying images, fraud detection, many different communities use tools 
+  
+  - The Turing Test 1950
+    - A machine is intelligent if its answer are indistinguishable from a human's. Many flavours of intelligence measured in this test.
+    - Checkers programs 1952: computer that got better at playing checkers over time. Arthur Samuel created program, introduced the term Machine Learning, term got popular in 70's-80's
+    - Perceotrin 1957, grandfather of deep neural networks. Separating two classes of objects using a linear threshold classifier. Worked at cornell. 
+  
+  AI didn't live up to hype in 60's
+  - speech understand failed, arguments high, AI winter in 70's-80's, funding low
+  - Rebirth started with changing name of field to machine learning, using data driven approaches, bottom up, etc, foundations of ML laid down. 
+  
+  Foundations of ML, 1980's-present
+  - Formal notions of learnability from data
+  - When is data driven learning possible?
+    - Probability Approximately Correct Learning (PAC) by Valiant
+    - How much data is required?
+  - Whats the diference between great and mediocre learners?
+    - Imporving the performance of a learning algorithm
+    - Boosting algorithm of Freund and Schapire
+  - How to deal with difficult and noisy learning problems?
+    - (soft margin) Support vector machines ny Cortes and Vapnick
+  - What to do when the learning task evolves over time?
+    - Online learning framework
+  
+  - In the 90's many machine learning techniques in games (backgammon, Big Blue)
+  - In 2000's machine learning used to rank search results in Google, Bing..., used topic modeling to detect and organize documents by subject matter, made sense of the unstructured data on the web. Used in the online economy to place ads, recommend products.
+  
+  Syllabus:
+  - Supervised bath learning: decision theroretic foundation, model selection, model assesment, empiricial risk minimization
+  - instance based learning
+  - decision trees
+  - linear rules
+  - support vector machines
+  - deep learning
+  - generative models
+  - structuted output prediction
+  - statistical learning theory
+  - online learning
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false
