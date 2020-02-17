@@ -1,5 +1,5 @@
 createdAt: "2020-02-17T16:59:41.075Z"
-updatedAt: "2020-02-17T17:51:09.220Z"
+updatedAt: "2020-02-17T21:11:50.799Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "CS 4780 - Machine Learning"
@@ -35,8 +35,8 @@ content: '''
   - When is data driven learning possible?
     - Probability Approximately Correct Learning (PAC) by Valiant
     - How much data is required?
-  - Whats the diference between great and mediocre learners?
-    - Imporving the performance of a learning algorithm
+  - Whats the difference between great and mediocre learners?
+    - Improving the performance of a learning algorithm
     - Boosting algorithm of Freund and Schapire
   - How to deal with difficult and noisy learning problems?
     - (soft margin) Support vector machines ny Cortes and Vapnick
@@ -44,17 +44,17 @@ content: '''
     - Online learning framework
   
   - In the 90's many machine learning techniques in games (backgammon, Big Blue)
-  - In 2000's machine learning used to rank search results in Google, Bing..., used topic modeling to detect and organize documents by subject matter, made sense of the unstructured data on the web. Used in the online economy to place ads, recommend products.
+  - In 2000's machine learning used to rank search results in Google, Bing..., used topic modelling to detect and organize documents by subject matter, made sense of the unstructured data on the web. Used in the online economy to place ads, recommend products.
   
   Syllabus:
-  - Supervised bath learning: decision theroretic foundation, model selection, model assesment, empiricial risk minimization
+  - Supervised bath learning: decision theoretic foundation, model selection, model assessment, empirical risk minimization
   - instance based learning
   - decision trees
   - linear rules
   - support vector machines
   - deep learning
   - generative models
-  - structuted output prediction
+  - structured output prediction
   - statistical learning theory
   - online learning
   
