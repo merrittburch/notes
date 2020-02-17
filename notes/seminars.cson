@@ -1,11 +1,14 @@
 createdAt: "2019-10-30T15:02:38.028Z"
-updatedAt: "2020-02-17T19:34:15.211Z"
+updatedAt: "2020-02-17T21:47:14.877Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Seminars"
 tags: []
 content: '''
   Seminars
+  
+   
+  
   
   ---
   ### Date: 2020-02-17
@@ -55,6 +58,28 @@ content: '''
   - poplar dosage series quantifying phenotypic diversity
   - regulatory variation has a constraint has impact on quant. traits
   - implications for basis of quant variation: very small increments of many genes
+  
+  
+  ---
+  ### Date: 2020-02-12
+  - Justin Walley: Unravelling Developmental & Immune Networks Using Integrated Omic Profiling
+  - How do plants perceive and respond to their environment?
+  - Use integrated omics to uncover stress induced networks
+  - Found 50% overlap in differentially expressed mRNAs and proteins in mutants compared to WT, mRNA levels not correlated to protein levels, need more protein data
+  - Models with integrated mRNA, protein, and methylation data are the best for predicting regulatory networks in maize. Dataset consisted of whole proteome data in 33 tissues in maize with different developmental stages and RNAseq data
+    - Found it was hard to extract these in green leaves
+    - Optimized extractions and protocols for protein extraction, protein-protein interaction
+  - Development of a gene regulatory network approach to integrate multiple levels of omics data --> used SC-ION spatiotemporal clustering fr integrated omics networks, also used temporal clustering with dynamic time arping
+  - Zander nature plants publication on TF binding, transcriptome data, and phosphoproteome. SC-ION predicts a central role for ABo3 for response to jasomate.
+  - Cool northern leaf blight example in collaboration with Nick Lauter's group at ISU
+    - n=134 RILs, 30k plants total
+    - Sampled transcriptomes (eQTL) 31k sites 26k significant
+    - proteins (pQTLs) 11k sites
+    - phosphorylation sites (phosQTL) 42k siets
+    - Moderate number of overlapping QTL and pQTL, cis QTLs more impacted by mRNA
+    - Overlapping cis eQTLs and cis pQTLs negatively correlated at one particular locus
+    - Reconstructed predicted gene network with significant QTLs to find genes involved in NLB resistance. 
+  
   
   ---
   ### Date: 2020-01-29
