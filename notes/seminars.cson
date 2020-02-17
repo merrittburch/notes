@@ -1,5 +1,5 @@
 createdAt: "2019-10-30T15:02:38.028Z"
-updatedAt: "2020-01-29T16:39:27.661Z"
+updatedAt: "2020-02-17T19:34:15.211Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Seminars"
@@ -7,7 +7,54 @@ tags: []
 content: '''
   Seminars
   
+  ---
+  ### Date: 2020-02-17
+  - Jim  Birchler, gene dosage
+  - Genomic  balance in maize
+    - family portrait with B chromosome of haploids, haploid +1L, monosomic 1L, diploid, trisomic 1L, translocations  
+    - Family portraits of different chromosomes have varying effect on phenotype, Can do with 5S, 9S, etc...
+    - Same principles apply to other taxa (humans. Triploid babies can survive until birth)
+    - What is the molecular basis of genomic balance?
+      - centred around gene regulatory processes and has implications for gene expression and evolution
+  - DOsage effects on gene expression in aneuploids, for gene dosage it was a series of increasing expression for 1, 2 and 3 copies. For genes further away an inverse happened, decreasing expression for 1, 2, and 3 copies
+  - Dosage compensation of the embryo PRO protein in a dosage series of chr1
+  - Dosage compensation can result from the combination of a gene dosage effect and an inverse effect produced by the same chromosomal dosage series, happens at a rRNA level and in Adh1. Varies across genome.
+  - In drosophila --> Adh compensation, dosage effect and inverse in Drosophila
+  - What are the genes that produce dosage effects?
+    - Two deceases of screening for dosage modifiers of white eye colour, lg number of dosage sensitive modifiers many are RFs, chromatin proteins, members of signal transduction cascades
+  - ratio of distribution of cis and trans in a 5S dosage series, very few changes in expression in a ploidy series but there are changes in cell sizes. When you remove chromosome arms or add additional arms that are unbalanced cis and trans expression is thrown off
+  -  Hou et al., 2018 PNAS 115:11321-11330 --> network analysis in Arabidopsis for dosage experiments (should read later)
+  -  genome imbalance causes discordance between TFs & target co-expression vs. aneuploidy. 
+  -  Re-analysis of Amon lab data in mice and yeast, did not look at trans effects
   
+  GLobal studies in maize
+  - disomic, monsomic, trisomic, tetrasomic vs diploid in maize
+  - the greater the stoichiometric change, the greater the modulation of gene expression
+  - Aneuploidy affects TF
+  
+  Reiner V. (Paris)
+  - The WXXYZ oligomer, if you vary the concentration of one letter, how does the pathway change?
+  - how do changes in subunit quantities affect regulatory macromolecules complex assembly
+  - overexpression of anu bridge subunit would have a dominant negative effect depending on order of aaembly, whifh is not known for many complexes
+  
+  Dosage sensitive genes are enriched in interacting complexes
+  - dosage sensitivity reflects participation in multi-subunit complexes
+  - tight reg. of dosage sensitive genes --> dosage sensitivity has been correlated with intrinsically disordered protein domain (IDP). ID domains facilitate multiple interactions include TFs and signalling proteins.
+  
+  - Duplicate genes that are retained during fractionation are preferentially retained and are involved in multi-subunit protein complexes
+    - often suggested to be due to balance
+    - Balance can explain why segmental duplication show a non-random distribution of function
+  
+  Genomic balance and speciation
+  - when different lineages are brought together, thought to be incompatible
+  
+  Dosage balance and quantitate traits
+  - multiple aneuploids have an effect on the same trait via dosage effects
+  - most QTL show some level of being intermeadely affects by dosage
+  - fruit weight 2.2 in  tomato
+  - poplar dosage series quantifying phenotypic diversity
+  - regulatory variation has a constraint has impact on quant. traits
+  - implications for basis of quant variation: very small increments of many genes
   
   ---
   ### Date: 2020-01-29
