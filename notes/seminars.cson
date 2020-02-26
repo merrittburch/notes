@@ -1,5 +1,5 @@
 createdAt: "2019-10-30T15:02:38.028Z"
-updatedAt: "2020-02-17T21:47:14.877Z"
+updatedAt: "2020-02-26T16:37:00.292Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Seminars"
@@ -7,7 +7,50 @@ tags: []
 content: '''
   Seminars
   
-   
+  ---
+  ### Date: 2020-04-26
+  - Sarah Anderson, TE contributions to maize
+  - TE contributions to maize genome
+    - LTRs = 62%
+    - TIRs = 3.5%
+    - Heliton = 3.6%
+  - Genome landscape in maize vs Arabidopsis
+    - maize more interspersed genes but more TEs between as opposed to  arabidopsis
+    - more methylation differences in maize
+  - Classical maize mutants for waxy, knotted1, vgt1, tb1 (60kb upstream of gene, Hopscorch)
+  - How do TEs influence gene expression dynamics in maize?
+    - How variable are TEs across genomes?
+    - How variable is TE transcription across development and genotypes?
+    - What happens when two different maize genomes come together?
+  - How variable are TEs across genomes?
+    - Brunner et al. Plant Cell 2005
+    - Anderson, Stitzer, Brohammer, The Plant Journal 2019
+      - 500 mb of TEs not shared in hybrids,  20% of the genome
+      - 78% of TEs IDd in 4 genomes are variable among them
+      - Recent TE insertions not tagged by SNPs
+      - Majority of maize genes near a variable TE
+      - Maize can tolerate substantial TE variability
+      - New resolution to study subset of TE influences
+  - How variable is TE transcription across development and genotypes?
+    - TE expression identifies candidates for effects on gene (TE enhancer with leaky regulation, read through transcription from TE promoter)
+    - B73 developmental atlas  data from Walley, Zhou,  Stelpflug analysed in  Anderson et al.,  G3  2019. 
+    - Expression is family  specific, LTRs most expressed
+    - Expression is dynamic across development,  highly tissue  specific
+    - Different in each NAM line, can't redict across taxa
+  - What happens when two different maize genomes come together?
+    - imprinting occurs in the endosperm, sometimes caused by TEs
+    - pericarp is maternal in origin (2n both from mom)
+    - calling imprinting from RNA-seq data using maternal SNP ratio
+    - Imprinted genes and TEs across  contrasts, could only find maternally imprinted TEs and not as many  paternally expressed TEs, could be due to reference bias.
+    - Genes with conserved imprinting show expected expression patterns
+    - Materially expressed TEs are predominately LTRs and Helitrons in endosperm
+    - MEGs (materially imprinted genes) are mostly nonsyntenic,  few GO terms, genes with no imprinting split between syntenic and non-syntenic with many GO terms assigned, PEGs also split between syntenic and non-syntenic. 
+      - Why is there such a big difference for MEGs?
+      - Front line for TE genome conflict
+      - Differences in paternal and maternal genomes
+  - Conclusions
+    - TEs major contributors roo genome variation in maize
+    - Using a single reference for TE problematic
   
   
   ---
