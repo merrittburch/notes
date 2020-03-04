@@ -1,11 +1,37 @@
 createdAt: "2019-10-30T15:02:38.028Z"
-updatedAt: "2020-02-26T16:37:00.292Z"
+updatedAt: "2020-03-04T19:06:52.832Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Seminars"
 tags: []
 content: '''
   Seminars
+  
+  ---
+  ### Date: 2020-03-04
+  - Haidong (Postdoc interview)
+  - transposons and their effect on agronomic traits
+  - Developed DeepTE and TE-marker
+  - Several tools for identifying TEs: REPCLASS, PASTEC, TECLAS, have limitations to classify subfamilies under Class II, LINE, SINE, some cannot distinguish between TE and non-TE families mainly due to homology classification of known TEs
+  - Convolutional neural networks, deep learning models appropriate for high dimensional data.
+    - Summarized TE information with a K-mer frequency matrix to get equal matrix inputs, train CNN model, the get out classified TEs
+    - Kmer list list of K=3, kmer frequency table
+    - Used an alphabetical order for kmer table,  might influence CNN architecture
+    - Used back-propagation to update weights of predictions
+  - Trained 8 models specialized for specific classes and families, used repbase and plant genome and systems biology TE test sets
+  - Performance test for different kmer sizes, k=7 was the best, but similar to k=5-7 similar
+  - Class II performance much lower than Class I, class II from repbase might be misclassified
+  - Classification of   non-TE and TE sequences in 21 plants in coding, intergenic, and TE sequences from gff files. Accuracy around 90% in cds regions, intergenic, and prior annotated TEs, might be biased due to bad genome annotations
+  - TE-marker
+    - Hypotheses: TEs can distinguish population structure, can ID casual loci
+    - Used repeat modeler database, deepTE, and McClintock database (wrapper for multiple TE detection software). TE-marker genotyped input DNA for presence, hets, and homozygous non-present of TEs, used as genotypes for mapping. Used only single mapped read, did not use second paired read to make genotype calls. Output vcf
+    - Used rice dataset (50 accessions), can distinguish some families similar to SNP markers. 
+    - Dated LTRs, older TEs better able to distinguish population structure than younger TEs
+    - Did teGWAS, LD decay in TEs is faster than SNPs. Rapid LD decay might be due to differences in library quality, sequencing quality. LD decay between SNP and TE markers unknown, expect some LD between old TEs and SNPs
+    - Prior SNP GWAS in rice for plant height, got same top peak between methods. Might be finding new genes, just looks like they were looking for top gene from each trait, not necessarily all prior genes found for that trait
+    - Hit and run TEs, similar to footprint/ghost, looked for 6bp sequence and looked for 6bp sequence in known TEs. Looked for interaction between 6bp sequence and trait. 
+    - Dwarf 8 paper has 6 bp indel, could be hit and run TE?
+  
   
   ---
   ### Date: 2020-04-26
