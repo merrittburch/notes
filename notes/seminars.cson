@@ -1,5 +1,5 @@
 createdAt: "2019-10-30T15:02:38.028Z"
-updatedAt: "2020-03-04T19:06:52.832Z"
+updatedAt: "2020-03-05T20:04:31.918Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Seminars"
@@ -31,6 +31,40 @@ content: '''
     - Prior SNP GWAS in rice for plant height, got same top peak between methods. Might be finding new genes, just looks like they were looking for top gene from each trait, not necessarily all prior genes found for that trait
     - Hit and run TEs, similar to footprint/ghost, looked for 6bp sequence and looked for 6bp sequence in known TEs. Looked for interaction between 6bp sequence and trait. 
     - Dwarf 8 paper has 6 bp indel, could be hit and run TE?
+  
+  
+  ---
+  ### Date: 2020-03-05
+  - Hiroyshi Iwata
+  - Integration of multi-omics data for modeling drought stress response in soybean
+  - Had cool slide on the challenges and process of genomic selection
+    - genotype (x) + field (y) --> build model (y=f(x)) use genetic data (x) to predict new (y) in new environments (z) --> y = f(x,z)
+    - How do we model these complex relationships? Could intermediate phenotypes help?
+  - Datasets: drought stress in phenotypes in soybean, 1k genotypes, 200 lines
+  - Phenotypes: shoot phenome, root phenome, ionome, metabolome, 3D structures of soybean canopy through drone data
+  - application of DL to biomass prediction from canopy images with ionomics and environmental data
+  - Using mmultispecral images to predict control and drought with kernel regression
+  - High throughput ionomic analusis sampled during harvest
+    - can predict FT R^2 = 0.5, plant height R^2=0.5, fresh weight R^2=0.2
+    - measure ion profiles
+    - Measured ions with handheld devide using x-rays, can capture around 20 ions
+  - Root phenotyping using shovelomics
+    - structural equation modeling (SEM) of shoot traits. root traits
+  - Trasomic modeling with multiple kernel learning, inputs: SNPs+ionomics+root structure+soil conditions --> put all into kernels, sum kernels, weight importance, use kernel models like ridge regression & SVR.
+    - Split genome into 20 kernels (for 20 chromosomes), mapped stringly to 1 kernel, might just be where top peak for that trait was
+    - Accuracy increases with more kernels, might be false associations (synthetic associations)
+    - Tried predicting kernels from other kernels (like predicting into new environments, looked a little synthetic association-y)     
+  
+  
+  ---
+  ### Date: 2020-02-20
+  - Johannes
+  - Carbon seqeustration
+  - dont go for recalcitrant methods for carbon sequestration
+  - Bomb carbon, from all bombing tests there is an enrichment for C14 and C12 ratios from plants that absorbed that carbon and died or soil
+  - Microbial use efficiency
+  - cellulose gets more mass per unit of CO2 than glucose in terms of microbial use efficeiny
+  - Could agavae sequester more carbon per year?
   
   
   ---
