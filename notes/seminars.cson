@@ -1,5 +1,5 @@
 createdAt: "2019-10-30T15:02:38.028Z"
-updatedAt: "2020-03-05T20:04:31.918Z"
+updatedAt: "2020-03-10T19:28:53.508Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Seminars"
@@ -54,6 +54,18 @@ content: '''
     - Split genome into 20 kernels (for 20 chromosomes), mapped stringly to 1 kernel, might just be where top peak for that trait was
     - Accuracy increases with more kernels, might be false associations (synthetic associations)
     - Tried predicting kernels from other kernels (like predicting into new environments, looked a little synthetic association-y)     
+  
+  
+  ---
+  ### Date: 2020-01
+  -Jeorg Jander
+  - 1,000 mutations per line per round of EMS
+  - can do ems on maize kernels, mutants of maize handbook has protocol
+  - 600 accessions of Setaria available through Danforth center seqwunced through JGI (Ivan Baxter) as part of a setaria association populatoin. Is a C4 model organism used for biofuel research
+  - David Sterns lab using setaria EMS mutants to screen for leaf mutants
+  - crypochroms are cool
+  - magnetic bacteria
+  - Round of mass spec to get 3-5k mass features is around $20 per run and takes 15-20 minutes to run. Can be put in 96 well plates. Does not include labor price. Use of different solvents, columns, ionization, makes results differ. Addition of controls and software helps to control variability.
   
   
   ---
