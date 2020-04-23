@@ -1,0 +1,41 @@
+createdAt: "2020-03-19T19:39:43.136Z"
+updatedAt: "2020-03-19T20:03:02.157Z"
+type: "MARKDOWN_NOTE"
+folder: "6827e53fd4576b1dc031"
+title: "UCSanDiegoX: DSE220x: Machine Learning Fundamentals"
+tags: []
+content: '''
+  # UCSanDiegoX: DSE220x: Machine Learning Fundamentals
+  
+  ## Week 1
+  
+  - Instructor: Sanjoy Dasgupta, Professor, Computer Science and Engineering Department, UC San Diego
+  
+  Course Outline
+  This is a ten-week course.
+  - Week 1: Introduction: nearest neighbor, and a host of prediction problems
+  - Week 2: Probability basics and generative modeling
+  - Week 3: Linear algebra basics, the multivariate Gaussian, and more generative modeling
+  - Week 4: Linear regression and logistic regression
+  - Week 5: Optimization
+  - Week 6: Support vector machines
+  - Week 7: Beyond linear prediction: kernel methods, decision trees, boosting, random forests
+  - Week 8: Clustering
+  - Week 9: Informative projections
+  - Week 10: Deep learning
+  
+  
+  Nearest Neighbour Classification
+  - Number classiciation from handwriting
+  - Collect dataset of handwritten digits and their labels, called the MNIST dataset. 
+    - Training size of 60k images and their labels
+    - Test set of 10k images and their labels
+    - let machine learning model figure out the underlying labels
+    - Use nearest neighbour method. Search images for most similar image, output label of closest image. 
+    - Use matrix of pixel values
+    - Metric of Euclidean distance
+    - Why is it important to have a test set? Error rate on training points is zero, training error is overly optimistic predictor of future performance. A better guage is a separate test of test data. Test error is the fraction of test points incorrectly classified.
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

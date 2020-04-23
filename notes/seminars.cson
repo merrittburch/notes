@@ -1,11 +1,82 @@
 createdAt: "2019-10-30T15:02:38.028Z"
-updatedAt: "2020-03-10T19:28:53.508Z"
+updatedAt: "2020-04-23T16:54:49.460Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Seminars"
 tags: []
 content: '''
   Seminars
+  
+  ---
+  ### Date: 2020-04-23
+  - Comprehensive dissection of complex traits using a panel of 250,000 barcoded diploid yeast segregants.
+  - Takeshi Matsui, TAGC talk
+  - Goal of quantitative genetics is to determine the genetic architecture of heritable, quantitative traits.
+  - Making a large panel of barcoded diploid yeasts with known genotypes. Mated 2 yeast isolates, creates diploid, created 250k double barcoded diploids. Used the Cre-loc system to out two barcodes on the same chromosome
+  - Estimating fitness of each diploid using Fitseq program using barcode abundance as a metric
+  - Most F2 diploids hybrids have higher fitness than the homozygous parental strains
+  - Estimated fitness are reproducible across biological replicates
+  - Family structure has large effect on trait similarity, haploid parents make a difference within offspring
+  - Used a linear mixed model after controlling for family relationships. Found 30 additive QTLs. Did forward regression, took most significant loci from first model, re-ran model until no more loci were found.
+  - Many of the IDd additive loci interact with others within a network
+  
+  
+  - Quantitative analysis of transcription factor binding and expression using calling cards reporter arrays.
+  - Jiayue Liu, Washington University in St. Louis, TAGC talk
+  - How do TFs select functional binding sites in vivo?
+    - Changes in binding site affinity?
+    - TF-TF cooperativity
+    - DNA shape
+    - Etc?
+  - Calling cards reporter arrays
+    - Directly measures TF binding
+    - Binding measurements through binding of TF to Sir4 and Ty5 integrase. Induce TF directed transpositions, recover plasmid DNA. Measure binding using transposition calling cards
+    - Jiayue Liu et al NAR 2020. Can also calculate expression by Sort-Seq
+    - CCRA measures TF binding with high sensitivity and reproducibility with known TFs
+    - Can CCRA detect subtle changes in binding
+      - Created 1 bp SNP, measured binding. Binding decreased depending on what base was changed. 
+      - Method is sensitive
+      - How do these measurements compare to MITOMI and PBM? Very close, CCRA makes a quantitative and accurate measurements. 
+  - Binding is more favourable when on the same phase of the DNA helix, not when on opposite phase (think trans layout)
+  - CCRA measures TF binding and expression with high sensitivity and reproducibility
+  - CCRA enables rapid and high throughput hypothesis testing
+  - CCRA can be used to study
+    - in vivo TF-DNA interaction
+    - TF-TF interaction
+    - outcome of TF binding
+  - How does this method compare to CHIP seq?  Another paper in lab by Christian compared CHIP to Calling Cards, in yeast, calling cards is more accurate. Chip not quantitative enough to see TF-cooperativity 
+  
+  
+  - Resolving the genetic basis of simple and complex traits using outbred Hybrid Swarm mapping populations
+  - Cory Weller, TACG talk
+  - Can they accurately reconstruct Hybrid swarm populations, how do these genotypes fare in GWAS?
+    - Very accurate imputation with low sequencing coverage
+    - Missed a lot of other stuff
+  
+  
+  - For Us, By Us, but Not All of Us: building our own Indigenous biobank as a better way to ensure research equity. (@kstsosie)
+  - Krystal Tsosie 1,2; Joseph Yracheta 1,3,4; Guthrie Ducheneaux 1,4; Timothy Watkins 1
+  Affiliations:
+  1) Native BioData Consortium, Eagle Butte, SD; 2) Vanderbilt University, Nashville, TN; 3) Department of Environmental Health and Engineering, Bloomberg School of Public Health, Johns Hopkins University, Baltimore, MD; 4) Missouri Breaks Industries Research Inc., Eagle Butte, SD
+  - Dine, tribal college instructor at Turtle Mountain College, vanderbilt university
+  - 1/4 million people on Navajo nation, 
+  - Differences in rates of health outcomes and differences in access to care that affect a particular group of individuals, very few sequenced individuals
+  - In 1991 the federal policy for the protection of human subjects, also known as the common rule, what does that look like for 570+ federally recognized tribes. Most tribes rely on IHS to review protocols, some rely on tribal councils, are these tribal decisions taken into account or do they have weight?
+  - What we would like
+    - REsearchers going through tribal councils or committees
+    - What it actually looks like, sometimes do not go through tribal committees, not through IHS
+  - Framework for enhancing ethical genomic research with indigenous communities
+    -   Understanding tribal sovereignty and research regulation
+    -    more I missed
+  - Easy to place/enforce protection for individuals within a community, not necessarily outside the community
+  - Targeting individuals in large communities (Phoenix, Tucson) or through direct to community testing (23 And me, Ancestry), researchers circumventing tribal committees and councils 
+  - NIH recruited over 1600 American Indians from urban cities such as Phoenix, collecting blood, never returned, now back tracking and asking for consultation with tribal nations.
+  - Publication: Overhauling individual consent ignores risks to tribal participants
+  - 2 more pubs I screed captured
+  - Native BioData Consortium (NBDC)
+    - First Indigenous-led biological and data repository wholly housed within  the jurisdiction of US Indigenous nation
+    - Board members are other tribal members
+  
   
   ---
   ### Date: 2020-03-04
