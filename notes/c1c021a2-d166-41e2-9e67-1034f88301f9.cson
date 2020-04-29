@@ -1,0 +1,100 @@
+createdAt: "2020-04-28T19:05:10.937Z"
+updatedAt: "2020-04-28T22:05:48.880Z"
+type: "MARKDOWN_NOTE"
+folder: "6827e53fd4576b1dc031"
+title: "HarvardX: PH125.8 x"
+tags: []
+content: '''
+  # HarvardX: PH125.8 x
+  # Data Science: Machine Learning
+  
+  ## Introduction to Machine Learning: Section 1
+  
+  Notation
+  - $X_1, .., X_p$ denote the features/predictors/covariates, $Y$ denotes the outcomes, and $Y$  denotes the predictions. $\\hat Y$ is the outcome, want to match the actual outcome.
+  - Machine learning prediction tasks can be divided into categorical and continuous outcomes. We refer to these as classification and prediction, respectively.
+  
+  Example
+  - $Y_i$ = an outcome for observation or index i
+  - Use boldface for _$X_i$_ to distinguish the vector of predictors from the individual predictors (not bolded) $X_{i,1}, .., X_{i,784}$ (letters example)
+  - When referring to an arbitrary set of features and outcomes, we drop the index i and use Y and bold X
+  - Uppercase is used to refer to variables because we think of predictors as random variables
+  - Lowercase is used to denote observed values, for example, _$X=x$_
+  
+  
+  ## Basics of Evaluating Machine Learning Algorithms: Section 2
+  
+  Caret package, training and test sets, and overall accuracy
+  - We know that we will not be able to predict y (sex) very accurately based on x (height) because male and female heights are not that different relative to within group variability, but can we do better than guessing?
+    - The answer to this question, we need to quantify the definition of better.
+    - Therefore, to mimic the ultimate evaluation process, we typically split the data into two and act as if we don't know the outcome for one of these two sets.
+    - To mimic the ultimate evaluation process, we randomly split our data into two — a training set and a test set — and act as if we don’t know the outcome of the test set. 
+    - We develop algorithms using only the training set; the test set is used only for evaluation.
+  - The createDataPartition()  function from the caret package can be used to generate indexes for randomly splitting data.
+  - The simplest evaluation metric for categorical outcomes is overall accuracy: the proportion of cases that were correctly predicted in the test set.
+  - Trained a model to predict gender based off height using a training and test set!
+  - 
+  
+  Basics of Evaluating Machine Learning Algorithms
+  - Generally speaking, overall accuracy can be a deceptive measure
+  - Construct a confusion matrix which tabulates each combination of prediction and actual value, can do in R table. Have a higher accuracy for males rather than females, more males in dataset than females, would show higher overall accuracy
+    - So when computing overall accuracy, the high percentage of mistakes made for females is outweighed by the gains in correct calls for men.
+    - This can actually be a big problem in machine learning.
+    - If your training data is biased in some way, you are likely to develop an algorithm that are biased as well.
+  - A general improvement to using overall accuracy is to study sensitivity and specificity separately. Sensitivity, also known as the true positive rate or recall, is the proportion of actual positive outcomes correctly identified as such. Specificity, also known as the true negative rate, is the proportion of actual negative outcomes that are correctly identified as such.
+  - A confusion matrix tabulates each combination of prediction and actual value. You can create a confusion matrix in R using the table() function or the confusionMatrix() function from the caret package. 
+  
+  - Sensitivity = True positive / (true positive + false negative) OR the first column of the confusion matrix that are called positives. Also known as the True positive rate or Recall
+  - Specificity = True negatives / (true negatives + false positives) OR the proportion of negatives, the second column f the confusion matrix, that are called negatives. This is also called the true negative rate. 
+    - Another way to calculate specificity by: True positives/(true positives + false positives) OR the proportion of outcomes called positives, in the first row of our confusion matrix that are actually positives. AKA precision and AKA the positive predictive value.
+  - Note that unlike the true positive rate and the true negative rate, precision depends on the prevalence, since higher prevalence implies you can get higher precision, even when guessing. 
+  - Confusion matrix from R
+  
+  ```
+  Confusion Matrix and Statistics
+  
+            Reference
+  Prediction Female Male
+      Female     48   32
+      Male       71  374
+                                            
+                 Accuracy : 0.8038          
+                   95% CI : (0.7672, 0.8369)
+      No Information Rate : 0.7733          
+      P-Value [Acc > NIR] : 0.0513022       
+                                            
+                    Kappa : 0.3671          
+                                            
+   Mcnemar's Test P-Value : 0.0001809       
+                                            
+              Sensitivity : 0.40336         
+              Specificity : 0.92118         
+           Pos Pred Value : 0.60000         
+           Neg Pred Value : 0.84045         
+               Prevalence : 0.22667         
+           Detection Rate : 0.09143         
+     Detection Prevalence : 0.15238         
+        Balanced Accuracy : 0.66227         
+                                            
+         'Positive' Class : Female
+  ```
+         
+  
+  Balanced Accuracy and F1 score
+  - One matric that is preferred over overall accuracy is the average of specificity and sensitivity, referred to as the balanced accuracy
+  - Because specificity and sensitivity are rates, it is more appropriate to compute the harmonic average of specificity and sensitivity like this: $F1 score = \\frac{1}{\\frac{1}{2}(\\frac{1}{recall} + \\frac{1}{precision})}$
+  - In fact, the F1-score, a widely used one-number summary, is the harmonic average of precision and recall. 
+  
+  
+  Prevalence matters in practice
+  - A machine learning algorithm with very high sensitivity and specificity may not be useful in practice when prevalence is close to either 0 or 1. For example, if you develop an algorithm for disease diagnosis with very high sensitivity, but the prevalence of the disease is pretty low, then the precision of your algorithm is probably very low based on Bayes' theorem.
+  
+  
+  ROC and precision-recall curves
+  - ROC = receiver operating characteristic
+    - Plots sensitivity versus 1 - specificity or the false positive rate
+    - Weakness: they neither of the measures plotted depend on prevalence, in cases where prevalence matters, we may instead make a precision recall plot. In height and sex example, precision of just guessing is not high (25%), while using the height cutoff precision is a bit higher
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false
