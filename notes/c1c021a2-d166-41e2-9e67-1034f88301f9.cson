@@ -1,5 +1,5 @@
 createdAt: "2020-04-28T19:05:10.937Z"
-updatedAt: "2020-04-28T22:05:48.880Z"
+updatedAt: "2020-06-08T20:11:01.927Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "HarvardX: PH125.8 x"
@@ -94,6 +94,19 @@ content: '''
   - ROC = receiver operating characteristic
     - Plots sensitivity versus 1 - specificity or the false positive rate
     - Weakness: they neither of the measures plotted depend on prevalence, in cases where prevalence matters, we may instead make a precision recall plot. In height and sex example, precision of just guessing is not high (25%), while using the height cutoff precision is a bit higher
+  
+  
+  
+  ## Section 2: Machine Learning Basics
+  
+  ### Conditional Probabilities 
+  - Conditional probabilities for each class k: $pk(x) = Pr(Y=k|X=x), for k = 1,...,K$
+  - Predictors are bolded, $p(x)$ = conditional probabilities as functions
+  - In machine learning, this is referred to as Bayes' Rule. This is a theoretical rule because in practice we don't know $p(x)$. Having a good estimate of the $p(x)$ will suffice for us to build optimal prediction models, since we can control the balance between specificity and sensitivity however we wish. In fact, estimating these conditional probabilities can be thought of as the main challenge of machine learning. 
+  
+  ### Conditional expectations and loss function
+  - Due to the connection between conditional probabilities and conditional expectations $pk(x) = Pr(Y=k|X=x), for k = 1,...,K$, we often only use the expectation to denote both the conditional probability and conditional expectation
+  - For continuous outcomes, we define a loss function to evaluate the mode. The most commonly used one is MSE (mean squared error). The reason why we care about the conditional expectation in machine learning is that the expected vale minimizes the mean squared error $\\hat Y = E(Y|X=x)$ minimizes $E{(\\hat Y - Y)^2 | X=x}$. Due to this property, a succinct description of the main task of machine learning is that we use data to estimate for any set of features. The main way in which competing machine learning algorithms differ is in their approach to estimating this expectation.
 '''
 linesHighlighted: []
 isStarred: false
