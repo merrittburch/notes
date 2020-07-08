@@ -1,0 +1,246 @@
+createdAt: "2020-07-08T13:53:34.689Z"
+updatedAt: "2020-07-08T15:13:57.531Z"
+type: "MARKDOWN_NOTE"
+folder: "6827e53fd4576b1dc031"
+title: "Neo4j Notes"
+tags: []
+content: '''
+  # Neo4j Notes
+  
+  ## The Neo4j Getting Started Guide v4.1
+  [Link to guide](https://neo4j.com/docs/pdf/neo4j-getting-started-4.1.pdf)
+  
+  ### Graph Database concepts
+  - Nodes: used to represent entities, the simplest possible graph is a single node
+  - Labels: used to share the domain by geouping nodes into sets where all nodes that have a certain label belong to the same set. Can have zero to many labels. 
+  - Relationships: connects two nodes. Organize notes into structures, allowing a graph to resemble a list, tree, or a compound entity, any of which may be combined into yet more complex, richly interconnected structures. 
+  - Relationship types: a relationship must have exactly one relationship type. For example in the movies dataset, ACTED_IN and DIRECTED as relationship types.
+  - Properties: name-value pairs that are used to add qualities to nodes and relationships. 
+    - In our example graphs, we have used the properties name and born on Person nodes, title and released on Movie nodes, and the property roles on the :ACTED_IN relationship.
+    - The value part of the property can hold different data types such as number, string and boolean
+  - Traversals and paths: A traversal is how you query a graph in order to find answers to questions. Traversing a graph means visiting nodes by following relationships according to some rules. In most cases only a subset of the graph is visited.
+  - Schema: refers to indexes and constraints.
+  - Indexes: used to increase performance. 
+  - Constraints: used to make sure that the data adheres to the rules of the domain. 
+  
+  ### Naming rules and recommendations
+  - Node labels, relationship types and properties are case sensitive
+  - Node label: camel case, beginning with an uppercase character (:VehicleOwner)
+  - Relationship type: uppercase, using underscore to separate words (:OWNS_VEHICLE)
+  - Property: Lower camel case beginning with a lowercase character (firstName)
+  
+  
+  ### Patterns
+  
+  Node Syntax
+  - Cypher uses a pair of parentheses to represent a node: (). This is reminiscent of a circle or a rectangle with rounded end caps.
+  - The simplest form, (), represents an anonymous, uncharacterised node. If we want to refer to the node elsewhere, we can add a variable, for example: (matrix). A variable is restricted to a single statement. It may have different or no meaning in another statement.
+  
+  Relationship syntax
+  - Cypher uses a pair of dashes (--) to represent an undirected relationship. Directed relationships have an arrowhead at one end (<--, -->). Bracketed expressions (\\[…]) can be used to add details. This may include variables, properties, and type information
+  
+  Pattern variables
+  - To increase modularity and reduce repetition, Cypher allows patterns to be assigned to variables. This allows the matching paths to be inspected, used in other expressions, etc
+  
+  Clauses
+  - Cypher statements typically have multiple clauses, each of which performs a specific task, for example:
+    - create and match patterns in the graph
+    - filter, project, sort, or paginate results
+    - compose partial statements
+  - By combining Cypher clauses, we can compose more complex statements that express what we want to know or create.
+  
+  
+  Creating data
+  
+  Creates 1 node, 1 label, and 2 properties and then returns
+  ```
+  CREATE (:Movie { title:"The Matrix",released:1997 })
+  
+  CREATE (p:Person { name:"Keanu Reeves", born:1964 })
+  RETURN p
+  ```
+  
+  Matching patterns
+  - Matching patterns is a task for the MATCH statement. We pass the same kind of patterns we’ve used sofar to MATCH to describe what we’re looking for. 
+  
+  ```
+  # Look for all nodes labelled with the MOVIE label
+  MATCH (m:Movie)
+  RETURN m
+  
+  # Look for a specific person
+  MATCH (p:Person { name:"Keanu Reeves" })
+  RETURN p
+  
+  # FInd interesting connections, movies that Tom Hanks acted in and the roles he played
+  MATCH (p:Person { name:"Tom Hanks" })-[r:ACTED_IN]->(m:Movie)
+  RETURN m.title, r.roles
+  ```
+  
+  Attaching structures
+  - To extend the graph with new information, we first match the existing connection points and then attach the newly created nodes to them with relationships. Adding Cloud Atlas as a new movie for Tom Hanks could be achieved like this:
+  
+  ```
+  MATCH (p:Person { name:"Tom Hanks" })
+  CREATE (m:Movie { title:"Cloud Atlas",released:2012 })
+  CREATE (p)-[r:ACTED_IN { roles: ['Zachry']}]->(m)
+  RETURN p,r,m
+  ```
+  
+  Completing Patterns
+  - Whenever we get data from external systems or are not sure if certain information already exists in the graph, we want to be able to express a repeatable (idempotent) update operation. 
+  - In Cypher MERGE has this function. Like an if statement.
+  - It acts like a combination of MATCH or CREATE, which checks for the existence of data first before creating it. With MERGE you define a pattern to be found or created.
+  - MERGE makes sure that you can’t create duplicate information or structures, but it comes with the cost of needing to check for existing matches first. Especially on large graphs it can be costly to scan a large set of labelled nodes for a certain property
+  
+  ```
+  MERGE (m:Movie { title:"Cloud Atlas" })
+  ON CREATE SET m.released = 2012
+  RETURN m
+  ```
+  
+  ### Getting the correct results
+  
+  Filtering Results
+  -  filter conditions are expressed using the WHERE clause. This clause allows to use any number of boolean expressions, predicates, combined with AND, OR, XOR and NOT. 
+  
+  ```
+  # Using WHERE
+  MATCH (m:Movie)
+  WHERE m.title = "The Matrix"
+  RETURN m
+  
+  # Can use < or > symbols 
+  MATCH (p:Person)-[r:ACTED_IN]->(m:Movie)
+  WHERE p.name =~ "K.+" OR m.released > 2000 OR "Neo" IN r.roles
+  
+  # Using NOT
+  MATCH (p:Person)-[:ACTED_IN]->(m)
+  WHERE NOT (p)-[:DIRECTED]->()
+  RETURN p,m
+  ```
+  
+  Returning results
+  
+  ```
+  # Filtering returned results
+  MATCH (p:Person)
+  RETURN p, p.name AS name, toUpper(p.name), coalesce(p.nickname,"n/a") AS nickname,
+    { name: p.name, label:head(labels(p))} AS person
+  
+  # Display unique results
+  MATCH (n)
+  RETURN DISTINCT labels(n) AS Labels
+  ```
+  Aggregating information
+  - In many cases we wish to aggregate or group the data encountered while traversing patterns in our graph. In Cypher, aggregation happens in the RETURN clause while computing the final results. Many common aggregation functions are supported, e.g. count, sum, avg, min, and max, but there are several more.
+  
+  ```
+  # Counting the number of people in your database
+  MATCH (:Person)
+  RETURN count(*) AS people
+  
+  # Aggregate by column
+  MATCH (actor:Person)-[:ACTED_IN]->(movie:Movie)<-[:DIRECTED]-(director:Person)
+  RETURN actor, director, count(*) AS collaborations
+  ```
+  
+  Ordering and pagination
+  - It is common to sort and paginate after aggregating using count(x).
+  - Ordering is done using the ORDER BY expression [ASC|DESC] clause. The expression can be any expression, as long as it is computable from the returned information. 
+  - For instance, if we return person.name we can still ORDER BY person.age since both are accessible from the person reference. We cannot order by things that are not returned. This is especially important with aggregation and DISTINCT return values, since both remove the visibility of data that is aggregated.
+  - Pagination is done using the SKIP {offset}`and `LIMIT {count} clauses.
+  
+  ```
+  # Find the most prolific actors
+  MATCH (a:Person)-[:ACTED_IN]->(m:Movie)
+  RETURN a, count(*) AS appearances
+  ORDER BY appearances DESC LIMIT 10;
+  ```
+  
+  Collecting aggregation
+  - A very helpful aggregation function is collect(), which collects all the aggregated values into a list. This is very useful in many situations, since no information of details is lost while aggregating.
+  - collect() is well-suited for retrieving typical parent-child structures, where one core entity (parent, root or head) is returned per row with all its dependent information in associated lists created with collect()
+  
+  ```
+  # Return the cast of each movie in our database
+  MATCH (m:Movie)<-[:ACTED_IN]-(a:Person)
+  RETURN m.title AS movie, collect(a.name) AS cast, count(*) AS actors
+  ```
+  
+  
+  ### Composing large statements
+  
+  UNION
+  - If you want to combine the results of two statements that have the same result structure, you can use UNION [ALL].
+  
+  ```
+  # List both actors and directors
+  MATCH (actor:Person)-[r:ACTED_IN]->(movie:Movie)
+  RETURN actor.name AS name, type(r) AS type, movie.title AS title
+  UNION
+  MATCH (director:Person)-[r:DIRECTED]->(movie:Movie)
+  RETURN director.name AS name, type(r) AS type, movie.title AS title
+  ```
+  
+  WITH
+  - Chain fragments together
+  - Each fragment works on the output from the precious one, and its results can feed into the next one
+  - Only columns declared in the WITH calise are available in subsequent query parts
+  - The WITH clause is used to combine the individual parts and declare which data flows from one to the other. WITH is similar to the RETURN clause. The difference is that the WITH clause does not finish the query, but prepares the input for the next part. Expressions, aggregations, ordering and pagination can be used in the same way as in the RETURN clause. The only difference is all columns must be aliased
+  
+  ```
+  # Collect the movies someone appeared in and then filter ot those which only appear in one movie
+  MATCH (person:Person)-[:ACTED_IN]->(m:Movie)
+  WITH person, count(*) AS appearances, collect(m.title) AS movies
+  WHERE appearances > 1
+  RETURN person.name, appearances, movies
+  ```
+  
+  
+  ### Defining a schema
+  
+  Using indexes
+  - The main reason for using indexes in a graph database is to find the starting point of a graph traversal. Once that starting point is found, the traversal relies on in-graph structures to achieve high performance.
+  
+  ```
+  # Create an index to speed up finding actors by name
+  CREATE INDEX ON :Actor(name)
+  
+  # It will now automatically use that index
+  MATCH (actor:Actor { name: "Tom Hanks" })
+  RETURN actor;
+  ```
+  - Composite index is an index on multiple properties for all nodes that have a particular label. If a node does not have that property it will not be indexed.
+  - Cypher enables the creation of indexes on one or more properties for all nodes that have a given label:
+    - An index that is created on a single property for any given label is called a single-property index.
+    - An index that is created on more than one property for any given label is called a composite index.
+  
+  - The following is true for indexes:
+    - Best practice is to give the index a name when it is created. If the index is not explicitly named, it will get an auto-generated name.
+    - The index name must be unique among both indexes and constraints.
+    - Index creation is not idempotent. An error will be thrown if you attempt to create the same index twice.
+  
+  
+  ```
+  CREATE INDEX ON :Actor(name, born)
+  
+  # Inspect database to find out what indexes are defined
+  CALL db.indexes
+  YIELD description, tokenNames, properties, type;
+  ```
+  
+  Using constrains
+  - Constraints are used to make sure that the data adheres to the rules of the domain. For example: "If a node has a label of Actor and a property of name, then the value of name must be unique among all nodes that have the Actor label".
+  - To create a constraint that makes sure that our database will never contain more than one node with the label Movie and the property title, we use the IS UNIQUE syntax:
+  
+  ```
+  CREATE CONSTRAINT ON (movie:Movie) ASSERT movie.title IS UNIQUE
+  
+  # See what constraints are imposed
+  CALL db.constraints
+  ```
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false
