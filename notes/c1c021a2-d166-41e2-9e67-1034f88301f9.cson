@@ -1,5 +1,5 @@
 createdAt: "2020-04-28T19:05:10.937Z"
-updatedAt: "2020-06-08T20:11:01.927Z"
+updatedAt: "2020-08-12T00:30:51.129Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "HarvardX: PH125.8 x"
@@ -107,6 +107,56 @@ content: '''
   ### Conditional expectations and loss function
   - Due to the connection between conditional probabilities and conditional expectations $pk(x) = Pr(Y=k|X=x), for k = 1,...,K$, we often only use the expectation to denote both the conditional probability and conditional expectation
   - For continuous outcomes, we define a loss function to evaluate the mode. The most commonly used one is MSE (mean squared error). The reason why we care about the conditional expectation in machine learning is that the expected vale minimizes the mean squared error $\\hat Y = E(Y|X=x)$ minimizes $E{(\\hat Y - Y)^2 | X=x}$. Due to this property, a succinct description of the main task of machine learning is that we use data to estimate for any set of features. The main way in which competing machine learning algorithms differ is in their approach to estimating this expectation.
+  
+  Comprehension check part 1
+  
+  What is the probability that a test is positive?
+  $P(test+) = P(test+|disease) P(disease) + P(test+|healthy) P(healthy)$$
+  
+  What is the probability that an individual has the disease if the test is negative?
+  $P(test-|disease) = P(test-|disease) * P(disease)/p(test-) = \\frac{P(teat-|disease) P(disease)}{p(test-|disease)P(disease)+P(test-|healthy)P(healthy)}$
+  
+  What is the probability that you have the disease if the test is positive?
+  $𝑃(disease|test+)=𝑃(test+|disease)× \\frac{𝑃(disease)}{𝑃(test+)} = \\frac{𝑃(test+|disease)𝑃(disease)}{𝑃(test+|disease)𝑃(disease)+𝑃(test+|healthy)𝑃(healthy)}$
+  
+  Compare the prevalence of disease in people who test positive to the overall prevalence of disease.
+  
+  If a patient's test is positive, how much does that increase their risk of having the disease?
+  First calculate the probability of having the disease given a positive test, then divide by the probability of having the disease.
+  $\\frac{𝑃(test+|disease)𝑃(disease)}{𝑃(test+|disease)𝑃(disease)+𝑃(test+|healthy)𝑃(healthy)} = \\frac{0.147}{0.02}$
+  
+  Comprehension check part 2
+   - all coded in R, code is on github
+  
+  ## Section 3: Linear Regression for Prediction, Smoothing, and working with matrices
+  
+  ### Linear Regression for Prediction
+  - Linear regression can be considered a machine learning algorithm. Although it can be too rigid to be useful, it works rather well for some challenges. It also serves as a baseline approach: if you can’t beat it with a more complex approach, you probably want to stick to linear regression. 
+  
+  ### Predict function (in R)
+  - Takes a fitted object from functions such as m or glm and a dataframe with the new predictors for which you want to precit ans returns a prediction. Same as using the regression formula. 
+  
+  Comprehenision check: linear regression
+  - code on github
+  
+  ### Regression for a Categorical Outcome
+  
+  ### Logistic regression
+  - Logistic regression is an extension of linear regression that assures that the estimate of conditional probability  𝑃𝑟(𝑌=1|𝑋=𝑥)  is between 0 and 1. This approach makes use of the logistic transformation: 
+  $g(p)= log \\frac{p}{1-p}$
+  - With logistic regression, we model the conditional probability directly with:
+  $𝑔{𝑃𝑟(𝑌=1|𝑋=𝑥)}=𝛽0+𝛽1𝑥 $
+  - Note that with this model, we can no longer use least squares. Instead we compute the maximum likelihood estimate (MLE). 
+  - In R, we can fit the logistic regression model with the function glm() (generalized linear models). If we want to compute the conditional probabilities, we want type="response" since the default is to return the logistic transformed values.
+  
+  ### Case study: 2 or 7
+  - In this case study we apply logistic regression to classify whether a digit is two or seven. We are interested in estimating a conditional probability that depends on two variables:
+  - $g { p(x1, x2} = g{Pr(Y = 1|X_1 = x_1, X_2 = x_2)} = |beta_0+ \\beta_1 x_1+\\beta_2 x_2$
+  - Through this case, we know that logistic regression forces our estimates to be a plane and our boundary to be a line. This implies that a logistic regression approach has no chance of capturing the non-linear nature of the true  𝑝(𝑥1,𝑥2) . Therefore, we need other more flexible methods that permit other shapes.
+  
+  Comprehension check: Logistic regression 
+  - code on github
+  
 '''
 linesHighlighted: []
 isStarred: false
