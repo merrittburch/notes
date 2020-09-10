@@ -1,11 +1,47 @@
 createdAt: "2019-10-30T15:02:38.028Z"
-updatedAt: "2020-04-23T16:54:49.460Z"
+updatedAt: "2020-09-10T18:04:47.077Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Seminars"
 tags: []
 content: '''
   Seminars
+  
+  ---
+  ### Date: 2020-09-10
+  - Machine Learning Methods for Fine Mapping and Discovery in Genomic Association Studies
+  - Black in CompBio Seminar Series
+  - Lorin Crawford, Brown University
+  - www.lcrawlab.com
+  - Linear models used for GWAS and eQTL mapping studies $y = X \\beta + \\epsilon_i$ where $\\epsilon_i = MVN(0_n, \\Sigma)$
+  - Dissecting Phenotypic variation
+    - made up of genetic and environmental effects, genotypic variation can be dissected into additive and non-linear effects plus environment effects
+  - Black box statistical methods: machine learning methods typically well-suited for prediction based tasks, research goal: provide interperterable ways to summarize the importance of input variables for non-parametic variables
+  - Linear models only see additive and environmental effects, black models might see non-linear, additive, and environmental effects
+  - Components of an interpretable model
+    - a motivating probabilistic model
+    - a notion of an effect sie (regression coefficient)
+    - A statistical metric (p-value)
+  
+  Part I Post Hoc Approaches for interpretable machine learning
+  - The kernel trick issue, downside: classic idea of variable selection lost (i.e. original p-dimensional space)
+  - effect side analogues can be changed in non-linear models
+  - Kullback-Leibler Divergence (getting a statistical metric for each SNP)
+    - Summarize the influence of the variant on the rest of the variants
+    - RelATive cEntrality (RATE) Measures: one natural way for determining significance is to explore a variable's relative centrality or rate, a set of significant markers then have RATEs satisfying ... missed it
+    - Crawford et al 2019 AoAS
+  
+  Part II Neural Networks 
+  - Look at w and $\\theta$s, hierarchical nature to enrichment studies, we know where SNPs correspond to in GWAS studies (fall in genes and pathways), a natural grouping in genome (start and stops of genes), use this information for network architecture, biologically annotated neural networks (BANNs) from flipped GWAS studies SNPs, genes, other stuff
+  - BANN framework for individual level data Demetci, Cheng et al bioRxiv
+  - BANN works on individual level and summary statistics
+  - Simultaneous multi-scale genetic inference: use a novel variational expectation maximization algorithm (EM) to estimate all model parameters. 
+  
+  Ongoing work
+  - Generalize the BANN framework to serve as scalable Generalized non-linear mixed models
+    - extend the BANN framework to model multiple -omic data sources simultaneously
+  - Image analysis of teeth, could be applied to fields. Scanning teeth, identifying differences between two different teeth.  
+  
   
   ---
   ### Date: 2020-04-23
