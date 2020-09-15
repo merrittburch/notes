@@ -1,11 +1,46 @@
 createdAt: "2019-10-30T15:02:38.028Z"
-updatedAt: "2020-09-10T18:04:47.077Z"
+updatedAt: "2020-09-15T17:27:28.493Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Seminars"
 tags: []
 content: '''
   Seminars
+  
+  ---
+  ### Date: 2020-09-15
+  - Rex Bernardo
+  - Title: Perspectives on Prediction in Plant Breeding
+  - No slides! Just speaking, amazing!
+  - Prediction: the estimation of what's about to happen
+  - One word that summarizes plant breeding in past few decades: prediction
+  - Digging through literature for first mention of prediction, 1936 prediction of double crosses of maize. COntext was that maize hybrids were still new, but investigators were suggesting growing hybrids over open pollinated lines. 
+    - Use double crosses (AxB)x(cxB), 12 lines, pick 4 ==> give you 496 combinations of ways to cross things, 1485 double crosses, 66 single crosses. No way for breeder to assess 1485 hybrids then, now this would be possible with combines.
+    - Paper in 1934 --> Merle Jenkins prediction of values from double crosses, predict performance of best double crosses, method B works best, take mean performance of AxC, AxD, BxC works the best
+  - After this paper, prediction used less. Second context where it came back was the breeders equation. Change in mean of population when .... catch in video
+  - 1940s-1960s: prediction through response to selection, more of an academic exercise through pollen control, control for different factors, what was the value of this? What's the point of using these different predictive tools, did not change things in the bigger picture over prediction of single and double cross yield
+  - With 12 lines, easy to predict single and double cross yield, but as inbreds improved and more became available to breeding programs, 10k+ single crosses, breeders require knowledge on GCA and knowing which inbreds are best, genetic background. Only 10-15% of single crosses for commercial hybrids. Always wondering if missing good single crosses in that other 90%
+  - Use of lysozyme marker prediction in hybrid prediction. More diverse two parents, the better the hybrids were. This did not work, marker heterozygosity agnostic to hybrid performance.
+  - Using molecular markers for BLUPs to estimate relatedness, 1994 Bernardo using markers for gBLUPs to estimate relatedness, taken from animal BLUPs that use pedigrees to estimate relatedness. 
+  - Red building/barn where in Champaign-Irbana made gBLUP and genome wide predictions were made.
+  - $2.50/data point, 100 RFLPs = $250
+    - 100x100 = 10,000 single crosses, if just genotyping single parents can cut down on costs
+    - 10k single crosses/200 only genotype parents = factor of 50 (per hybrid cost 250/50 = $5 per single cross), can leverage homozygous lines to predict hybrid lines
+  - Pronounced: May-wissen? Landmark paper to use markers for genome wide prediction. gBLUP same as ridge regression for marker effects, these are not new technologies anymore.
+  - 1) genome wide selection, just like phenotypic selection, works on average bit not always. Just like phenotypic selection. Some instances where this won't work, if following rules of thumb
+    - High relatedness between training and testing sets
+    - Training and testing sample size high
+    - High heritability
+    - Need enough markers
+    - It just depends
+  - missed 2 &3
+  - 4) Many methods have been studied, gBLUP and ridge regression are robust.
+  - Heat and water, two hardest things to predict in a future environment. Soil, management, and genotypes much easier to predict.
+  - We've been trying to predict candidates we already have, or nearly have (hybrid, just a matter of making that hybrid). Worth thinking about predicting performance of something that we do not yet have and might not get in a regular breeding program. Bernardo using targeted recombination, determine where recombination happens and what occurs when recombination happens between two certain sets of markers and predict what happens. Before making candidates, try to make best individual, how do we create that individual. Like gene stacking, stacking a mosaic of chromosome arms between two parents. Predicted gains might be twice be what they are now.
+  - Second thought: can we use a predictive approach to find outliers, much progress in plant breeding has not been incremental, but more step gains. Very good hybrids/cultivar is like an outlier that raises the bar for hybrids. Can we find those hybrids that don't fit the pattern that we're used to. Shawn Bradly: uncommon blend of common variants.Had all same height alleles as everyone else in the population. Bradly is 8.6 st. dev. deviations away from mean height. Can we use the Shawn Bradly approach in plant breeding?
+  - R=0.59 correlation between MN temperature and covid cases, correlation and not causation
+  - Note for students: no mixed model background in grad school. Did not even know what a matrix was, no formal courses. If you're interested in a future in predictive breeding, learn more about regression, machine learning, mixed models.
+  
   
   ---
   ### Date: 2020-09-10
@@ -16,7 +51,7 @@ content: '''
   - Linear models used for GWAS and eQTL mapping studies $y = X \\beta + \\epsilon_i$ where $\\epsilon_i = MVN(0_n, \\Sigma)$
   - Dissecting Phenotypic variation
     - made up of genetic and environmental effects, genotypic variation can be dissected into additive and non-linear effects plus environment effects
-  - Black box statistical methods: machine learning methods typically well-suited for prediction based tasks, research goal: provide interperterable ways to summarize the importance of input variables for non-parametic variables
+  - Black box statistical methods: machine learning methods typically well-suited for prediction based tasks, research goal: provide interperterable ways to summarize the importance of input variables for non-parametric variables
   - Linear models only see additive and environmental effects, black models might see non-linear, additive, and environmental effects
   - Components of an interpretable model
     - a motivating probabilistic model
