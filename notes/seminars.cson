@@ -1,5 +1,5 @@
 createdAt: "2019-10-30T15:02:38.028Z"
-updatedAt: "2020-09-16T07:02:54.057Z"
+updatedAt: "2020-12-09T15:31:05.413Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Seminars"
@@ -8,8 +8,25 @@ content: '''
   Seminars
   
   ---
-  ### Date: 2020--
-  -
+  ### Date: 2020-12-09
+  - Zach Lippman
+  - Mechanisms of quantitative trait variation
+  - Paper: Major impacts of widespread structural variation on gene expression and crop improvement in tomato. 
+    - 40% within and nearby genes (within = 5 kb)
+    - 80% within regulatory regions
+    - ~10% associated with expression changes
+  - What are the rules of cis-regulatory control?
+  - Using CRISPR to change cis-regulatory control of different allelic series to change fruit shape in tomato
+  - Hidden complexity in cis regulatory control through synergism, additivity, no redundancy, and redundancy
+  - Highest conservation of CNS regions overlaps at the midpoint of ATAC-seq regions 
+  - Hidden pleiotropy through cis-regulatory alteration/dissection to create embryonic/vegetative and reproductive changes
+  - Open chromatin & CNS = pleiotropic function that leads to quantitative variation
+  - Henderson et al Cell in review
+  - Exposure and partitioning of pleiotropy and functional composition of it's cis-regulatory control
+    - Perturbing 5' cis regulatory control leads to quantitative variation
+    - Perturbing UTRs/Exons/Introns leads to quantitative variation
+    - Perturbing 3' cis regulatory elements leads to quantitative variation
+  
   
   
   ---
