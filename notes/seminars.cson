@@ -1,11 +1,16 @@
 createdAt: "2019-10-30T15:02:38.028Z"
-updatedAt: "2020-12-09T15:31:05.413Z"
+updatedAt: "2020-12-11T19:48:43.906Z"
 type: "MARKDOWN_NOTE"
 folder: "6827e53fd4576b1dc031"
 title: "Seminars"
 tags: []
 content: '''
   Seminars
+  
+  ---
+  ### Date: 
+  - 
+  
   
   ---
   ### Date: 2020-12-09
@@ -26,7 +31,6 @@ content: '''
     - Perturbing 5' cis regulatory control leads to quantitative variation
     - Perturbing UTRs/Exons/Introns leads to quantitative variation
     - Perturbing 3' cis regulatory elements leads to quantitative variation
-  
   
   
   ---
